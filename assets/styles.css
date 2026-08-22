@@ -1,7 +1,7 @@
 /* =========================================================================
    Vitor Guilherme — Imóveis de Brasília · Design System (Apt.vc-style LP)
    Editorial / alto padrão. Ink + cream + bronze. Mobile-first.
-   Fonts: Fraunces (display serif) + Manrope (body). Swap em assets se quiser.
+   Fonts: Playfair Display (display serif, alto padrão) + Inter (body).
    ========================================================================= */
 
 :root {
@@ -21,8 +21,8 @@
   --radius:     18px;
   --maxw:       1180px;
   --ease:       cubic-bezier(.22,.61,.36,1);
-  --font-body:  "Manrope", ui-sans-serif, system-ui, sans-serif;
-  --font-disp:  "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body:  "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-disp:  "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }

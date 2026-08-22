@@ -1,0 +1,5 @@
+hero.jpg | Vista aérea do ponto comercial na esquina, no Recanto das Emas-DF, com estacionamento e fluxo na avenida
+g1.jpg | Movimento e localização: avenida com tráfego intenso, comércio de rua e ampla área de estacionamento
+g2.jpg | Aérea do lote/loja: fachada, cobertura e localização de esquina em zona comercial movimentada
+g3.jpg | Entorno de alto fluxo: supermercado âncora (Bellavia) com clientes, entregas e estacionamento
+g4.jpg | Interior do imóvel: amplo espaço com pé-direito alto e saída para os fundos
