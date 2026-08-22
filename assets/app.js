@@ -1,0 +1,118 @@
+/* Vitor Guilherme LPs — comportamento compartilhado
+   - Topbar scroll state
+   - Scroll reveal
+   - Lightbox de galeria
+   - Montagem de link WhatsApp (data-wa em qualquer <a>/<button>)
+   - Simulador de financiamento (opcional, só na LP simulador)
+*/
+(function () {
+  "use strict";
+
+  // ---- Config do corretor (ajuste aqui) ----
+  var VITOR_WA = "5561985090580"; // (61) 98509-0580
+
+  // ---- Topbar ----
+  var topbar = document.querySelector(".topbar");
+  if (topbar) {
+    var onScroll = function () {
+      topbar.classList.toggle("scrolled", window.scrollY > 40);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+
+  // ---- Reveal ----
+  var io = "IntersectionObserver" in window
+    ? new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.14, rootMargin: "0px 0px -8% 0px" })
+    : null;
+  document.querySelectorAll(".reveal").forEach(function (el) {
+    if (io) io.observe(el); else el.classList.add("in");
+  });
+
+  // ---- WhatsApp links ----
+  // Qualquer elemento com [data-wa] vira link do WhatsApp; a mensagem vem de [data-wa-msg].
+  document.querySelectorAll("[data-wa]").forEach(function (el) {
+    var msg = el.getAttribute("data-wa-msg") || "Olá Vitor, vi o anúncio e quero mais informações.";
+    var href = "https://wa.me/" + VITOR_WA + "?text=" + encodeURIComponent(msg);
+    if (el.tagName === "A") { el.setAttribute("href", href); el.setAttribute("target", "_blank"); el.setAttribute("rel", "noopener"); }
+    else { el.addEventListener("click", function () { window.open(href, "_blank", "noopener"); }); }
+  });
+
+  // ---- Lightbox ----
+  var lb = document.querySelector(".lb");
+  if (lb) {
+    var lbImg = lb.querySelector("img");
+    document.querySelectorAll(".gallery .shot[data-full]").forEach(function (shot) {
+      shot.addEventListener("click", function () {
+        lbImg.src = shot.getAttribute("data-full");
+        lb.classList.add("open");
+      });
+    });
+    lb.addEventListener("click", function () { lb.classList.remove("open"); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") lb.classList.remove("open"); });
+  }
+
+  // ---- Simulador de financiamento ----
+  var sim = document.querySelector("[data-sim]");
+  if (sim) {
+    var fmt = function (n) {
+      return n.toLocaleString("pt-BR", { style: "currency", currency: "BRL", maximumFractionDigits: 0 });
+    };
+    var inRenda = sim.querySelector("#renda");
+    var inTipo  = sim.querySelector("#tipo");
+    var outImovel = sim.querySelector("#out-imovel");
+    var outParcela = sim.querySelector("#out-parcela");
+    var outRendaMin = sim.querySelector("#out-rendamin");
+    var waBtn = sim.querySelector("#sim-wa");
+
+    var parseMoney = function (v) { return parseFloat(String(v).replace(/[^\d]/g, "")) || 0; };
+
+    var calc = function () {
+      var renda = parseMoney(inRenda.value);
+      // Regras (insumo do próprio Vitor): comprometimento máx 30% da renda;
+      // 1ª prestação ≈ 1,1% do valor financiado (média 0,8–1,2%).
+      var taxaParcela = 0.011;
+      var comprometimento = 0.30;
+      var parcelaMax = renda * comprometimento;
+      var valorFinanciado = parcelaMax / taxaParcela;
+      // Linha econômica = 100% financiado → valor do imóvel ≈ valor financiado.
+      var valorImovel = valorFinanciado;
+
+      if (!renda) {
+        outImovel.textContent = "R$ —";
+        outParcela.textContent = "—";
+        outRendaMin.textContent = "—";
+        return;
+      }
+      outImovel.textContent = fmt(valorImovel);
+      outParcela.textContent = fmt(parcelaMax);
+      outRendaMin.textContent = fmt(renda);
+
+      if (waBtn) {
+        var msg = "Olá Vitor! Fiz a simulação no site. Minha renda é " + fmt(renda) +
+          " e apareceu que consigo financiar cerca de " + fmt(valorImovel) +
+          " (parcela ~" + fmt(parcelaMax) + "). Quero ver as opções disponíveis.";
+        waBtn.setAttribute("data-wa-msg", msg);
+        waBtn.setAttribute("href", "https://wa.me/" + VITOR_WA + "?text=" + encodeURIComponent(msg));
+        waBtn.setAttribute("target", "_blank");
+        waBtn.setAttribute("rel", "noopener");
+      }
+    };
+
+    inRenda.addEventListener("input", function () {
+      var v = parseMoney(inRenda.value);
+      inRenda.value = v ? v.toLocaleString("pt-BR") : "";
+      calc();
+    });
+    if (inTipo) inTipo.addEventListener("change", calc);
+    calc();
+  }
+
+  // ---- Ano no footer ----
+  var y = document.querySelector("[data-year]");
+  if (y) y.textContent = new Date().getFullYear();
+})();
