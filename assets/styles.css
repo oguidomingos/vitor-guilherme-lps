@@ -308,3 +308,133 @@ footer.ft .disclaimer { font-size: .74rem; color: rgba(255,255,255,.32); line-he
   * { animation: none !important; transition: none !important; }
   .hero__bg { transform: none; }
 }
+
+/* =========================================================================
+   v2 (ago/2026) — Foto real do corretor + Template de LANÇAMENTO
+   Classes abaixo são aditivas: não alteram as 6 LPs de imóvel avulso.
+   ========================================================================= */
+
+/* --- Broker: foto real --- */
+.broker .card .photo .avatar--img {
+  width: 148px; height: 148px; object-fit: cover; object-position: center 20%;
+  background: none; padding: 0; border: 3px solid var(--bronze-2);
+  box-shadow: 0 0 0 6px rgba(202,164,106,.18), 0 18px 40px -18px rgba(0,0,0,.7);
+}
+.broker .card .photo .creci { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; opacity: .55; margin-top: 8px; }
+
+/* --- Footer: faixa do corretor responsável (todas as páginas) --- */
+footer.ft .ft-broker {
+  display: flex; align-items: center; gap: 14px; padding: 18px 0; margin-bottom: 6px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+footer.ft .ft-broker img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; object-position: center 20%; border: 2px solid var(--bronze-2); flex: none; }
+footer.ft .ft-broker .who { line-height: 1.35; }
+footer.ft .ft-broker .who b { display: block; color: #fff; font-family: var(--font-disp); font-size: 1.05rem; font-weight: 600; }
+footer.ft .ft-broker .who span { font-size: .8rem; color: rgba(255,255,255,.55); }
+footer.ft .ft-broker .ft-wa {
+  margin-left: auto; display: inline-flex; align-items: center; gap: 8px; white-space: nowrap;
+  font-size: .82rem; font-weight: 700; color: #06231a !important; background: var(--wa);
+  padding: 9px 14px; border-radius: 100px; transition: background .25s var(--ease);
+}
+footer.ft .ft-broker .ft-wa:hover { background: #2ee06f; }
+footer.ft .ft-broker .ft-wa svg { width: 16px; height: 16px; }
+@media (max-width: 520px) { footer.ft .ft-broker { flex-wrap: wrap; } footer.ft .ft-broker .ft-wa { margin-left: 0; width: 100%; justify-content: center; } }
+
+/* --- Hero de lançamento: linha de metadados --- */
+.hero .meta { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 10px 26px; }
+.hero .meta .m { display: flex; flex-direction: column; gap: 2px; }
+.hero .meta .m .k { font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; opacity: .65; font-weight: 700; }
+.hero .meta .m .v { font-family: var(--font-disp); font-size: clamp(1.15rem, 3vw, 1.5rem); font-weight: 600; color: var(--bronze-2); line-height: 1.1; }
+.hero .dev-line { margin-top: 18px; font-size: .78rem; letter-spacing: .06em; color: rgba(255,255,255,.6); }
+.hero .dev-line b { color: rgba(255,255,255,.85); font-weight: 600; }
+
+/* --- Lazer / amenidades (chips) --- */
+.amen { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 34px; }
+.amen .a {
+  display: flex; align-items: center; gap: 12px; padding: 14px 16px;
+  background: #fff; border: 1px solid var(--line-soft); border-radius: 14px; font-size: .92rem; font-weight: 600; color: var(--ink);
+  transition: transform .3s var(--ease), border-color .3s var(--ease);
+}
+.amen .a:hover { transform: translateY(-2px); border-color: var(--sand); }
+.amen .a i { width: 30px; height: 30px; border-radius: 9px; flex: none; display: grid; place-items: center;
+  background: linear-gradient(150deg, var(--bronze-2), var(--bronze)); color: #fff; font-style: normal; }
+.amen .a i svg { width: 16px; height: 16px; }
+@media (min-width: 720px) { .amen { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 980px) { .amen { grid-template-columns: repeat(4, 1fr); } }
+
+/* --- Plantas / tipologias --- */
+.plans { display: grid; gap: 16px; grid-template-columns: 1fr; margin-top: 40px; }
+.plan {
+  background: #fff; border: 1px solid var(--line-soft); border-radius: var(--radius); overflow: hidden;
+  display: flex; flex-direction: column; transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+}
+.plan:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.plan .pimg { aspect-ratio: 4/3; background: var(--cream-2) center/cover no-repeat; border-bottom: 1px solid var(--line-soft); }
+.plan .pimg.ph { display: grid; place-items: center; color: var(--bronze-ink); font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  background: repeating-linear-gradient(45deg, rgba(176,131,75,.06) 0 10px, transparent 10px 20px), var(--cream-2); }
+.plan .pbody { padding: 22px 22px 24px; display: flex; flex-direction: column; flex: 1; }
+.plan .ptag { font-size: .7rem; letter-spacing: .2em; text-transform: uppercase; font-weight: 700; color: var(--bronze-ink); }
+.plan h3 { font-family: var(--font-disp); font-weight: 600; font-size: 1.35rem; margin-top: 6px; line-height: 1.1; }
+.plan .pspecs { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 12px; font-size: .88rem; color: #5a5245; }
+.plan .pspecs b { color: var(--ink); font-weight: 700; }
+.plan .pprice { margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line-soft); display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.plan .pprice .k { font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: #8a8172; font-weight: 700; }
+.plan .pprice .v { font-family: var(--font-disp); font-weight: 600; font-size: 1.3rem; color: var(--bronze-ink); }
+.plan .pcta { margin-top: auto; padding-top: 18px; }
+.plan .pcta .btn { width: 100%; padding: 12px 18px; font-size: .9rem; }
+.plan.featured { border-color: var(--bronze-2); box-shadow: 0 0 0 1px var(--bronze-2) inset; }
+.plan.featured .ptag::after { content: " · mais procurada"; color: var(--bronze); }
+@media (min-width: 720px) { .plans { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 980px) { .plans { grid-template-columns: repeat(3, 1fr); } }
+.plans-note { margin-top: 16px; font-size: .8rem; color: #8a8172; }
+
+/* --- Cronograma / status da obra --- */
+.timeline { display: grid; gap: 0; grid-template-columns: 1fr; margin-top: 36px; border: 1px solid rgba(255,255,255,.1); border-radius: var(--radius); overflow: hidden; }
+.timeline .tl { padding: 22px 22px; background: rgba(255,255,255,.03); border-bottom: 1px solid rgba(255,255,255,.08); display: flex; gap: 16px; align-items: flex-start; }
+.timeline .tl:last-child { border-bottom: 0; }
+.timeline .tl .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--bronze-2); flex: none; margin-top: 7px; box-shadow: 0 0 0 5px rgba(202,164,106,.18); }
+.timeline .tl.done .dot { background: var(--wa); box-shadow: 0 0 0 5px rgba(37,211,102,.18); }
+.timeline .tl .when { font-size: .7rem; letter-spacing: .18em; text-transform: uppercase; color: var(--bronze-2); font-weight: 700; }
+.timeline .tl .what { font-family: var(--font-disp); font-size: 1.15rem; font-weight: 600; margin-top: 4px; }
+.timeline .tl .why { font-size: .85rem; color: rgba(255,255,255,.6); margin-top: 4px; }
+@media (min-width: 720px) { .timeline { grid-template-columns: repeat(3, 1fr); } .timeline .tl { border-bottom: 0; border-right: 1px solid rgba(255,255,255,.08); } .timeline .tl:last-child { border-right: 0; } }
+
+/* --- Localização com mapa real --- */
+.loc .map iframe { width: 100%; height: 100%; min-height: 320px; border: 0; display: block; filter: saturate(.85) contrast(1.05); }
+.loc .map.has-iframe { padding: 0; display: block; }
+.loc .pins { margin-top: 22px; }
+
+/* --- Formulário de interesse (abre WhatsApp com a mensagem pronta) --- */
+.lead { background: var(--cream-2); }
+.lead .panel {
+  background: #fff; border: 1px solid var(--line-soft); border-radius: 24px; box-shadow: var(--shadow);
+  overflow: hidden; display: grid; grid-template-columns: 1fr;
+}
+.lead .side {
+  background: linear-gradient(160deg, #2a2016, #14110d); color: #fff; padding: 34px 28px;
+  display: flex; flex-direction: column; justify-content: center; gap: 14px;
+}
+.lead .side .who { display: flex; align-items: center; gap: 14px; }
+.lead .side .who img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; object-position: center 20%; border: 2px solid var(--bronze-2); }
+.lead .side .who b { display: block; font-family: var(--font-disp); font-size: 1.25rem; font-weight: 600; }
+.lead .side .who span { font-size: .8rem; color: rgba(255,255,255,.6); }
+.lead .side p { color: rgba(255,255,255,.72); font-size: .95rem; }
+.lead .side ul { list-style: none; display: grid; gap: 8px; margin-top: 6px; }
+.lead .side li { display: flex; gap: 10px; font-size: .9rem; color: rgba(255,255,255,.85); }
+.lead .side li::before { content: "—"; color: var(--bronze-2); }
+.lead form { padding: 32px 28px; }
+.lead form label { display: block; font-weight: 700; font-size: .9rem; margin: 18px 0 8px; }
+.lead form label:first-of-type { margin-top: 0; }
+.lead form input, .lead form select {
+  width: 100%; min-width: 0; padding: 15px 16px; font-size: 1.02rem; font-family: var(--font-body);
+  border: 1px solid var(--line); border-radius: 12px; background: var(--cream); color: var(--ink);
+  transition: border-color .2s var(--ease), box-shadow .2s var(--ease);
+}
+.lead form input:focus, .lead form select:focus { outline: none; border-color: var(--bronze); box-shadow: 0 0 0 4px rgba(176,131,75,.15); }
+.lead form .btn { width: 100%; margin-top: 22px; white-space: normal; }
+.lead form .fine { font-size: .76rem; color: #8a8172; margin-top: 12px; text-align: center; }
+@media (min-width: 720px) { .lead .panel { grid-template-columns: .9fr 1.1fr; } }
+
+/* --- Faixa incorporadora/construtora --- */
+.devs { display: flex; flex-wrap: wrap; gap: 10px 28px; align-items: center; margin-top: 28px; font-size: .8rem; color: #6a6153; }
+.devs b { color: var(--ink); font-weight: 700; }

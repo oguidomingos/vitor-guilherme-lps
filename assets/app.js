@@ -116,3 +116,24 @@
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = new Date().getFullYear();
 })();
+
+/* --- v2 (ago/2026): formulário de interesse → abre WhatsApp com mensagem pronta ---
+   <form data-lead-form data-lead-emp="ELEVA 25"> com campos name="nome", name="whats" (opcional), name="interesse" (select/ input).
+   Não depende de backend: monta a mensagem e abre o wa.me do Vitor. */
+(function () {
+  "use strict";
+  var VITOR_WA = "5561985090580";
+  document.querySelectorAll("form[data-lead-form]").forEach(function (form) {
+    form.addEventListener("submit", function (ev) {
+      ev.preventDefault();
+      var emp = form.getAttribute("data-lead-emp") || "o empreendimento";
+      var nome = (form.querySelector('[name="nome"]') || {}).value || "";
+      var interesse = (form.querySelector('[name="interesse"]') || {}).value || "";
+      var whats = (form.querySelector('[name="whats"]') || {}).value || "";
+      var msg = "Olá Vitor! " + (nome ? "Me chamo " + nome.trim() + ". " : "") +
+        "Vi a página do " + emp + " e quero " + (interesse ? interesse : "a tabela, as plantas e as condições") + "." +
+        (whats ? " Meu WhatsApp: " + whats.trim() + "." : "");
+      window.open("https://wa.me/" + VITOR_WA + "?text=" + encodeURIComponent(msg), "_blank", "noopener");
+    });
+  });
+})();
