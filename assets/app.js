@@ -11,6 +11,29 @@
   // ---- Config do corretor (ajuste aqui) ----
   var VITOR_WA = "5561985090580"; // (61) 98509-0580
 
+  // ---- Rastreio de origem (UTM → ref na mensagem do WhatsApp) ----
+  // O clique pago chega com utm_source/campaign/content na URL. Guardamos na sessão
+  // e anexamos um código curto ("ref") a TODA mensagem de WhatsApp gerada na página.
+  // O ref identifica canal+campanha+criativo do primeiro clique → nenhum lead órfão.
+  try {
+    var qs = new URLSearchParams(window.location.search);
+    if (qs.get("utm_source")) {
+      sessionStorage.setItem("vg_utm", JSON.stringify({
+        s: qs.get("utm_source") || "",
+        c: qs.get("utm_campaign") || "",
+        n: qs.get("utm_content") || ""
+      }));
+    }
+  } catch (e) {}
+  function waRef() {
+    try {
+      var u = JSON.parse(sessionStorage.getItem("vg_utm") || "null");
+      if (!u || !u.s) return "";
+      return "\nref: " + [u.s, u.c, u.n].filter(Boolean).join("/");
+    } catch (e) { return ""; }
+  }
+  window.__vgWaRef = waRef; // usado também pelo bloco do formulário (IIFE v2)
+
   // ---- Topbar ----
   var topbar = document.querySelector(".topbar");
   if (topbar) {
@@ -36,7 +59,7 @@
   // ---- WhatsApp links ----
   // Qualquer elemento com [data-wa] vira link do WhatsApp; a mensagem vem de [data-wa-msg].
   document.querySelectorAll("[data-wa]").forEach(function (el) {
-    var msg = el.getAttribute("data-wa-msg") || "Olá Vitor, vi o anúncio e quero mais informações.";
+    var msg = (el.getAttribute("data-wa-msg") || "Olá Vitor, vi o anúncio e quero mais informações.") + waRef();
     var href = "https://wa.me/" + VITOR_WA + "?text=" + encodeURIComponent(msg);
     if (el.tagName === "A") { el.setAttribute("href", href); el.setAttribute("target", "_blank"); el.setAttribute("rel", "noopener"); }
     else { el.addEventListener("click", function () { window.open(href, "_blank", "noopener"); }); }
@@ -95,7 +118,7 @@
       if (waBtn) {
         var msg = "Olá Vitor! Fiz a simulação no site. Minha renda é " + fmt(renda) +
           " e apareceu que consigo financiar cerca de " + fmt(valorImovel) +
-          " (parcela ~" + fmt(parcelaMax) + "). Quero ver as opções disponíveis.";
+          " (parcela ~" + fmt(parcelaMax) + "). Quero ver as opções disponíveis." + waRef();
         waBtn.setAttribute("data-wa-msg", msg);
         waBtn.setAttribute("href", "https://wa.me/" + VITOR_WA + "?text=" + encodeURIComponent(msg));
         waBtn.setAttribute("target", "_blank");
@@ -132,7 +155,8 @@
       var whats = (form.querySelector('[name="whats"]') || {}).value || "";
       var msg = "Olá Vitor! " + (nome ? "Me chamo " + nome.trim() + ". " : "") +
         "Vi a página do " + emp + " e quero " + (interesse ? interesse : "a tabela, as plantas e as condições") + "." +
-        (whats ? " Meu WhatsApp: " + whats.trim() + "." : "");
+        (whats ? " Meu WhatsApp: " + whats.trim() + "." : "") +
+        (window.__vgWaRef ? window.__vgWaRef() : "");
       window.open("https://wa.me/" + VITOR_WA + "?text=" + encodeURIComponent(msg), "_blank", "noopener");
     });
   });
