@@ -1,6 +1,0 @@
-hero.jpg | Piscina e área de lazer do UNO Residence sob céu aberto
-g1.jpg | Sala de estar integrada, iluminada, com sofá e painel de TV
-g2.jpg | Cozinha americana equipada com geladeira e bancada
-g3.jpg | Quarto/dormitório com cama de casal e janela ampla
-g4.jpg | Banheiro completo com bancada, box de vidro e chuveiro
-g5.jpg | Fachada do edifício UNO Residence em Águas Claras
