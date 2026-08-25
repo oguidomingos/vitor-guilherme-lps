@@ -438,3 +438,17 @@ footer.ft .ft-broker .ft-wa svg { width: 16px; height: 16px; }
 /* --- Faixa incorporadora/construtora --- */
 .devs { display: flex; flex-wrap: wrap; gap: 10px 28px; align-items: center; margin-top: 28px; font-size: .8rem; color: #6a6153; }
 .devs b { color: var(--ink); font-weight: 700; }
+
+/* --- Hero com scrim reforçado (fotos claras / muito detalhe → legibilidade) --- */
+/* opt-in via class .hero--dim na <section class="hero">. Feedback Vitor: texto embaralhado sobre foto clara. */
+.hero--dim .hero__scrim {
+  background:
+    linear-gradient(180deg, rgba(10,8,6,.66) 0%, rgba(10,8,6,.32) 34%, rgba(10,8,6,.55) 66%, rgba(10,8,6,.96) 100%);
+}
+.hero--dim .hero__inner::before {
+  content: ""; position: absolute; inset: auto 0 0 0; height: 78%; z-index: -1;
+  background: radial-gradient(120% 90% at 22% 100%, rgba(10,8,6,.7), transparent 62%);
+  pointer-events: none;
+}
+.hero--dim .hero h1, .hero--dim h1 { text-shadow: 0 2px 24px rgba(10,8,6,.45); }
+.hero--dim .sub { text-shadow: 0 1px 14px rgba(10,8,6,.5); }
