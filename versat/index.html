@@ -6,15 +6,16 @@
 <!-- LP de LANÇAMENTO gerada a partir de /_template-lancamento (ago/2026).
      Fontes: resumo do book VERSAT enviado pelo Vitor no grupo (05/08), tabela de vendas jul/2026 R00 (Torre 1),
      convite "VISITE O DECORADO" (decorado 99,88 m²), ficha 10_FICHA_DOS_PRODUTOS.md.
-     IMAGENS: frames dos vídeos IMG_3778–3797 (gravados pelo Vitor, identificados como VERSAT na rodada anterior —
-     pasta Drive VERSAT/). ⚠️ Não há render oficial de fachada/áreas comuns no Drive: quando a incorporadora enviar
-     o book com imagens, trocar hero.jpg e incluir renders do lazer. Confirmar com o Vitor que as fotos são do decorado do VERSAT. -->
+     IMAGENS DECORADO (img/g1–g7): frames dos vídeos IMG_3778–3797 (gravados pelo Vitor).
+     RENDERS OFICIAIS (img/renders/r-*.jpg): perspectivas artísticas extraídas do site oficial da incorporadora
+     (construtoravillela.com.br/versat/, 8 renders — fachada, panorâmica, piscina, gourmet x2, academia, guarita, pet),
+     baixados em ago/2026. Hero agora usa r-fachada.jpg; galeria "Perspectivas" usa os renders. -->
 <title>VERSAT Home Resort · Lançamento 3 quartos em Águas Claras — Vitor Guilherme</title>
 <meta name="description" content="VERSAT Home Resort (Villela e Carvalho), Rua Copaíba esquina com Av. Jequitibá, Águas Claras: 3 quartos de 95 a 108 m², gardens e penthouses de 210 m², mais de 2.000 m² de lazer tipo resort, vaga com recarga para carro elétrico. Entrega 2028. Tabela, plantas e condições com o corretor Vitor Guilherme." />
 <meta property="og:title" content="VERSAT Home Resort — 3 quartos de alto padrão em Águas Claras" />
 <meta property="og:description" content="Plantas de 95 a 108 m², penthouses de 210 m² e mais de 2.000 m² de lazer. A partir de R$ 1,14 mi." />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="https://oguidomingos.github.io/vitor-guilherme-lps/versat/img/hero.jpg" />
+<meta property="og:image" content="https://oguidomingos.github.io/vitor-guilherme-lps/versat/img/renders/r-fachada.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -29,7 +30,7 @@
 
 <!-- 1. HERO -->
 <section class="hero">
-  <div class="hero__bg" style="background-image:url(img/hero.jpg);background-position:center 42%"></div>
+  <div class="hero__bg" style="background-image:url(img/renders/r-fachada.jpg);background-position:center 32%"></div>
   <div class="hero__scrim"></div>
   <div class="hero__inner wrap">
     <div class="stagger">
@@ -104,7 +105,27 @@
   </div>
 </section>
 
-<!-- 5. GALERIA -->
+<!-- 5. PERSPECTIVAS / ÁREAS COMUNS (renders oficiais) -->
+<section id="perspectivas" class="section-pad" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow reveal">Perspectivas do empreendimento</span>
+    <h2 class="section-title reveal" style="margin-top:12px">Fachada, áreas comuns e o home resort de 2.052 m²</h2>
+    <p class="lead reveal" style="margin-top:12px">Renders oficiais da Villela e Carvalho: a torre em L na parte mais alta de Águas Claras, o lazer completo no 3º pavimento e a portaria com porte-cochère.</p>
+    <div class="gallery">
+      <div class="shot wide reveal" style="background-image:url(img/renders/r-fachada.jpg)" data-full="img/renders/r-fachada.jpg" role="img" aria-label="Render da fachada principal do VERSAT Home Resort, torre em L"></div>
+      <div class="shot reveal" style="background-image:url(img/renders/r-piscina.jpg)" data-full="img/renders/r-piscina.jpg" role="img" aria-label="Render da piscina adulto do home resort"></div>
+      <div class="shot reveal" style="background-image:url(img/renders/r-panoramica.jpg)" data-full="img/renders/r-panoramica.jpg" role="img" aria-label="Vista panorâmica diurna do empreendimento em Águas Claras"></div>
+      <div class="shot reveal" style="background-image:url(img/renders/r-gourmet.jpg)" data-full="img/renders/r-gourmet.jpg" role="img" aria-label="Render do espaço gourmet do lazer"></div>
+      <div class="shot reveal" style="background-image:url(img/renders/r-gourmet2.jpg)" data-full="img/renders/r-gourmet2.jpg" role="img" aria-label="Render do terraço gourmet com vista"></div>
+      <div class="shot reveal" style="background-image:url(img/renders/r-academia.jpg)" data-full="img/renders/r-academia.jpg" role="img" aria-label="Render da academia com terraço fitness"></div>
+      <div class="shot reveal" style="background-image:url(img/renders/r-guarita.jpg)" data-full="img/renders/r-guarita.jpg" role="img" aria-label="Render da portaria e porte-cochère de entrada"></div>
+      <div class="shot reveal" style="background-image:url(img/renders/r-pet.jpg)" data-full="img/renders/r-pet.jpg" role="img" aria-label="Render do pet place do condomínio"></div>
+    </div>
+    <p class="reveal" style="color:#8a8172;font-size:.82rem;margin-top:16px">Perspectivas artísticas de caráter ilustrativo, imagens oficiais de divulgação da Villela e Carvalho. Acabamentos, mobiliário e paisagismo sujeitos a alteração conforme memorial descritivo oficial.</p>
+  </div>
+</section>
+
+<!-- 6. GALERIA DECORADO -->
 <section id="galeria" class="section-pad" style="padding-top:0">
   <div class="wrap">
     <span class="eyebrow reveal">Decorado</span>
@@ -119,7 +140,7 @@
       <div class="shot reveal" style="background-image:url(img/g6.jpg)" data-full="img/g6.jpg" role="img" aria-label="Detalhe de bancada em pedra com taças, acabamento do decorado"></div>
       <div class="shot reveal" style="background-image:url(img/g7.jpg)" data-full="img/g7.jpg" role="img" aria-label="Vitor Guilherme no apartamento decorado durante visita"></div>
     </div>
-    <p class="reveal" style="color:#8a8172;font-size:.82rem;margin-top:16px">Fotos do apartamento decorado, de caráter ilustrativo; mobiliário e decoração não integram a unidade. Acabamentos conforme memorial descritivo oficial. Perspectivas das áreas comuns: solicite o book ao Vitor.</p>
+    <p class="reveal" style="color:#8a8172;font-size:.82rem;margin-top:16px">Fotos do apartamento decorado, de caráter ilustrativo; mobiliário e decoração não integram a unidade. Acabamentos conforme memorial descritivo oficial. Veja também as <a href="#perspectivas" style="color:inherit;text-decoration:underline">perspectivas das áreas comuns</a>.</p>
   </div>
 </section>
 
