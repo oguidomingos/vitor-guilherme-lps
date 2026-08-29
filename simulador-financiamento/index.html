@@ -14,6 +14,10 @@
 
 <style id="sim-style">
 /* Simulador — form completo (motor validado). Escopado, usa os tokens da LP. */
+/* A LP transforma .sim .panel em 2 colunas (form | result) no desktop; aqui o
+   form e o resultado ficam empilhados em coluna unica, com padding proprio. */
+#simular .panel{display:block;padding:26px 22px}
+@media(min-width:560px){#simular .panel{padding:34px 32px}}
 .sim-form .field{margin-bottom:16px}
 .sim-form label,.sim-form .legend{display:block;font-family:var(--font-body);font-size:.82rem;font-weight:600;margin-bottom:6px;color:var(--ink)}
 .sim-form .opt{font-weight:400;opacity:.6}
