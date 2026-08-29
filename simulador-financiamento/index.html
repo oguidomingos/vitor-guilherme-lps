@@ -11,6 +11,56 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../assets/styles.css" />
+
+<style id="sim-style">
+/* Simulador — form completo (motor validado). Escopado, usa os tokens da LP. */
+.sim-form .field{margin-bottom:16px}
+.sim-form label,.sim-form .legend{display:block;font-family:var(--font-body);font-size:.82rem;font-weight:600;margin-bottom:6px;color:var(--ink)}
+.sim-form .opt{font-weight:400;opacity:.6}
+.sim-form .hint{font-weight:400;opacity:.62;font-size:.76rem;display:block;margin:-2px 0 6px}
+.sim-form input[type=text],.sim-form select{width:100%;padding:13px 14px;font-size:16px;font-family:var(--font-body);color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;appearance:none;transition:border-color .15s,box-shadow .15s}
+.sim-form input:focus,.sim-form select:focus{outline:none;border-color:var(--bronze);box-shadow:0 0 0 3px rgba(176,131,75,.16)}
+.sim-form select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b4e26' stroke-width='1.6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+.sim-form .dateFb{display:block;min-height:15px;font-size:.76rem;font-weight:600;margin-top:6px;color:rgba(20,17,13,.55);transition:color .15s}
+.sim-form .dateFb.ok{color:var(--bronze-ink)}
+.sim-form .dateFb.warn{color:#9c2b2b}
+.sim-form .pills{display:flex;gap:10px}
+.sim-form .pills input{position:absolute;opacity:0;width:0;height:0}
+.sim-form .pills label{flex:1;margin:0;text-align:center;padding:12px 8px;border:1px solid var(--line);border-radius:12px;background:#fff;cursor:pointer;font-weight:500;font-size:15px;transition:all .15s}
+.sim-form .pills input:checked + label{border-color:var(--bronze);background:rgba(176,131,75,.1);color:var(--bronze-ink);font-weight:600}
+.sim-form .check{display:flex;gap:11px;align-items:flex-start;cursor:pointer;margin:0}
+.sim-form .check input{margin:2px 0 0;width:19px;height:19px;accent-color:var(--bronze);flex:0 0 auto}
+.sim-form .check span{font-weight:500;font-size:14.5px;line-height:1.4}
+.sim-form .check small{display:block;opacity:.6;font-weight:400;font-size:12.5px}
+.sim-form hr.sep{border:none;border-top:1px solid var(--line);margin:18px 0}
+.sim-form .btn-sim{width:100%;margin-top:18px;padding:16px;border:none;border-radius:12px;background:var(--bronze);color:#fff;font-size:16px;font-weight:700;font-family:var(--font-body);cursor:pointer;transition:background .15s,transform .06s}
+.sim-form .btn-sim:hover{background:var(--bronze-ink)}
+.sim-form .btn-sim:active{transform:translateY(1px)}
+.sim-form .erro{color:#9c2b2b;font-size:13px;margin-top:10px}
+#resultado{display:none;margin-top:20px}
+#resultado.show{display:block;animation:simUp .35s var(--ease) both}
+@keyframes simUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+#resultado .chip{display:inline-block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--bronze-ink);background:rgba(176,131,75,.12);padding:5px 11px;border-radius:99px;margin-bottom:14px}
+#resultado .valorLabel{font-size:13px;opacity:.65;margin:0 0 4px}
+#resultado .valor{font-family:var(--font-disp);font-size:30px;line-height:1.15;letter-spacing:-.02em;margin:0;color:var(--ink)}
+#resultado .valor .ate{opacity:.5;font-size:.62em}
+#resultado .valorNota{font-size:12.5px;opacity:.65;margin:8px 0 0}
+#resultado .grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:18px 0 0}
+#resultado .grid > div{background:#fff;padding:13px 14px}
+#resultado .grid dt{font-size:11.5px;opacity:.6;margin:0 0 3px}
+#resultado .grid dd{margin:0;font-size:16px;font-weight:700;font-variant-numeric:tabular-nums}
+#resultado .avisos{margin:16px 0 0;padding:0;list-style:none}
+#resultado .avisos li{font-size:13px;opacity:.72;line-height:1.5;padding-left:16px;position:relative;margin-top:8px}
+#resultado .avisos li::before{content:"•";position:absolute;left:0;color:var(--bronze)}
+#resultado .nutricao{background:var(--cream-2);border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:18px}
+#resultado .nutricao p{margin:0 0 10px;font-size:14.5px}
+#resultado .nutricao ul{margin:0;padding-left:18px;opacity:.78;font-size:13.5px}
+#resultado .nutricao li{margin-bottom:5px}
+#resultado .btn--wa{margin-top:20px}
+#resultado .ctaNota{text-align:center;font-size:12.5px;opacity:.65;margin:10px 0 0}
+#resultado .refazer{display:block;width:100%;margin-top:14px;padding:12px;background:none;border:1px solid var(--line);border-radius:12px;color:rgba(20,17,13,.6);font-family:var(--font-body);font-size:14px;cursor:pointer}
+#resultado .refazer:hover{border-color:var(--bronze);color:var(--ink)}
+</style>
 </head>
 <body>
 
@@ -41,33 +91,78 @@
   <div class="wrap">
     <span class="eyebrow reveal">Simulador rápido</span>
     <h2 class="section-title reveal" style="margin-top:12px">Sua simulação, sem burocracia</h2>
-    <p class="lead reveal" style="margin:12px 0 34px">É uma estimativa inicial baseada nas regras que os bancos costumam usar. O valor exato o Vitor confirma com você na análise de crédito.</p>
-    <div class="panel reveal" data-sim>
-      <div class="form">
-        <label for="renda">Sua renda bruta mensal</label>
-        <input id="renda" inputmode="numeric" placeholder="Ex.: 8.000" autocomplete="off" />
-        <div class="hint">Some sua renda com a de quem vai comprar junto (renda familiar), se for o caso.</div>
-
-        <label for="tipo">Tipo de renda</label>
-        <select id="tipo">
-          <option value="clt">CLT / assalariado</option>
-          <option value="autonomo">Autônomo / profissional liberal</option>
-          <option value="empresario">Empresário</option>
-          <option value="servidor">Servidor público</option>
-        </select>
-        <div class="hint">Não pedimos nenhum documento nesta etapa. Só o suficiente para uma estimativa.</div>
-      </div>
-      <div class="result">
-        <div class="k">Você tende a financiar até</div>
-        <div class="v" id="out-imovel">R$ 0,00</div>
-        <div class="row2">
-          <div><div class="k2">Parcela estimada</div><div class="v2" id="out-parcela">R$ 0,00</div></div>
-          <div><div class="k2">Sua renda</div><div class="v2" id="out-rendamin">R$ 0,00</div></div>
+    <p class="lead reveal" style="margin:12px 0 34px">Uma estimativa inicial pelas regras que os bancos costumam usar — 30% da renda, prazo pela idade, FGTS e a linha econômica (MCMV Faixa 4). O valor exato o Vitor confirma com você na análise de crédito. O cálculo acontece no seu navegador; nada é armazenado.</p>
+    <div class="panel reveal">
+      <form class="sim-form" id="form" novalidate>
+        <div class="field">
+          <label for="tipoRenda">Tipo de renda</label>
+          <select id="tipoRenda" name="tipoRenda">
+            <option value="clt">CLT (carteira assinada)</option>
+            <option value="servidor">Servidor público</option>
+            <option value="aposentado">Aposentado ou pensionista</option>
+            <option value="autonomo">Autônomo / profissional liberal</option>
+            <option value="empresario">Empresário / PJ</option>
+            <option value="informal">Renda informal</option>
+          </select>
         </div>
-        <div class="muted">Estimativa: comprometimento de até 30% da renda e 1ª parcela ≈ 1,1% do valor financiado. Sujeito à análise de crédito do banco.</div>
-        <a class="btn btn--wa" id="sim-wa" data-wa data-wa-msg="Olá Vitor! Fiz a simulação e quero ver as opções disponíveis dentro do meu valor.">Ver as opções disponíveis no meu valor</a>
-      </div>
+
+        <div class="field">
+          <label for="renda">Renda bruta mensal</label>
+          <span class="hint">Valor antes dos descontos. Some a renda de quem vai comprar junto.</span>
+          <input type="text" id="renda" name="renda" inputmode="numeric" autocomplete="off" placeholder="R$ 0">
+        </div>
+
+        <div class="field">
+          <label for="nascimento">Data de nascimento</label>
+          <span class="hint">Do comprador mais velho — é ela que define o prazo do financiamento.</span>
+          <input type="text" id="nascimento" name="nascimento" inputmode="numeric"
+                 autocomplete="bday" placeholder="DD/MM/AAAA" maxlength="10"
+                 aria-describedby="nascFeedback">
+          <span class="dateFb" id="nascFeedback" aria-live="polite"></span>
+        </div>
+
+        <hr class="sep">
+
+        <div class="field">
+          <span class="legend" id="lblFgts">Você tem 3 anos de trabalho com FGTS?</span>
+          <span class="hint">Somando todos os contratos de carteira assinada da vida, mesmo que não seguidos.</span>
+          <div class="pills" role="radiogroup" aria-labelledby="lblFgts">
+            <input type="radio" id="fgtsSim" name="fgts" value="sim">
+            <label for="fgtsSim">Sim</label>
+            <input type="radio" id="fgtsNao" name="fgts" value="nao" checked>
+            <label for="fgtsNao">Não</label>
+          </div>
+        </div>
+
+        <div class="field" id="campoSaldo" hidden>
+          <label for="saldoFgts">Saldo aproximado de FGTS</label>
+          <input type="text" id="saldoFgts" name="saldoFgts" inputmode="numeric" autocomplete="off" placeholder="R$ 0">
+        </div>
+
+        <div class="field">
+          <label for="entrada">Entrada disponível <span class="opt">(opcional)</span></label>
+          <input type="text" id="entrada" name="entrada" inputmode="numeric" autocomplete="off" placeholder="R$ 0">
+        </div>
+
+        <div class="field">
+          <label class="check" for="vendeImovel">
+            <input type="checkbox" id="vendeImovel" name="vendeImovel">
+            <span>Tenho um imóvel para vender ou dar de entrada
+              <small>Venda e permuta contam como poder de compra.</small>
+            </span>
+          </label>
+        </div>
+
+        <button class="btn-sim" type="submit">Ver quanto eu consigo</button>
+        <p class="erro" id="erro" role="alert" hidden></p>
+      </form>
+
+      <section id="resultado" aria-live="polite" tabindex="-1"></section>
     </div>
+
+    <template id="tplWa">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.74.46 3.44 1.32 4.94L2 22l5.36-1.4a9.8 9.8 0 0 0 4.68 1.2h.01c5.43 0 9.84-4.4 9.84-9.84C21.89 6.4 17.48 2 12.04 2zm0 17.94h-.01a8.2 8.2 0 0 1-4.15-1.14l-.3-.18-3.08.8.83-3-.2-.31a8.13 8.13 0 0 1-1.25-4.35c0-4.5 3.67-8.16 8.17-8.16 2.18 0 4.23.85 5.77 2.4a8.1 8.1 0 0 1 2.39 5.77c0 4.5-3.67 8.17-8.17 8.17zm4.48-6.12c-.25-.12-1.45-.72-1.68-.8-.22-.08-.39-.12-.55.13-.16.24-.63.79-.77.95-.14.16-.28.18-.53.06-.25-.13-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.25-.84.83-.84 2.01s.86 2.33.98 2.5c.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.51.58.19 1.11.16 1.52.1.47-.07 1.45-.59 1.65-1.17.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.47-.28z"/></svg>
+    </template>
   </div>
 </section>
 
@@ -144,5 +239,615 @@
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.5-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
 </a>
 <script src="../assets/app.js"></script>
+<script type="module">
+/* MOTOR:INICIO */
+/**
+ * motor.js — motor de simulação de financiamento imobiliário + qualificação de lead.
+ *
+ * ES module, JavaScript puro, ZERO dependências. Roda no browser (LP) e no Node (testes).
+ * Fonte das regras: MECANISMOS.md (pesquisa dos simuladores) + REGRAS-VITOR.md (regras do corretor).
+ *
+ * =====================  PREMISSAS DE TAXA E DE CÁLCULO  =====================
+ *
+ * 1) TAXA DE JUROS — não existe "a" taxa: depende de banco, relacionamento e modalidade.
+ *    Pesquisa de mercado (jul/2026): Caixa taxa balcão SBPE a partir de ~11,19% a.a. + TR;
+ *    Caixa/Itaú/Bradesco/Santander competindo na banda 9,3% – 12% a.a.
+ *    Adotamos, seguindo o atalho de UX da apto.vc ("taxa de juros + seguro" num número só):
+ *      - TAXA_OTIMISTA     =  9,99% a.a.  -> teto da faixa (melhor banco / bom relacionamento)
+ *      - TAXA_REFERENCIA   = 10,99% a.a.  -> número central usado no poder de compra
+ *      - TAXA_CONSERVADORA = 11,99% a.a.  -> (documentada; o piso da faixa vem da regra do Vítor)
+ *    A taxa já embute, de forma aproximada, seguros MIP/DFI e taxa de administração — por isso
+ *    NÃO somamos seguros separadamente.
+ *
+ * 2) SISTEMA DE AMORTIZAÇÃO — PRICE (prestação constante). É o cenário que financia MAIS para a
+ *    mesma renda. SAC (padrão Caixa) exigiria renda maior no início; por isso o piso da faixa
+ *    usa a regra empírica do Vítor, que é mais dura que o PRICE e cobre o caso SAC.
+ *
+ * 3) REGRA-DO-VÍTOR — "a primeira prestação fica entre 0,8% e 1,2% do valor financiado,
+ *    varia por banco". Invertida: financiado = parcela / 0,012 (piso) .. parcela / 0,008 (teto).
+ *
+ * 4) COMPROMETIMENTO DE RENDA — 30% da renda bruta familiar (Caixa/BB e o próprio Vítor).
+ *    Obs.: o exemplo numérico do Vítor (9.600 de parcela p/ renda 28.800) equivale a 33,3%.
+ *    Ficamos com 30% de propósito: erra para menos, nunca para mais.
+ *
+ * 5) PRAZO — idade do proponente + prazo <= 80 anos, teto de 420 meses (35 anos).
+ *    A Caixa usa 80 anos e 6 meses; usamos 80 "cheio" por conservadorismo.
+ *
+ * 6) FGTS — só entra no poder de compra com >= 3 anos de trabalho sob regime FGTS (somando
+ *    vínculos). Restrições adicionais (imóvel residencial urbano, não possuir outro imóvel na
+ *    região, teto do SFH de R$ 1,5 mi) viram ALERTAS, não bloqueios — quem decide é o banco na
+ *    análise de crédito (etapa 2 do fluxo do Vítor).
+ *
+ * 7) ESTA SIMULAÇÃO NÃO É PROPOSTA DE CRÉDITO. É a etapa 1 do Vítor ("noção rápida"), sem
+ *    documentos, sem consulta a bureau, sem enquadramento por município.
+ * ============================================================================
+ */
+
+// ---------------------------------------------------------------------------
+// Constantes de regra (mexer aqui, não no meio do código)
+// ---------------------------------------------------------------------------
+
+const PREMISSAS = Object.freeze({
+  COMPROMETIMENTO_RENDA: 0.30,
+
+  TAXA_OTIMISTA: 0.0999,
+  TAXA_REFERENCIA: 0.1099,
+  TAXA_CONSERVADORA: 0.1199,
+
+  // Regra-do-Vítor: primeira prestação como % do valor financiado.
+  PCT_PARCELA_MIN: 0.008, // banco "barato"  -> financia mais
+  PCT_PARCELA_MAX: 0.012, // banco "caro"    -> financia menos (piso da faixa)
+
+  PRAZO_MAX_MESES: 420,
+  IDADE_LIMITE_ANOS: 80, // idade + prazo <= 80
+  IDADE_MINIMA_ANOS: 18,
+
+  // Decisão Guilherme 27/07/2026: cenário de trabalho conservador p/ alto padrão.
+  // Financia 70% -> entrada mínima sugerida de 30%. Os 80% do exemplo antigo do
+  // Vítor ficam como teto otimista (LTV_TETO), não como base de comunicação.
+  LTV_REFERENCIA: 0.70,
+  LTV_TETO: 0.80,
+
+  // MCMV 2026 (Faixa 4 criada em 2026). O PLANO.md citava ~12k/~500k, parâmetros pré-2026.
+  LIMITE_RENDA_MCMV: 13000,
+  TETO_IMOVEL_MCMV: 600000,
+
+  TETO_SFH: 1500000, // acima disso, FGTS não pode ser usado
+
+  // Régua de qualificação.
+  // Decisão Guilherme 30/07/2026 — PIVÔ ECONÔMICO-PRIMEIRO: reintroduz a linha
+  // econômica (MCMV Faixa 4, NEXUS/NEXT) como público-alvo principal, ao lado do
+  // alto padrão e da permuta. Abaixo de RENDA_MINIMA_ECONOMICO, sem permuta, é nutrição.
+  PODER_COMPRA_ALTO_PADRAO: 800000,
+  RENDA_MINIMA_ECONOMICO: 7800,
+
+  ANOS_FGTS_EXIGIDOS: 3,
+});
+
+/**
+ * Fator multiplicador aplicado sobre a renda declarada para estimar a renda que o banco
+ * efetivamente considera. Renda formal entra inteira; renda sem holerite sofre deságio na mesa
+ * de crédito (média de extratos, DECORE, etc.).
+ * OBS: este fator afeta a CAPACIDADE DE PARCELA, não a régua de qualificação — a régua usa a
+ * renda bruta declarada, como o Vítor enuncia ("a partir de R$ 7.800").
+ */
+const FATOR_TIPO_RENDA = Object.freeze({
+  clt: 1.0,
+  servidor: 1.0,
+  aposentado: 1.0,
+  autonomo: 0.9,
+  empresario: 0.9,
+  informal: 0.8,
+});
+
+// ---------------------------------------------------------------------------
+// Helpers puros
+// ---------------------------------------------------------------------------
+
+/** Converte taxa efetiva anual em taxa efetiva mensal. */
+function taxaMensal(taxaAnual) {
+  return Math.pow(1 + taxaAnual, 1 / 12) - 1;
+}
+
+/**
+ * Valor presente de uma série de parcelas constantes (Tabela PRICE).
+ * PV = PMT * (1 - (1 + i)^-n) / i
+ */
+function valorPresentePrice(parcela, taxaAnual, meses) {
+  if (!(parcela > 0) || !(meses > 0)) return 0;
+  const i = taxaMensal(taxaAnual);
+  if (i <= 0) return parcela * meses;
+  return parcela * (1 - Math.pow(1 + i, -meses)) / i;
+}
+
+/** Parcela PRICE para um valor presente. Inverso de valorPresentePrice. */
+function parcelaPrice(valorFinanciado, taxaAnual, meses) {
+  if (!(valorFinanciado > 0) || !(meses > 0)) return 0;
+  const i = taxaMensal(taxaAnual);
+  if (i <= 0) return valorFinanciado / meses;
+  return valorFinanciado * i / (1 - Math.pow(1 + i, -meses));
+}
+
+function paraData(valor) {
+  if (valor instanceof Date) return new Date(valor.getTime());
+  if (typeof valor === 'string') {
+    const iso = /^(\d{4})-(\d{2})-(\d{2})/.exec(valor.trim());
+    if (iso) return new Date(Number(iso[1]), Number(iso[2]) - 1, Number(iso[3]));
+    const br = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(valor.trim());
+    if (br) return new Date(Number(br[3]), Number(br[2]) - 1, Number(br[1]));
+    const d = new Date(valor);
+    return isNaN(d.getTime()) ? null : d;
+  }
+  return null;
+}
+
+/** Idade em meses completos entre nascimento e a data de referência. */
+function idadeEmMeses(dataNascimento, dataReferencia) {
+  const nasc = paraData(dataNascimento);
+  const ref = paraData(dataReferencia) || new Date();
+  if (!nasc) return null;
+  let meses = (ref.getFullYear() - nasc.getFullYear()) * 12 + (ref.getMonth() - nasc.getMonth());
+  if (ref.getDate() < nasc.getDate()) meses -= 1;
+  return meses;
+}
+
+function num(v) {
+  if (typeof v === 'number') return isFinite(v) ? v : 0;
+  if (typeof v === 'string') {
+    const limpo = v.replace(/[^\d,.-]/g, '').replace(/\.(?=\d{3}\b)/g, '').replace(',', '.');
+    const n = parseFloat(limpo);
+    return isFinite(n) ? n : 0;
+  }
+  return 0;
+}
+
+const brl = (v) => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
+const arredondaMil = (v) => Math.round(v / 1000) * 1000;
+const arredonda2 = (v) => Math.round(v * 100) / 100;
+
+// ---------------------------------------------------------------------------
+// Motor
+// ---------------------------------------------------------------------------
+
+/**
+ * @param {Object} input
+ * @param {number} input.rendaBruta        Renda bruta familiar mensal (R$).
+ * @param {string|Date} input.dataNascimento  Proponente mais velho ('YYYY-MM-DD' ou 'DD/MM/YYYY').
+ * @param {boolean} [input.temFgts3Anos]   Tem >= 3 anos de trabalho sob regime FGTS?
+ * @param {number}  [input.saldoFgts]      Saldo aproximado de FGTS (R$).
+ * @param {string}  [input.tipoRenda]      clt|servidor|aposentado|autonomo|empresario|informal.
+ * @param {number}  [input.entradaDisponivel] Recursos próprios para entrada (R$).
+ * @param {boolean} [input.vendeOutroImovel]  Tem imóvel para vender/dar de entrada.
+ * @param {string|Date} [input.dataReferencia] Só para testes determinísticos (default: hoje).
+ * @returns {Object} resultado da simulação + qualificação.
+ */
+function simular(input = {}) {
+  const {
+    rendaBruta,
+    dataNascimento,
+    temFgts3Anos = false,
+    saldoFgts = 0,
+    tipoRenda = 'clt',
+    entradaDisponivel = 0,
+    vendeOutroImovel = false,
+    dataReferencia,
+  } = input;
+
+  const P = PREMISSAS;
+  const alertas = [];
+  const erros = [];
+
+  const renda = num(rendaBruta);
+  const entrada = Math.max(0, num(entradaDisponivel));
+  const fgtsBruto = Math.max(0, num(saldoFgts));
+
+  if (!(renda > 0)) erros.push('Informe a renda bruta mensal.');
+
+  const meses = idadeEmMeses(dataNascimento, dataReferencia);
+  if (meses === null) erros.push('Informe uma data de nascimento válida.');
+
+  const idadeAnos = meses === null ? null : Math.floor(meses / 12);
+  if (idadeAnos !== null && idadeAnos < P.IDADE_MINIMA_ANOS) {
+    erros.push('É necessário ter pelo menos 18 anos para financiar.');
+  }
+
+  // --- Prazo: idade + prazo <= 80 anos, teto 420 meses ---------------------
+  let prazoMeses = 0;
+  if (meses !== null) {
+    prazoMeses = Math.min(P.PRAZO_MAX_MESES, Math.max(0, P.IDADE_LIMITE_ANOS * 12 - meses));
+  }
+  if (idadeAnos !== null && idadeAnos >= P.IDADE_LIMITE_ANOS) {
+    alertas.push('Pela idade, os bancos não concedem prazo de financiamento — a rota é compra à vista, consórcio ou financiamento em nome de um familiar mais novo.');
+  } else if (prazoMeses > 0 && prazoMeses < P.PRAZO_MAX_MESES) {
+    alertas.push(`Prazo limitado a ${prazoMeses} meses pela regra "idade + prazo ≤ ${P.IDADE_LIMITE_ANOS} anos". Um comprador mais novo no contrato aumenta o valor financiável.`);
+  }
+
+  // --- Capacidade de parcela ------------------------------------------------
+  const fator = FATOR_TIPO_RENDA[tipoRenda] ?? 1.0;
+  const rendaConsiderada = renda * fator;
+  const parcelaMaxima = arredonda2(rendaConsiderada * P.COMPROMETIMENTO_RENDA);
+  if (fator < 1) {
+    alertas.push('Renda sem carteira assinada costuma sofrer deságio na análise do banco — a simulação já considera isso.');
+  }
+
+  // --- Valor financiável: faixa (Vítor 1,2% .. PRICE otimista / 0,8%) ------
+  const pisoVitor = parcelaMaxima / P.PCT_PARCELA_MAX;              // banco caro
+  const tetoVitor = parcelaMaxima / P.PCT_PARCELA_MIN;              // banco barato
+  const priceRef = valorPresentePrice(parcelaMaxima, P.TAXA_REFERENCIA, prazoMeses);
+  const priceOtimista = valorPresentePrice(parcelaMaxima, P.TAXA_OTIMISTA, prazoMeses);
+
+  const semPrazo = prazoMeses <= 0;
+  const finMin = semPrazo ? 0 : arredondaMil(Math.min(pisoVitor, priceRef));
+  const finRef = semPrazo ? 0 : arredondaMil(priceRef);
+  const finMax = semPrazo ? 0 : arredondaMil(Math.min(tetoVitor, priceOtimista));
+
+  const financiavel = { min: finMin, referencia: finRef, max: Math.max(finMax, finRef) };
+
+  // --- FGTS -----------------------------------------------------------------
+  const fgtsUtilizavel = temFgts3Anos ? fgtsBruto : 0;
+  if (!temFgts3Anos && fgtsBruto > 0) {
+    alertas.push(`Sem ${P.ANOS_FGTS_EXIGIDOS} anos de trabalho sob regime FGTS (somando todos os vínculos), o saldo não pode ser usado na compra — por isso ele não entrou na conta.`);
+  }
+
+  const recursosProprios = entrada + fgtsUtilizavel;
+
+  // --- Poder de compra ------------------------------------------------------
+  const poderDeCompra = {
+    min: arredondaMil(financiavel.min + recursosProprios),
+    referencia: arredondaMil(financiavel.referencia + recursosProprios),
+    max: arredondaMil(financiavel.max + recursosProprios),
+  };
+
+  if (fgtsUtilizavel > 0 && poderDeCompra.referencia > P.TETO_SFH) {
+    alertas.push('Acima do teto do SFH (R$ 1,5 milhão) o FGTS não pode ser usado na compra — nessa faixa ele serve só como reserva.');
+  }
+
+  // --- Enquadramento ----------------------------------------------------------
+  // Precisa vir antes da entrada mínima: no modo MCMV (renda ≤ 13k e poder de
+  // compra ≤ 600k, teto Faixa 4 2026) o financiamento pode chegar a 100% do
+  // imóvel na linha econômica — não há "entrada mínima sugerida" nesse modo.
+  let enquadramento;
+  if (vendeOutroImovel || poderDeCompra.referencia >= P.PODER_COMPRA_ALTO_PADRAO) {
+    enquadramento = 'alto_padrao';
+  } else if (renda <= P.LIMITE_RENDA_MCMV && poderDeCompra.referencia <= P.TETO_IMOVEL_MCMV) {
+    enquadramento = 'mcmv_possivel';
+  } else {
+    enquadramento = 'sbpe';
+  }
+  const mcmvMode = enquadramento === 'mcmv_possivel';
+
+  // Entrada mínima sugerida pelo LTV de referência (70%) — só se aplica fora do
+  // modo MCMV. Decisão 30/07/2026: LTV 70% fica restrito ao caminho alto padrão
+  // / SBPE; na linha econômica MCMV Faixa 4, LTV pode chegar a 100%, sem entrada.
+  const entradaMinimaSugerida = mcmvMode ? 0 : arredondaMil(poderDeCompra.referencia * (1 - P.LTV_REFERENCIA));
+  if (!mcmvMode && !vendeOutroImovel && recursosProprios < entradaMinimaSugerida && poderDeCompra.referencia > 0) {
+    alertas.push(`Os bancos costumam financiar até ${Math.round(P.LTV_REFERENCIA * 100)}% do imóvel. Para um imóvel nessa faixa, o ideal é ter cerca de ${brl(entradaMinimaSugerida)} entre entrada e FGTS.`);
+  }
+
+  // --- Qualificação -------------------------------------------------------
+  // Decisão Guilherme 30/07/2026 — PIVÔ ECONÔMICO-PRIMEIRO: qualificado se
+  // permuta OU poder de compra ≥ 800k (alto padrão) OU renda ≥ 7.800 (linha
+  // econômica MCMV Faixa 4, 100% financiada — agora é o público-alvo principal).
+  let qualificacao;
+  let segmento_lead;
+  let motivo;
+  if (vendeOutroImovel) {
+    qualificacao = 'qualificado';
+    segmento_lead = 'permuta';
+    motivo = 'Tem imóvel para vender ou dar de entrada — qualifica por patrimônio (compra à vista ou permuta), independente da renda.';
+  } else if (poderDeCompra.referencia >= P.PODER_COMPRA_ALTO_PADRAO) {
+    qualificacao = 'qualificado';
+    segmento_lead = 'alto_padrao';
+    motivo = `Poder de compra estimado de ${brl(poderDeCompra.referencia)} — dentro da carteira alto padrão (R$ 800 mil a R$ 4 milhões).`;
+  } else if (renda >= P.RENDA_MINIMA_ECONOMICO) {
+    qualificacao = 'qualificado';
+    segmento_lead = 'economico';
+    motivo = 'Renda dentro da linha econômica 100% financiada (a partir de R$ 7.800) — pode se enquadrar no Minha Casa Minha Vida Faixa 4, sem entrada.';
+  } else {
+    qualificacao = 'nao_qualificado';
+    segmento_lead = null;
+    motivo = 'Renda abaixo de R$ 7.800 e sem imóvel para troca — ainda fora da linha econômica e do alto padrão. Caminho: compor renda com cônjuge/família, usar FGTS ou juntar uma entrada.';
+  }
+
+  return {
+    ok: erros.length === 0,
+    erros,
+    entrada: {
+      rendaBruta: renda,
+      tipoRenda,
+      fatorTipoRenda: fator,
+      rendaConsiderada: arredonda2(rendaConsiderada),
+      dataNascimento: dataNascimento ?? null,
+      temFgts3Anos: !!temFgts3Anos,
+      saldoFgts: fgtsBruto,
+      entradaDisponivel: entrada,
+      vendeOutroImovel: !!vendeOutroImovel,
+    },
+    idadeAnos,
+    idadeMeses: meses,
+    prazoMeses,
+    prazoAnos: Math.floor(prazoMeses / 12),
+    parcelaMaxima,
+    parcelaEstimada: parcelaMaxima, // parcela cheia a 30% da renda é a estimativa exibida
+    financiavel,
+    fgtsUtilizavel,
+    recursosProprios,
+    poderDeCompra,
+    entradaMinimaSugerida,
+    enquadramento,
+    qualificacao,
+    segmento_lead,
+    motivo,
+    alertas,
+    premissas: {
+      comprometimentoRenda: P.COMPROMETIMENTO_RENDA,
+      taxaAnualReferencia: P.TAXA_REFERENCIA,
+      taxaAnualOtimista: P.TAXA_OTIMISTA,
+      taxaAnualConservadora: P.TAXA_CONSERVADORA,
+      sistemaAmortizacao: 'PRICE',
+      regraVitorPctParcela: [P.PCT_PARCELA_MIN, P.PCT_PARCELA_MAX],
+      idadeLimiteAnos: P.IDADE_LIMITE_ANOS,
+      prazoMaxMeses: P.PRAZO_MAX_MESES,
+    },
+  };
+}
+
+/** Faixa de renda em texto, para a mensagem do WhatsApp (não expõe o valor exato). */
+function faixaDeRenda(renda) {
+  const r = num(renda);
+  if (r < 5000) return 'até R$ 5 mil';
+  if (r < 7800) return 'R$ 5 mil a R$ 7,8 mil';
+  if (r < 12000) return 'R$ 7,8 mil a R$ 12 mil';
+  if (r < 18000) return 'R$ 12 mil a R$ 18 mil';
+  if (r < 25000) return 'R$ 18 mil a R$ 25 mil';
+  if (r < 35000) return 'R$ 25 mil a R$ 35 mil';
+  if (r < 50000) return 'R$ 35 mil a R$ 50 mil';
+  return 'acima de R$ 50 mil';
+}
+/* MOTOR:FIM */
+// ==========================================================================
+// UI — tudo client-side, nada sai do navegador.
+// ==========================================================================
+const WHATSAPP = '5561985090580';
+
+const $ = (id) => document.getElementById(id);
+const brlUI = (v) => v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
+
+/** Cria um elemento sem usar innerHTML (nada de HTML vindo de string). */
+function el(tag, opts, ...filhos) {
+  const n = document.createElement(tag);
+  const o = opts || {};
+  if (o.class) n.className = o.class;
+  if (o.text !== undefined) n.textContent = o.text;
+  if (o.attrs) for (const [k, v] of Object.entries(o.attrs)) n.setAttribute(k, v);
+  for (const f of filhos) if (f) n.append(f);
+  return n;
+}
+
+
+/* --- máscara de moeda (só dígitos -> R$ 0.000) --- */
+function mascaraMoeda(campo) {
+  campo.addEventListener('input', () => {
+    const digitos = campo.value.replace(/\D/g, '');
+    campo.value = digitos ? brlUI(Number(digitos)) : '';
+  });
+}
+['renda', 'saldoFgts', 'entrada'].forEach((id) => mascaraMoeda($(id)));
+const lerMoeda = (id) => Number(($(id).value || '').replace(/\D/g, '')) || 0;
+
+/* --- data de nascimento: máscara DD/MM/AAAA + idade calculada ao vivo ---
+   Substitui o <input type="date"> nativo (picker abre no ano atual, exige rolar
+   décadas p/ uma data de nascimento). Teclado numérico, formatação automática,
+   e devolve a idade — que é justamente o que define o prazo do financiamento.
+   O motor aceita 'DD/MM/AAAA' via paraData(), então o value já sai pronto. */
+(function mascaraData() {
+  const campo = $('nascimento');
+  const fb = $('nascFeedback');
+
+  const dataValida = (dd, mm, aaaa) => {
+    const d = new Date(aaaa, mm - 1, dd);
+    return d.getFullYear() === aaaa && d.getMonth() === mm - 1 && d.getDate() === dd;
+  };
+  const calculaIdade = (dd, mm, aaaa) => {
+    const hoje = new Date();
+    let anos = hoje.getFullYear() - aaaa;
+    const m = hoje.getMonth() - (mm - 1);
+    if (m < 0 || (m === 0 && hoje.getDate() < dd)) anos -= 1;
+    return anos;
+  };
+
+  campo.addEventListener('input', () => {
+    const dig = campo.value.replace(/\D/g, '').slice(0, 8);
+    let out = dig;
+    if (dig.length > 4) out = dig.slice(0, 2) + '/' + dig.slice(2, 4) + '/' + dig.slice(4);
+    else if (dig.length > 2) out = dig.slice(0, 2) + '/' + dig.slice(2);
+    campo.value = out;
+
+    fb.className = 'dateFb';
+    fb.textContent = '';
+    if (dig.length < 8) return;
+
+    const dd = +dig.slice(0, 2), mm = +dig.slice(2, 4), aaaa = +dig.slice(4, 8);
+    if (!dataValida(dd, mm, aaaa)) {
+      fb.textContent = 'Data inválida — confira o dia e o mês.';
+      fb.classList.add('warn');
+      return;
+    }
+    const idade = calculaIdade(dd, mm, aaaa);
+    if (idade < 0 || idade > 110) {
+      fb.textContent = 'Confira o ano de nascimento.';
+      fb.classList.add('warn');
+      return;
+    }
+    if (idade < 18) {
+      fb.textContent = `${idade} anos — é preciso ter 18 anos para financiar.`;
+      fb.classList.add('warn');
+      return;
+    }
+    fb.textContent = `✓ ${idade} anos`;
+    fb.classList.add('ok');
+  });
+})();
+
+/* --- FGTS: o saldo só aparece quando "Sim" --- */
+function alternaSaldo() {
+  const sim = $('fgtsSim').checked;
+  $('campoSaldo').hidden = !sim;
+  if (!sim) $('saldoFgts').value = '';
+}
+$('fgtsSim').addEventListener('change', alternaSaldo);
+$('fgtsNao').addEventListener('change', alternaSaldo);
+
+/* --- submit --- */
+$('form').addEventListener('submit', (ev) => {
+  ev.preventDefault();
+  const erro = $('erro');
+  erro.hidden = true;
+
+  const r = simular({
+    rendaBruta: lerMoeda('renda'),
+    dataNascimento: $('nascimento').value,
+    tipoRenda: $('tipoRenda').value,
+    temFgts3Anos: $('fgtsSim').checked,
+    saldoFgts: lerMoeda('saldoFgts'),
+    entradaDisponivel: lerMoeda('entrada'),
+    vendeOutroImovel: $('vendeImovel').checked,
+  });
+
+  if (!r.ok) {
+    erro.textContent = r.erros.join(' ');
+    erro.hidden = false;
+    return;
+  }
+  renderiza(r);
+});
+
+/* --- resultado --- */
+const ROTULO_ENQUADRAMENTO = {
+  alto_padrao: 'Perfil alto padrão',
+  sbpe: 'Financiamento SBPE',
+  mcmv_possivel: 'Minha Casa Minha Vida — Faixa 4',
+};
+
+function mensagemWhatsapp(r) {
+  const linhas = [
+    'Olá, Vítor! Fiz a simulação no seu site e quero ver as opções.',
+    '',
+    `• Imóvel viável: ${brlUI(r.poderDeCompra.min)} a ${brlUI(r.poderDeCompra.max)}`,
+    `• Parcela que cabe no meu orçamento: até ${brlUI(r.parcelaEstimada)}/mês`,
+    `• Prazo possível: ${r.prazoMeses} meses`,
+    `• Faixa de renda: ${faixaDeRenda(r.entrada.rendaBruta)}`,
+  ];
+  if (r.recursosProprios > 0) linhas.push(`• Entrada + FGTS: ${brlUI(r.recursosProprios)}`);
+  if (r.entrada.vendeOutroImovel) linhas.push('• Tenho um imóvel para vender / dar de entrada');
+  linhas.push('', 'Pode me mandar o que você tem dentro desse valor?');
+  return linhas.join('\n');
+}
+
+function blocoNutricao() {
+  const cx = el('div', { class: 'nutricao' });
+  const p = el('p');
+  p.append(el('strong', { text: 'Ainda não é o momento — mas falta pouco.' }));
+  p.append(' A linha econômica 100% financiada (Minha Casa Minha Vida Faixa 4) começa em renda familiar de R$ 7.800. Com a renda informada ainda não bate, mas o caminho mais rápido é:');
+  cx.append(p);
+
+  const itens = [
+    ['Some a renda', ' de cônjuge, pai, mãe ou irmão no contrato — o banco considera o total da família.'],
+    ['Complete 3 anos de trabalho com carteira assinada', ' para poder usar o FGTS na compra.'],
+    ['Monte uma entrada', ': cada R$ 10 mil de entrada é R$ 10 mil a menos de financiamento.'],
+    ['Um consórcio', ' pode ser a ponte até lá, já que não exige aprovação de renda na adesão.'],
+  ];
+  const ul = el('ul');
+  for (const [forte, resto] of itens) {
+    const li = el('li');
+    li.append(el('strong', { text: forte }), resto);
+    ul.append(li);
+  }
+  cx.append(ul);
+  return cx;
+}
+
+function renderiza(r) {
+  const box = $('resultado');
+  const qualificado = r.qualificacao !== 'nao_qualificado';
+  const partes = [];
+
+  // Para quem não qualifica, o rótulo de enquadramento soaria contraditório com a mensagem
+  // de nutrição logo abaixo — nesse caso o chip fica neutro.
+  partes.push(el('span', {
+    class: 'chip',
+    text: qualificado ? ROTULO_ENQUADRAMENTO[r.enquadramento] : 'Sua simulação',
+  }));
+
+  if (qualificado && r.poderDeCompra.max > 0) {
+    partes.push(el('p', { class: 'valorLabel', text: 'Você pode comprar um imóvel de' }));
+    const valor = el('p', { class: 'valor' });
+    valor.append(brlUI(r.poderDeCompra.min), ' ', el('span', { class: 'ate', text: 'a' }), ' ', brlUI(r.poderDeCompra.max));
+    partes.push(valor);
+    const nota = el('p', { class: 'valorNota' });
+    nota.append('A faixa existe porque cada banco cobra uma taxa diferente. Referência de mercado: ',
+      el('strong', { text: brlUI(r.poderDeCompra.referencia) }), '.');
+    partes.push(nota);
+
+    if (r.enquadramento === 'mcmv_possivel') {
+      const mcmv = el('p', { class: 'valorNota' });
+      mcmv.append(el('strong', { text: 'Você pode se enquadrar no Minha Casa Minha Vida Faixa 4' }),
+        ' (subsídio do governo) — compra 100% financiada, sem entrada.');
+      partes.push(mcmv);
+    }
+  } else {
+    partes.push(el('p', { class: 'valorLabel', text: 'Com os dados de hoje, o financiamento chegaria a' }));
+    partes.push(el('p', { class: 'valor', text: brlUI(r.poderDeCompra.referencia) }));
+  }
+
+  const grid = el('dl', { class: 'grid' });
+  const linhas = [
+    ['Parcela estimada', brlUI(r.parcelaEstimada)],
+    ['Prazo possível', `${r.prazoMeses} meses`],
+    ['Entrada + FGTS', brlUI(r.recursosProprios)],
+    ['Valor financiado', brlUI(r.financiavel.referencia)],
+  ];
+  for (const [rotulo, valor] of linhas) {
+    grid.append(el('div', null, el('dt', { text: rotulo }), el('dd', { text: valor })));
+  }
+  partes.push(grid);
+
+  if (r.alertas.length) {
+    const ul = el('ul', { class: 'avisos' });
+    for (const a of r.alertas) ul.append(el('li', { text: a }));
+    partes.push(ul);
+  }
+
+  if (qualificado) {
+    const cta = el('a', {
+      class: 'btn--wa',
+      attrs: {
+        href: `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(mensagemWhatsapp(r))}`,
+        target: '_blank',
+        rel: 'noopener',
+      },
+    });
+    cta.append($('tplWa').content.cloneNode(true));
+    cta.append('Ver imóveis dentro desse valor');
+    partes.push(cta);
+    partes.push(el('p', { class: 'ctaNota', text: 'O resumo acima já vai escrito na mensagem — é só enviar.' }));
+  } else {
+    partes.push(blocoNutricao());
+    partes.push(el('p', { class: 'ctaNota', text: 'Refaça a simulação quando algum desses pontos mudar.' }));
+  }
+
+  const refazer = el('button', { class: 'refazer', text: 'Refazer simulação', attrs: { type: 'button' } });
+  refazer.addEventListener('click', () => {
+    box.classList.remove('show');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  partes.push(refazer);
+
+  box.replaceChildren(...partes);
+  box.classList.add('show');
+  box.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  box.focus({ preventScroll: true });
+}
+</script>
 </body>
 </html>
