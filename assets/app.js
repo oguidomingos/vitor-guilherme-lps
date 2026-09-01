@@ -11,6 +11,59 @@
   // ---- Config do corretor (ajuste aqui) ----
   var VITOR_WA = "5561985090580"; // (61) 98509-0580
 
+  // ============================================================
+  // TRACKING — Meta Pixel + Google Tag Manager (preencha os IDs)
+  // Este arquivo é incluído em TODAS as LPs, então basta configurar
+  // aqui uma vez e republicar para valer no site inteiro.
+  // Deixe "" para manter desativado (nada dispara enquanto vazio).
+  // ============================================================
+  var TRACK = {
+    PIXEL_ID: "",   // ex.: "1234567890123456" — Events Manager > Fontes de dados
+    GTM_ID: ""      // ex.: "GTM-XXXXXXX" — container do Google Tag Manager
+  };
+
+  window.dataLayer = window.dataLayer || [];
+
+  // Google Tag Manager (só carrega se GTM_ID configurado)
+  if (TRACK.GTM_ID) {
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true; j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", TRACK.GTM_ID);
+    // noscript fallback (construído via DOM, sem innerHTML)
+    try {
+      var ns = document.createElement("noscript");
+      var ifr = document.createElement("iframe");
+      ifr.src = "https://www.googletagmanager.com/ns.html?id=" + TRACK.GTM_ID;
+      ifr.height = "0"; ifr.width = "0";
+      ifr.style.display = "none"; ifr.style.visibility = "hidden";
+      ns.appendChild(ifr);
+      if (document.body) document.body.insertBefore(ns, document.body.firstChild);
+    } catch (e) {}
+  }
+
+  // Meta Pixel (só carrega se PIXEL_ID configurado)
+  if (TRACK.PIXEL_ID) {
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () { n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments) }; if (!f._fbq) f._fbq = n;
+      n.push = n; n.loaded = !0; n.version = "2.0"; n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+    }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", TRACK.PIXEL_ID);
+    fbq("track", "PageView");
+  }
+
+  // Dispara um evento no Pixel e no dataLayer (GTM) de uma vez.
+  function vgTrack(evt, params) {
+    params = params || {};
+    try { if (TRACK.PIXEL_ID && window.fbq) fbq("track", evt, params); } catch (e) {}
+    try { window.dataLayer.push(Object.assign({ event: "vg_" + String(evt).toLowerCase() }, params)); } catch (e) {}
+  }
+  window.__vgTrack = vgTrack;
+
   // ---- Rastreio de origem (UTM → ref na mensagem do WhatsApp) ----
   // O clique pago chega com utm_source/campaign/content na URL. Guardamos na sessão
   // e anexamos um código curto ("ref") a TODA mensagem de WhatsApp gerada na página.
@@ -63,6 +116,10 @@
     var href = "https://wa.me/" + VITOR_WA + "?text=" + encodeURIComponent(msg);
     if (el.tagName === "A") { el.setAttribute("href", href); el.setAttribute("target", "_blank"); el.setAttribute("rel", "noopener"); }
     else { el.addEventListener("click", function () { window.open(href, "_blank", "noopener"); }); }
+    // conversão: clique no WhatsApp = Contact (Pixel) / vg_contact (GTM)
+    el.addEventListener("click", function () {
+      vgTrack("Contact", { method: "whatsapp", page: location.pathname });
+    });
   });
 
   // ---- Lightbox ----
@@ -157,6 +214,7 @@
         "Vi a página do " + emp + " e quero " + (interesse ? interesse : "a tabela, as plantas e as condições") + "." +
         (whats ? " Meu WhatsApp: " + whats.trim() + "." : "") +
         (window.__vgWaRef ? window.__vgWaRef() : "");
+      if (window.__vgTrack) window.__vgTrack("Lead", { form: emp, page: location.pathname });
       window.open("https://wa.me/" + VITOR_WA + "?text=" + encodeURIComponent(msg), "_blank", "noopener");
     });
   });
