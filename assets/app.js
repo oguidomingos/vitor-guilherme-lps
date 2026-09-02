@@ -18,8 +18,8 @@
   // Deixe "" para manter desativado (nada dispara enquanto vazio).
   // ============================================================
   var TRACK = {
-    PIXEL_ID: "",   // ex.: "1234567890123456" — Events Manager > Fontes de dados
-    GTM_ID: ""      // ex.: "GTM-XXXXXXX" — container do Google Tag Manager
+    PIXEL_ID: "",              // Pixel entra pelas tags do GTM (deixar vazio evita disparo em dobro)
+    GTM_ID: "GTM-543P3VS8"     // container do Google Tag Manager (Vitor Guilherme)
   };
 
   window.dataLayer = window.dataLayer || [];
