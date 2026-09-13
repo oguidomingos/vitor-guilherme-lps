@@ -1,26 +1,486 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vitor Guilherme · Imóveis | Landing Pages</title>
-  <link rel="stylesheet" href="assets/styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vitor Guilherme · Corretor de Imóveis em Brasília-DF</title>
+<meta name="description" content="Vitor Guilherme — corretor de imóveis em Brasília-DF. Lançamentos ELEVA 25 e VERSAT Home Resort em Águas Claras, galpão em Vicente Pires, terreno no Lago Sul e loja no Recanto das Emas. Atendimento direto pelo WhatsApp." />
+<meta property="og:title" content="Vitor Guilherme · Corretor de Imóveis em Brasília" />
+<meta property="og:description" content="Lançamentos e portfólio em Brasília-DF. Atendimento direto, sem intermediários." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://oguidomingos.github.io/vitor-guilherme-lps/eleva-25/img/r-skypool.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+<style>
+/* ---- PORTFOLIO PAGE (home) ---- */
+
+/* Hero badge/meta row */
+.hero .tag-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+.hero .tag-row .tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 14px; border-radius: 100px; font-size: .75rem; font-weight: 700; letter-spacing: .06em;
+  background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.22); backdrop-filter: blur(6px); color: #fff;
+}
+.hero .tag-row .tag b { color: var(--bronze-2); }
+
+/* Section headings */
+.sec-head { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 36px; }
+.sec-head .txt { }
+.sec-head .see-all { font-size: .82rem; font-weight: 700; letter-spacing: .04em; color: var(--bronze-ink); text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---- Featured launch cards (Eleva + Versat) ---- */
+.launches { display: grid; gap: 20px; }
+
+.lcard {
+  position: relative; border-radius: 22px; overflow: hidden;
+  background: var(--ink); color: #fff;
+  display: grid; grid-template-rows: 1fr auto;
+  text-decoration: none;
+  box-shadow: 0 24px 56px -24px rgba(20,17,13,.5);
+  transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+  min-height: 420px;
+}
+.lcard:hover { transform: translateY(-5px); box-shadow: 0 36px 70px -24px rgba(20,17,13,.6); }
+
+.lcard__bg {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+  transition: transform 6s var(--ease);
+}
+.lcard:hover .lcard__bg { transform: scale(1.04); }
+
+.lcard__scrim {
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(10,8,6,.18) 0%, rgba(10,8,6,.1) 35%, rgba(10,8,6,.55) 65%, rgba(10,8,6,.95) 100%);
+}
+.lcard__body {
+  position: relative; z-index: 2;
+  padding: 26px 28px 30px;
+  display: flex; flex-direction: column; gap: 14px;
+  align-self: end;
+}
+.lcard__badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
+  padding: 6px 13px; border-radius: 100px; font-size: .7rem; font-weight: 700; letter-spacing: .07em;
+  backdrop-filter: blur(6px); align-self: flex-start;
+}
+.lcard__badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--bronze-2); box-shadow: 0 0 0 3px rgba(202,164,106,.3); }
+.lcard__name { font-family: var(--font-disp); font-size: clamp(1.7rem, 4.5vw, 2.4rem); font-weight: 600; line-height: 1; letter-spacing: -.02em; }
+.lcard__loc { font-size: .82rem; color: rgba(255,255,255,.7); }
+.lcard__chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.lcard__chip {
+  padding: 6px 13px; border-radius: 100px; font-size: .78rem; font-weight: 600;
+  background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2);
+}
+.lcard__chip.price { background: var(--bronze); border-color: transparent; }
+.lcard__foot {
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+  padding-top: 14px; border-top: 1px solid rgba(255,255,255,.15);
+}
+.lcard__foot .price-from { }
+.lcard__foot .price-from .k { font-size: .65rem; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.6); font-weight: 700; }
+.lcard__foot .price-from .v { font-family: var(--font-disp); font-size: 1.45rem; font-weight: 600; color: var(--bronze-2); line-height: 1; }
+.lcard__cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 11px 20px; border-radius: 100px; font-size: .85rem; font-weight: 700;
+  background: var(--wa); color: #06231a;
+  transition: background .25s var(--ease);
+  white-space: nowrap;
+}
+.lcard__cta:hover { background: #2ee06f; }
+.lcard__cta svg { width: 16px; height: 16px; }
+
+/* ---- Portfolio grid (smaller cards: galpão, terreno, loja) ---- */
+.portfolio-grid { display: grid; gap: 18px; }
+
+.pcard {
+  border-radius: 18px; overflow: hidden;
+  background: #fff; border: 1px solid var(--line-soft);
+  display: flex; flex-direction: column;
+  text-decoration: none; color: var(--ink);
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s var(--ease);
+  box-shadow: 0 2px 0 rgba(20,17,13,.04);
+}
+.pcard:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--sand); }
+
+.pcard__img {
+  aspect-ratio: 4/3; background: var(--cream-2) center/cover no-repeat;
+  position: relative;
+}
+.pcard__img .badge {
+  position: absolute; top: 14px; left: 14px;
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 12px; border-radius: 100px; font-size: .68rem; font-weight: 700; letter-spacing: .06em;
+  background: rgba(246,242,233,.88); color: var(--ink); backdrop-filter: blur(4px);
+  border: 1px solid rgba(20,17,13,.1);
+}
+.pcard__img .badge--launch { background: rgba(176,131,75,.9); color: #fff; border-color: transparent; }
+
+.pcard__body { padding: 20px 22px 22px; display: flex; flex-direction: column; flex: 1; gap: 10px; }
+.pcard__name { font-family: var(--font-disp); font-size: 1.25rem; font-weight: 600; line-height: 1.1; }
+.pcard__loc { font-size: .82rem; color: #6a6153; display: flex; align-items: center; gap: 5px; }
+.pcard__loc svg { width: 13px; height: 13px; color: var(--bronze-ink); flex: none; }
+.pcard__specs { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.pcard__spec {
+  padding: 5px 11px; border-radius: 100px; font-size: .75rem; font-weight: 600;
+  background: var(--cream); border: 1px solid var(--line); color: #5a5245;
+}
+.pcard__foot { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-top: auto; padding-top: 14px; border-top: 1px solid var(--line-soft); }
+.pcard__price .k { font-size: .63rem; letter-spacing: .14em; text-transform: uppercase; color: #8a8172; font-weight: 700; display: block; }
+.pcard__price .v { font-family: var(--font-disp); font-size: 1.1rem; font-weight: 600; color: var(--bronze-ink); }
+.pcard__btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 9px 16px; border-radius: 100px; font-size: .8rem; font-weight: 700;
+  background: var(--ink); color: var(--cream);
+  white-space: nowrap;
+  transition: background .25s var(--ease);
+}
+.pcard__btn:hover { background: var(--ink-2); }
+.pcard__btn svg { width: 14px; height: 14px; }
+
+/* --- About / diferencial strip --- */
+.about-strip { background: var(--ink-2); color: var(--cream); }
+.about-strip .inner { display: grid; gap: 40px; align-items: center; }
+.about-strip .broker-photo {
+  display: flex; flex-direction: column; align-items: center; gap: 14px;
+  background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1);
+  border-radius: 22px; padding: 32px 24px; text-align: center;
+}
+.about-strip .broker-photo img { width: 110px; height: 110px; border-radius: 50%; object-fit: cover; object-position: center 20%; border: 3px solid var(--bronze-2); box-shadow: 0 0 0 6px rgba(202,164,106,.18); }
+.about-strip .broker-photo strong { font-family: var(--font-disp); font-size: 1.3rem; color: #fff; }
+.about-strip .broker-photo span { font-size: .78rem; color: rgba(255,255,255,.55); }
+.about-strip .broker-text h2 { font-family: var(--font-disp); font-size: clamp(1.8rem, 4.5vw, 2.6rem); font-weight: 600; line-height: 1.05; letter-spacing: -.02em; }
+.about-strip .broker-text p { color: rgba(255,255,255,.72); margin-top: 16px; max-width: 54ch; }
+.about-strip .trust-row { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 28px; }
+.about-strip .trust-row .t .n { font-family: var(--font-disp); font-size: 2rem; font-weight: 600; color: var(--bronze-2); line-height: 1; }
+.about-strip .trust-row .t .l { font-size: .78rem; color: rgba(255,255,255,.55); margin-top: 3px; }
+
+@media (min-width: 640px) {
+  .launches { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 720px) {
+  .portfolio-grid { grid-template-columns: repeat(3, 1fr); }
+  .about-strip .inner { grid-template-columns: auto 1fr; }
+}
+@media (min-width: 980px) {
+  .lcard { min-height: 500px; }
+}
+</style>
 </head>
-<body style="max-width:760px;margin:0 auto;padding:48px 20px;font-family:'Inter',system-ui,sans-serif">
-  <h1>Vitor Guilherme · Imóveis</h1>
-  <p>Páginas de captação disponíveis:</p>
-  <ul style="line-height:2.2;font-size:1.1rem">
-    <li><a href="galpao-vicente-pires/">Galpão em Vicente Pires</a></li>
-    <li><a href="terreno-lago-sul/">Terreno no Lago Sul</a></li>
-    <li><a href="simulador-financiamento/">Simulador de Financiamento</a></li>
-    <li><a href="casa-solar-de-brasilia/">Casa no Solar de Brasília</a></li>
-    <li><a href="loja-recanto-das-emas/">Loja no Recanto das Emas</a></li>
-  </ul>
-  <p>Lançamentos:</p>
-  <ul style="line-height:2.2;font-size:1.1rem">
-    <li><a href="eleva-25/">ELEVA 25 · Terral · Águas Claras</a></li>
-    <li><a href="versat/">VERSAT Home Resort · Villela e Carvalho · Águas Claras</a></li>
-  </ul>
-  <script src="assets/app.js"></script>
+<body>
+
+<header class="topbar">
+  <a href="#" class="brand">Vitor Guilherme<small>Imóveis · Brasília-DF</small></a>
+  <a class="top-cta" data-wa data-wa-msg="Olá Vitor! Vi seu portfólio de imóveis e quero conversar.">Falar agora</a>
+</header>
+
+<!-- ===================== 1. HERO ===================== -->
+<section class="hero hero--dim">
+  <div class="hero__bg" style="background-image:url(eleva-25/img/r-skypool.jpg);background-position:center 40%"></div>
+  <div class="hero__scrim"></div>
+  <div class="hero__inner wrap">
+    <div class="stagger">
+      <span class="badge"><span class="dot"></span> Corretor · Brasília-DF</span>
+      <h1 class="display">Imóveis que eu acredito.<br>Em Brasília.</h1>
+      <p class="sub">Lançamentos, investimento e alto padrão. Atendimento direto, sem intermediários — do primeiro contato à assinatura.</p>
+      <div class="tag-row">
+        <span class="tag"><b>2</b> lançamentos</span>
+        <span class="tag"><b>3</b> imóveis prontos</span>
+        <span class="tag">Brasília · DF</span>
+      </div>
+      <div class="hero-actions" style="margin-top:30px">
+        <a class="btn btn--wa" data-wa data-wa-msg="Olá Vitor! Vi seu portfólio de imóveis e quero conversar.">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.5-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+          Falar com o Vitor
+        </a>
+        <a class="btn btn--ghost" href="#lancamentos">Ver imóveis ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 2. LANÇAMENTOS EM DESTAQUE ===================== -->
+<section id="lancamentos" class="section-pad" style="background:var(--cream)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="txt">
+        <span class="eyebrow">Lançamentos</span>
+        <h2 class="section-title" style="margin-top:10px">Duas oportunidades em Águas Claras</h2>
+      </div>
+    </div>
+
+    <div class="launches">
+
+      <!-- ELEVA 25 -->
+      <a class="lcard reveal" href="eleva-25/" aria-label="Ver detalhes do ELEVA 25">
+        <div class="lcard__bg" style="background-image:url(eleva-25/img/r-skypool.jpg)"></div>
+        <div class="lcard__scrim"></div>
+        <div class="lcard__body">
+          <span class="lcard__badge"><span class="dot"></span> Lançamento Terral</span>
+          <div>
+            <div class="lcard__name">ELEVA 25</div>
+            <div class="lcard__loc">Rua 25 Sul, Águas Claras · DF</div>
+          </div>
+          <div class="lcard__chips">
+            <span class="lcard__chip">2 e 3 quartos</span>
+            <span class="lcard__chip">45 a 172 m²</span>
+            <span class="lcard__chip">Skypool no 11º andar</span>
+            <span class="lcard__chip">Entrega 2027</span>
+          </div>
+          <div class="lcard__foot">
+            <div class="price-from">
+              <div class="k">A partir de</div>
+              <div class="v">R$ 890 mil</div>
+            </div>
+            <span class="lcard__cta">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.5-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+              Ver tabela e plantas
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- VERSAT Home Resort -->
+      <a class="lcard reveal" href="versat/" aria-label="Ver detalhes do VERSAT Home Resort">
+        <div class="lcard__bg" style="background-image:url(versat/img/renders/r-piscina.jpg);background-position:center 45%"></div>
+        <div class="lcard__scrim"></div>
+        <div class="lcard__body">
+          <span class="lcard__badge"><span class="dot"></span> Lançamento Villela e Carvalho</span>
+          <div>
+            <div class="lcard__name">VERSAT Home Resort</div>
+            <div class="lcard__loc">Rua Copaíba, Águas Claras · DF</div>
+          </div>
+          <div class="lcard__chips">
+            <span class="lcard__chip">3 quartos</span>
+            <span class="lcard__chip">95 a 210 m²</span>
+            <span class="lcard__chip">+2.000 m² de lazer</span>
+            <span class="lcard__chip">Entrega 2028</span>
+          </div>
+          <div class="lcard__foot">
+            <div class="price-from">
+              <div class="k">A partir de</div>
+              <div class="v">R$ 1,14 mi</div>
+            </div>
+            <span class="lcard__cta">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.5-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+              Ver tabela e plantas
+            </span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 3. PORTFÓLIO: IMÓVEIS PRONTOS ===================== -->
+<section id="portfolio" class="section-pad" style="background:var(--cream-2);padding-top:0">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="txt">
+        <span class="eyebrow">Portfólio disponível</span>
+        <h2 class="section-title" style="margin-top:10px">Imóveis prontos para uso</h2>
+      </div>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <!-- Galpão Vicente Pires -->
+      <a class="pcard reveal" href="galpao-vicente-pires/" aria-label="Galpão Comercial em Vicente Pires">
+        <div class="pcard__img" style="background-image:url(galpao-vicente-pires/img/hero.jpg)">
+          <span class="badge">Comercial · Alugado</span>
+        </div>
+        <div class="pcard__body">
+          <div class="pcard__name">Galpão Comercial</div>
+          <div class="pcard__loc">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.4 8 12 8 12s8-6.6 8-12a8 8 0 0 0-8-8z"/></svg>
+            Vicente Pires · DF
+          </div>
+          <div class="pcard__specs">
+            <span class="pcard__spec">858 m² terreno</span>
+            <span class="pcard__spec">250 m² construído</span>
+            <span class="pcard__spec">7 m pé-direito</span>
+            <span class="pcard__spec">Já rentabilizando</span>
+          </div>
+          <div class="pcard__foot">
+            <div class="pcard__price">
+              <span class="k">Valor</span>
+              <span class="v">Sob consulta</span>
+            </div>
+            <span class="pcard__btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Ver detalhes
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Terreno Lago Sul -->
+      <a class="pcard reveal" href="terreno-lago-sul/" aria-label="Terreno no Lago Sul com vista para a Ponte JK">
+        <div class="pcard__img" style="background-image:url(terreno-lago-sul/img/hero-ponte.jpg)">
+          <span class="badge">Terreno · Alto padrão</span>
+        </div>
+        <div class="pcard__body">
+          <div class="pcard__name">Terreno com Vista Ponte JK</div>
+          <div class="pcard__loc">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.4 8 12 8 12s8-6.6 8-12a8 8 0 0 0-8-8z"/></svg>
+            Lago Sul, SHIS QI 25 · DF
+          </div>
+          <div class="pcard__specs">
+            <span class="pcard__spec">3.600 m²</span>
+            <span class="pcard__spec">Vista Ponte JK</span>
+            <span class="pcard__spec">5 min do Plano Piloto</span>
+            <span class="pcard__spec">Pronto para construir</span>
+          </div>
+          <div class="pcard__foot">
+            <div class="pcard__price">
+              <span class="k">Valor</span>
+              <span class="v">Sob consulta</span>
+            </div>
+            <span class="pcard__btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Ver detalhes
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Loja Recanto das Emas -->
+      <a class="pcard reveal" href="loja-recanto-das-emas/" aria-label="Loja no Recanto das Emas">
+        <div class="pcard__img" style="background-image:url(loja-recanto-das-emas/img/hero.jpg)">
+          <span class="badge">Comercial · Locação</span>
+        </div>
+        <div class="pcard__body">
+          <div class="pcard__name">Loja no Recanto das Emas</div>
+          <div class="pcard__loc">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.4 8 12 8 12s8-6.6 8-12a8 8 0 0 0-8-8z"/></svg>
+            Recanto das Emas · DF
+          </div>
+          <div class="pcard__specs">
+            <span class="pcard__spec">720 m²</span>
+            <span class="pcard__spec">Frente ao Bellavia</span>
+            <span class="pcard__spec">Estrutura p/ 3 pav.</span>
+          </div>
+          <div class="pcard__foot">
+            <div class="pcard__price">
+              <span class="k">Valor</span>
+              <span class="v">Sob consulta</span>
+            </div>
+            <span class="pcard__btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              Ver detalhes
+            </span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 4. SOBRE O CORRETOR ===================== -->
+<section class="about-strip section-pad">
+  <div class="wrap">
+    <div class="inner">
+      <div class="broker-photo reveal">
+        <img src="assets/img/vitor.jpg" alt="Vitor Guilherme, corretor de imóveis em Brasília" width="110" height="110" />
+        <strong>Vitor Guilherme</strong>
+        <span>Corretor de Imóveis · Brasília-DF</span>
+        <a class="btn btn--wa" style="margin-top:12px;font-size:.85rem;padding:12px 20px" data-wa data-wa-msg="Olá Vitor! Vi seu portfólio e quero conversar.">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.5-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+          Chamar no WhatsApp
+        </a>
+      </div>
+      <div class="broker-text reveal">
+        <span class="eyebrow on-dark">Atendimento direto</span>
+        <h2 style="margin-top:12px">Você fala direto<br>com quem conhece<br><em style="color:var(--bronze-2)">cada imóvel</em>.</h2>
+        <p>O Vitor acompanha você do primeiro contato à assinatura: envia tabela, simula financiamento, agenda visitas e negocia sem intermediários. Um corretor que só apresenta o que realmente vale a pena.</p>
+        <div class="trust-row">
+          <div class="t"><div class="n">5</div><div class="l">imóveis no portfólio</div></div>
+          <div class="t"><div class="n">2</div><div class="l">lançamentos ativos</div></div>
+          <div class="t"><div class="n">Brasília</div><div class="l">Região metropolitana</div></div>
+        </div>
+        <a class="btn btn--wa" style="margin-top:32px" data-wa data-wa-msg="Olá Vitor! Vi seu portfólio e quero conversar sobre um imóvel.">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.5-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+          Falar com o Vitor
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 5. DIFERENCIAIS ===================== -->
+<section class="section-pad" style="background:var(--cream)">
+  <div class="wrap">
+    <span class="eyebrow reveal">Como trabalhamos</span>
+    <h2 class="section-title reveal" style="margin-top:12px">Por que o atendimento<br>direto faz diferença</h2>
+    <div class="feats" style="margin-top:44px">
+      <div class="feat reveal">
+        <div class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M12 3v18"/></svg>
+        </div>
+        <h3>Sem comissionamento embutido</h3>
+        <p>Você negocia direto com quem tem o imóvel. Sem intermediário que não agrega e sem taxa escondida.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 12l3 3 5-6"/><circle cx="12" cy="12" r="9"/></svg>
+        </div>
+        <h3>Imóveis selecionados a dedo</h3>
+        <p>O Vitor só apresenta o que ele mesmo visitou e acredita. Sem catálogo genérico, sem "soluções para todos".</p>
+      </div>
+      <div class="feat reveal">
+        <div class="ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Da visita até a assinatura</h3>
+        <p>Simulação de financiamento, análise de proposta, acompanhamento em cartório. Um ponto de contato do começo ao fim.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 6. CTA FINAL ===================== -->
+<section class="cta-band section-pad">
+  <div class="wrap">
+    <h2 class="reveal">Encontrou o imóvel certo?<br>Fale agora.</h2>
+    <p class="reveal">Resposta no mesmo dia. O Vitor envia tabela, simulação e agenda visita, tudo pelo WhatsApp.</p>
+    <a class="btn btn--wa reveal" data-wa data-wa-msg="Olá Vitor! Vi seu portfólio de imóveis e quero conversar.">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.5-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+      Chamar no WhatsApp
+    </a>
+  </div>
+</section>
+
+<footer class="ft">
+  <div class="wrap row">
+    <div class="ft-broker">
+      <img src="assets/img/vitor-320.jpg" alt="Vitor Guilherme" width="52" height="52" />
+      <div class="who">
+        <b>Vitor Guilherme</b>
+        <span>Corretor de imóveis responsável · Brasília-DF · (61) 98509-0580</span>
+      </div>
+      <a class="ft-wa" data-wa data-wa-msg="Olá Vitor! Vi sua página e quero falar com você.">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.5-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        Falar com o Vitor
+      </a>
+    </div>
+    <div class="brand">Vitor Guilherme</div>
+    <div>Corretor de Imóveis · Brasília-DF · <a data-wa data-wa-msg="Olá Vitor!">(61) 98509-0580</a></div>
+    <div class="disclaimer">
+      Portfólio de imóveis disponíveis sujeito a alteração. Valores e condições sob consulta com o corretor. Perspectivas e imagens de caráter ilustrativo. Intermediação por Vitor Guilherme.
+      © <span data-year>2026</span>.
+    </div>
+  </div>
+</footer>
+
+<a class="wa-fab" data-wa data-wa-msg="Olá Vitor! Vi seu portfólio de imóveis." aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.5-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+</a>
+
+<script src="assets/app.js"></script>
 </body>
 </html>
