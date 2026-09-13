@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- LP Pre-lancamento VIBRATTO (Soltec Engenharia) · Aguas Claras, DF
+     Baseado em /_template-lancamento. Conteudo: treinamento comercial Vibratto/Soltec (set/2026).
+     Imagens: substituir img/hero.jpg + img/g1..g4.jpg + img/planta.jpg quando renders disponiveis.
+     Publico-alvo: investidor (liquidez, renda) + morador (qualidade de vida, comodidade). -->
+<title>VIBRATTO · Pre-lancamento 2 quartos em Aguas Claras — Vitor Guilherme</title>
+<meta name="description" content="VIBRATTO, Soltec Engenharia — pre-lancamento em Aguas Claras: 2 quartos a partir de 58 m², a tipologia de maior demanda de locacao do bairro. Proximo ao metro. Registre seu interesse com o corretor Vitor Guilherme." />
+<meta property="og:title" content="VIBRATTO — 2 quartos em Aguas Claras (Pre-lancamento)" />
+<meta property="og:description" content="A tipologia mais procurada de Aguas Claras. 2 quartos, a partir de 58 m², Soltec Engenharia. Registre seu interesse agora." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://oguidomingos.github.io/vitor-guilherme-lps/vibratto/img/hero.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/styles.css" />
+<style>
+/* Vibratto — overrides de pre-lancamento */
+.hero--pre .hero__bg {
+  background-color: #1a1108;
+  background-image: linear-gradient(145deg, #2b1f0a 0%, #0e0b06 100%);
+}
+
+.badge--pre {
+  background: rgba(176,131,75,.18);
+  border: 1px solid rgba(176,131,75,.4);
+  color: #f5c97e;
+}
+.badge--pre .dot {
+  background: #f5c97e;
+  box-shadow: 0 0 0 4px rgba(245,201,126,.18);
+  animation: pulse-amb 2s infinite;
+}
+@keyframes pulse-amb {
+  0%,100% { box-shadow: 0 0 0 4px rgba(245,201,126,.18); }
+  50%      { box-shadow: 0 0 0 8px rgba(245,201,126,.04); }
+}
+
+/* Dados de mercado — fundo escuro */
+.market-data {
+  background: var(--ink);
+  color: #fff;
+}
+.market-data .mgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2px;
+}
+.market-data .mcell {
+  background: var(--ink-2);
+  padding: 32px 28px;
+  text-align: center;
+}
+.market-data .mk {
+  font-size: .7rem;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  color: var(--bronze-2);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.market-data .mv {
+  font-family: var(--font-disp);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+.market-data .mu {
+  font-size: .78rem;
+  color: rgba(255,255,255,.55);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+/* Cards de perfil */
+.profiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 40px;
+}
+@media (max-width: 640px) { .profiles { grid-template-columns: 1fr; } }
+
+.prf-card {
+  background: var(--cream-2);
+  border: 1px solid var(--sand);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+}
+.prf-label {
+  font-size: .7rem;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--bronze-ink);
+  margin-bottom: 12px;
+}
+.prf-card h3 {
+  font-family: var(--font-disp);
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+.prf-list {
+  list-style: none;
+  padding: 0;
+}
+.prf-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: .9rem;
+  color: #4c453a;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.prf-list li svg {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  stroke: var(--bronze);
+}
+
+/* Tipologia unica */
+.tipo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-top: 36px;
+}
+@media (max-width: 720px) { .tipo-grid { grid-template-columns: 1fr; } }
+
+.tipo-ph {
+  aspect-ratio: 4/3;
+  background: var(--sand);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .8rem;
+  color: #8a8172;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.tipo-img {
+  aspect-ratio: 4/3;
+  background: var(--sand);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.tipo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tipo-tag {
+  font-size: .7rem;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--bronze-ink);
+  margin-bottom: 10px;
+}
+.tipo-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+.tspec { text-align: center; }
+.tspec .tn {
+  font-family: var(--font-disp);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1;
+}
+.tspec .tl {
+  font-size: .75rem;
+  color: #8a8172;
+  margin-top: 3px;
+}
+.tipo-preco {
+  background: var(--cream-2);
+  border: 1px solid var(--sand);
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin-bottom: 20px;
+}
+.tipo-preco .pk { font-size: .75rem; color: #8a8172; text-transform: uppercase; letter-spacing: .15em; font-weight: 600; }
+.tipo-preco .pv { font-family: var(--font-disp); font-size: 1.5rem; font-weight: 700; color: var(--ink); margin-top: 4px; }
+.tipo-preco .pn { font-size: .78rem; color: #8a8172; margin-top: 4px; }
+
+/* Timeline — reutiliza classes do _template com overrides para fundo dark da secao .loc */
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <a href="#" class="brand">Vitor Guilherme<small>Imoveis · Brasilia-DF</small></a>
+  <a class="top-cta" data-wa data-wa-msg="Ola Vitor! Vi a pagina do VIBRATTO e quero receber as condicoes de lancamento.">Registrar interesse</a>
+</header>
+
+<!-- 1. HERO -->
+<section class="hero hero--pre">
+  <div class="hero__bg" style="background-image:url(img/hero.jpg)"></div>
+  <div class="hero__scrim"></div>
+  <div class="hero__inner wrap">
+    <div class="stagger">
+      <span class="badge badge--pre"><span class="dot"></span> Pre-lancamento · Soltec Engenharia · Aguas Claras</span>
+      <h1 class="display">2 quartos em Aguas Claras.<br><em>A tipologia mais procurada do mercado.</em></h1>
+      <p class="sub">VIBRATTO — metragem competitiva, proximo ao metro, com a maior demanda de locacao do bairro. Registre seu interesse e receba as condicoes em primeira mao.</p>
+      <div class="meta">
+        <div class="m"><span class="k">Tipologia</span><span class="v">2 quartos (c/ suite)</span></div>
+        <div class="m"><span class="k">Metragens</span><span class="v">A partir de 58 m&#178;</span></div>
+        <div class="m"><span class="k">Garagem</span><span class="v">1 vaga inclusa</span></div>
+        <div class="m"><span class="k">Status</span><span class="v">Pre-lancamento</span></div>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn--wa" data-wa data-wa-msg="Ola Vitor! Quero registrar meu interesse no VIBRATTO em Aguas Claras e receber as condicoes de lancamento em primeira mao.">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.5-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+          Quero receber as condicoes
+        </a>
+        <a class="btn btn--ghost" href="#por-que">Por que o Vibratto &#8595;</a>
+      </div>
+      <div class="dev-line">Incorporacao e construcao <b>Soltec Engenharia</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. DADOS DE MERCADO -->
+<section class="market-data section-pad">
+  <div class="wrap">
+    <div class="mgrid reveal">
+      <div class="mcell">
+        <div class="mk">Tipologia mais procurada</div>
+        <div class="mv">#1</div>
+        <div class="mu">2 quartos lidera a demanda de locacao em Aguas Claras</div>
+      </div>
+      <div class="mcell">
+        <div class="mk">Renda potencial de locacao</div>
+        <div class="mv">R$&nbsp;2.700+</div>
+        <div class="mu">por mes — imoveis usados da mesma tipologia hoje no mercado</div>
+      </div>
+      <div class="mcell">
+        <div class="mk">Valorizacao de alugueis</div>
+        <div class="mv">+14%</div>
+        <div class="mu">alta registrada no periodo para 2 quartos em Aguas Claras</div>
+      </div>
+      <div class="mcell">
+        <div class="mk">Metragem a partir de</div>
+        <div class="mv">58 m&#178;</div>
+        <div class="mu">2 quartos com suite e vaga — na faixa mais absorvida pelo mercado</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. SOBRE -->
+<section id="por-que" class="section-pad">
+  <div class="wrap intro-grid">
+    <div class="reveal">
+      <span class="eyebrow">O empreendimento</span>
+      <p class="big" style="margin-top:16px">O apartamento que Aguas Claras mais procura. Na condicao de quem chega primeiro.</p>
+    </div>
+    <div class="reveal">
+      <p>Aguas Claras tem uma das demandas de locacao mais consistentes do Distrito Federal. Dentro do bairro, a tipologia de <strong>2 quartos com suite e vaga</strong> e a mais procurada — tanto por quem quer morar quanto por quem quer investir.</p>
+      <p style="margin-top:14px">O VIBRATTO esta justamente nessa faixa: metragem competitiva, entorno urbano consolidado, proximo ao metro. Pre-lancamento significa condicoes melhores, acesso as melhores unidades e tempo para planejar o fluxo financeiro antes da abertura oficial da tabela.</p>
+      <div class="devs">
+        <span>Incorporacao e construcao <b>Soltec Engenharia</b></span>
+        <span>Localizacao <b>Aguas Claras, DF</b></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. DOIS PERFIS DE COMPRADOR + AMENIDADES -->
+<section id="diferenciais" class="section-pad" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow reveal">Para quem e o Vibratto</span>
+    <h2 class="section-title reveal" style="margin-top:12px">Dois motivos fortes para decidir agora.</h2>
+    <div class="profiles reveal">
+
+      <div class="prf-card">
+        <div class="prf-label">Para o investidor</div>
+        <h3>Liquidez e renda em uma das regioes mais demandadas de Brasilia.</h3>
+        <ul class="prf-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>2 quartos e a tipologia com maior velocidade de locacao em Aguas Claras</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Imoveis usados nessa metragem ja alugam por R$2.700–R$3.000+ hoje</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Alta de +14% no aluguel — potencial de crescimento da renda</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Imovel novo: acabamento melhor, menor custo de manutencao inicial</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Patrimonio fisico com renda e possibilidade de valorizacao</li>
+        </ul>
+      </div>
+
+      <div class="prf-card">
+        <div class="prf-label">Para o morador</div>
+        <h3>Qualidade de vida, menos deslocamento, mais tempo para o que importa.</h3>
+        <ul class="prf-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Proximo ao metro — acesso rapido ao Plano Piloto e outras regioes</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Smart Fit, escolas, mercados, shopping e comercio a poucos passos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Estrutura urbana consolidada: resolver tudo perto de casa</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>2 quartos para casais, familias em formacao ou home office</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Primeira conquista patrimonial — sair do aluguel com condicao de lancamento</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <span class="eyebrow reveal" style="display:block;margin-top:56px">Entorno do Vibratto</span>
+    <div class="amen reveal">
+      <div class="a"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg></i>Estacao de metro proxima</div>
+      <div class="a"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg></i>Smart Fit nas redondezas</div>
+      <div class="a"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg></i>Escolas proximas</div>
+      <div class="a"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg></i>Mercados e supermercados</div>
+      <div class="a"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg></i>Shopping Aguas Claras</div>
+      <div class="a"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg></i>Comercio e servicos a pe</div>
+      <div class="a"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg></i>Facilidade de deslocamento</div>
+      <div class="a"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg></i>Acesso a importantes vias</div>
+      <div class="a"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 13l4 4L19 7"/></svg></i>Estrutura urbana consolidada</div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. GALERIA (placeholders — substituir com renders quando disponíveis) -->
+<section id="galeria" class="section-pad" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow reveal">Vibratto · Aguas Claras</span>
+    <h2 class="section-title reveal" style="margin-top:12px">Renders e imagens em breve.</h2>
+    <div class="gallery" style="margin-top:32px">
+      <div class="shot wide reveal" style="background-image:url(img/g1.jpg);background-color:var(--sand)" role="img" aria-label="Fachada Vibratto"></div>
+      <div class="shot reveal" style="background-image:url(img/g2.jpg);background-color:var(--cream-2)" role="img" aria-label="Area de lazer"></div>
+      <div class="shot reveal" style="background-image:url(img/g3.jpg);background-color:var(--cream-2)" role="img" aria-label="Vista interna"></div>
+      <div class="shot reveal" style="background-image:url(img/g4.jpg);background-color:var(--sand)" role="img" aria-label="Entorno Aguas Claras"></div>
+    </div>
+    <p class="reveal" style="color:#8a8172;font-size:.82rem;margin-top:16px">Imagens de referencia do entorno. Renders oficiais do empreendimento disponiveis no lancamento.</p>
+  </div>
+</section>
+
+<!-- 6. TIPOLOGIA -->
+<section id="tipologia" class="section-pad" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow reveal">Planta e tipologia</span>
+    <h2 class="section-title reveal" style="margin-top:12px">2 quartos — na metragem certa para o mercado de Aguas Claras.</h2>
+    <p class="lead reveal" style="margin-top:12px">Um imovel deve ser avaliado pelo que representa para o comprador, nao apenas pelos metros quadrados. O Vibratto entrega a metragem mais absorvida pelo mercado local — ideal tanto para morar quanto para locar.</p>
+
+    <div class="tipo-grid reveal">
+      <div class="tipo-ph" id="js-planta-wrap">
+        Planta disponivel no lancamento
+      </div>
+      <div>
+        <div class="tipo-tag">Tipologia unica</div>
+        <h3 style="font-family:var(--font-disp);font-size:1.9rem;font-weight:600;line-height:1.1;margin-bottom:16px">2 Quartos com Suite</h3>
+        <div class="tipo-specs">
+          <div class="tspec"><div class="tn">58+</div><div class="tl">m² a partir de</div></div>
+          <div class="tspec"><div class="tn">1</div><div class="tl">suite</div></div>
+          <div class="tspec"><div class="tn">1</div><div class="tl">vaga de garagem</div></div>
+        </div>
+        <div class="tipo-preco">
+          <div class="pk">Valor de lancamento</div>
+          <div class="pv">Condicoes em primeira mao</div>
+          <div class="pn">Tabela disponivel no inicio das vendas. Registre seu interesse para ser avisado primeiro.</div>
+        </div>
+        <a class="btn btn--wa" data-wa data-wa-msg="Ola Vitor! Quero a planta e as condicoes de lancamento do VIBRATTO em Aguas Claras (2 quartos com suite).">Quero a planta no WhatsApp</a>
+      </div>
+    </div>
+
+    <p style="color:#8a8172;font-size:.82rem;margin-top:20px">Metragens e especificacoes sujeitas a confirmacao no lancamento oficial. Planta ilustrativa disponivel em breve.</p>
+  </div>
+</section>
+
+<!-- 7. LOCALIZACAO + CRONOGRAMA -->
+<section class="loc section-pad">
+  <div class="wrap">
+    <div class="cols">
+      <div class="reveal">
+        <span class="eyebrow on-dark">Localizacao</span>
+        <h2 class="section-title" style="color:#fff;margin-top:12px">Aguas Claras — estrutura completa a poucos passos.</h2>
+        <p style="color:rgba(255,255,255,.72);margin-top:16px">Quem mora em Aguas Claras sabe que localizacao nao e so ponto no mapa. E tempo. E praticidade. E poder estudar, treinar, comprar, trabalhar e pegar o metro sem sair do bairro. O Vibratto foi pensado para quem valoriza isso.</p>
+        <div class="pins">
+          <div class="pin">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.4 8 12 8 12s8-6.6 8-12a8 8 0 0 0-8-8z"/></svg>
+            <div><b>Aguas Claras, DF</b><span>Endereco exato disponivel no lancamento</span></div>
+          </div>
+          <div class="pin">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M12 3v18"/></svg>
+            <div><b>Estacao de metro</b><span>Conectividade direta ao Plano Piloto e demais regioes</span></div>
+          </div>
+          <div class="pin">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M12 3v18"/></svg>
+            <div><b>Comercio, escola, academia e shopping</b><span>Estrutura urbana consolidada no entorno imediato</span></div>
+          </div>
+        </div>
+        <a class="btn btn--wa" style="margin-top:26px" data-wa data-wa-msg="Ola Vitor! Quero saber a localizacao exata do VIBRATTO em Aguas Claras e agendar uma visita ao estande.">Saber a localizacao exata</a>
+      </div>
+      <div class="reveal">
+        <div class="map has-iframe">
+          <iframe title="Mapa Aguas Claras" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Aguas+Claras+Brasilia+DF&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline reveal">
+      <div class="tl done">
+        <span class="dot"></span>
+        <div>
+          <div class="when">Agora · Set/2026</div>
+          <div class="what">Pre-lancamento — registre seu interesse</div>
+          <div class="why">Acesso antecipado as condicoes, unidades e tabela antes da abertura oficial das vendas.</div>
+        </div>
+      </div>
+      <div class="tl">
+        <span class="dot"></span>
+        <div>
+          <div class="when">Em breve · Lancamento</div>
+          <div class="what">Abertura oficial da tabela e das vendas</div>
+          <div class="why">Quem esta cadastrado recebe a tabela primeiro e tem acesso as melhores unidades antes do publico geral.</div>
+        </div>
+      </div>
+      <div class="tl">
+        <span class="dot"></span>
+        <div>
+          <div class="when">A confirmar · Entrega</div>
+          <div class="what">Unidade pronta para morar ou locar</div>
+          <div class="why">Imovel novo, melhor acabamento, maior valor de locacao e menor custo de manutencao inicial.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. CORRETOR -->
+<section class="broker section-pad">
+  <div class="wrap"><div class="card reveal">
+    <div class="photo">
+      <div>
+        <img class="avatar avatar--img" src="../assets/img/vitor.jpg" alt="Vitor Guilherme, corretor de imoveis em Brasilia" width="148" height="148" />
+        <strong style="font-family:var(--font-disp);font-size:1.3rem">Vitor Guilherme</strong>
+        <div style="opacity:.7;font-size:.85rem;margin-top:4px">Corretor de Imoveis · Brasilia-DF</div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="name">Quem conduz a negociacao</div>
+      <div class="role">Consultoria imobiliaria · Aguas Claras</div>
+      <p>Atendimento direto, sem intermediario. O Vitor envia as condicoes de lancamento, apresenta as plantas, simula o fluxo financeiro e acompanha voce da reserva a assinatura. Para o investidor, apresenta tambem o cenario de locacao e retorno da operacao.</p>
+      <a class="btn btn--bronze" data-wa data-wa-msg="Ola Vitor! Quero receber as condicoes de lancamento do VIBRATTO em Aguas Claras.">Chamar o Vitor no WhatsApp</a>
+      <div class="trust">
+        <div class="t"><div class="n">Direto</div><div class="l">sem intermediario</div></div>
+        <div class="t"><div class="n">Desde</div><div class="l">o pre-lancamento</div></div>
+        <div class="t"><div class="n">+8</div><div class="l">lancamentos atendidos</div></div>
+      </div>
+    </div>
+  </div></div>
+</section>
+
+<!-- 9. FORMULARIO DE INTERESSE -->
+<section id="contato" class="lead section-pad">
+  <div class="wrap"><div class="panel reveal">
+    <div class="side">
+      <div class="who">
+        <img src="../assets/img/vitor-320.jpg" alt="Vitor Guilherme" width="64" height="64" />
+        <div>
+          <b>Receba as condicoes do VIBRATTO em primeira mao</b>
+          <span>Resposta do proprio Vitor, no WhatsApp</span>
+        </div>
+      </div>
+      <p>Cadastre-se agora e seja avisado antes da abertura oficial. Voce recebe:</p>
+      <ul>
+        <li>Tabela de precos assim que disponivel (antes do publico geral)</li>
+        <li>Plantas em alta resolucao da tipologia 2 quartos</li>
+        <li>Simulacao do fluxo de pagamento (entrada + mensais + financiamento)</li>
+        <li>Analise do potencial de locacao do imovel para o investidor</li>
+      </ul>
+    </div>
+    <form data-lead-form data-lead-emp="VIBRATTO" novalidate>
+      <label for="lf-nome">Seu nome</label>
+      <input id="lf-nome" name="nome" type="text" autocomplete="name" placeholder="Como prefere ser chamado(a)" required />
+      <label for="lf-whats">Seu WhatsApp (opcional)</label>
+      <input id="lf-whats" name="whats" type="tel" autocomplete="tel" inputmode="tel" placeholder="(61) 9 0000-0000" />
+      <label for="lf-int">Qual o seu interesse?</label>
+      <select id="lf-int" name="interesse">
+        <option value="receber as condicoes de lancamento em primeira mao">Receber condicoes de lancamento em primeira mao</option>
+        <option value="entender o potencial de locacao e retorno do investimento">Potencial de locacao e retorno (investidor)</option>
+        <option value="agendar uma visita ao estande quando disponivel">Visitar o estande de vendas quando disponivel</option>
+        <option value="uma simulacao de pagamento para o VIBRATTO">Simulacao de pagamento</option>
+      </select>
+      <button type="submit" class="btn btn--wa">Enviar pelo WhatsApp</button>
+      <p class="fine">Sem cadastro, sem spam. A conversa acontece direto no WhatsApp do Vitor · (61) 98509-0580</p>
+    </form>
+  </div></div>
+</section>
+
+<!-- 10. CTA FINAL -->
+<section class="cta-band section-pad">
+  <div class="wrap">
+    <h2 class="reveal">Nao perca a condicao de lancamento.</h2>
+    <p class="reveal">As melhores unidades sao reservadas antes da abertura oficial das vendas. Quem chega primeiro tem mais tempo para entender, escolher e decidir com calma.</p>
+    <a class="btn btn--wa reveal" data-wa data-wa-msg="Ola Vitor! Quero registrar meu interesse no VIBRATTO em Aguas Claras e receber as condicoes de lancamento em primeira mao.">Registrar interesse agora</a>
+  </div>
+</section>
+
+<footer class="ft">
+  <div class="wrap row">
+    <div class="ft-broker">
+      <img src="../assets/img/vitor-320.jpg" alt="Vitor Guilherme" width="52" height="52" />
+      <div class="who">
+        <b>Vitor Guilherme</b>
+        <span>Corretor de imoveis responsavel · Brasilia-DF · (61) 98509-0580</span>
+      </div>
+      <a class="ft-wa" data-wa data-wa-msg="Ola Vitor! Vi sua pagina do VIBRATTO e quero falar com voce.">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.5-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        Falar com o Vitor
+      </a>
+    </div>
+    <div class="brand">Vitor Guilherme</div>
+    <div>Corretor de Imoveis · Brasilia-DF · <a data-wa data-wa-msg="Ola Vitor!">(61) 98509-0580</a></div>
+    <div class="disclaimer">VIBRATTO, Soltec Engenharia. Informacoes de pre-lancamento sujeitas a alteracao. Intermediacao por Vitor Guilherme. &#169; <span data-year>2026</span>.</div>
+  </div>
+</footer>
+
+<a class="wa-fab" data-wa data-wa-msg="Ola Vitor! Vi a pagina do VIBRATTO e quero receber as condicoes de lancamento." aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.5-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5 1.9.8 2.6.9 3.5.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+</a>
+
+<div class="lb"><span class="close">&#215;</span><div class="lb-inner"><img alt="" /></div></div>
+<script src="../assets/app.js"></script>
+</body>
+</html>
