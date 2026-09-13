@@ -19,12 +19,16 @@
   // ============================================================
   var TRACK = {
     PIXEL_ID: "",              // Pixel entra pelas tags do GTM (deixar vazio evita disparo em dobro)
-    GTM_ID: "GTM-543P3VS8"     // container do Google Tag Manager (Vitor Guilherme)
+    GTM_ID:   "GTM-543P3VS8", // container do Google Tag Manager (Vitor Guilherme)
+    GADS_ID:  "AW-18410246781",                    // Google Ads account
+    GADS_WA:  "AW-18410246781/wWJDCJ32-PUcEP2k2MpE" // conversão "Nova conversa no WhatsApp"
   };
 
   window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  window.gtag = window.gtag || gtag;
 
-  // Google Tag Manager (só carrega se GTM_ID configurado)
+  // Google Tag Manager (GTM carrega o GA4 e demais tags; load primeiro)
   if (TRACK.GTM_ID) {
     (function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
@@ -32,16 +36,16 @@
       j.async = true; j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
       f.parentNode.insertBefore(j, f);
     })(window, document, "script", "dataLayer", TRACK.GTM_ID);
-    // noscript fallback (construído via DOM, sem innerHTML)
-    try {
-      var ns = document.createElement("noscript");
-      var ifr = document.createElement("iframe");
-      ifr.src = "https://www.googletagmanager.com/ns.html?id=" + TRACK.GTM_ID;
-      ifr.height = "0"; ifr.width = "0";
-      ifr.style.display = "none"; ifr.style.visibility = "hidden";
-      ns.appendChild(ifr);
-      if (document.body) document.body.insertBefore(ns, document.body.firstChild);
-    } catch (e) {}
+  }
+
+  // Google Ads global site tag (carrega junto ao GTM; configura o remarketing/conversão)
+  if (TRACK.GADS_ID) {
+    var gadsScript = document.createElement("script");
+    gadsScript.async = true;
+    gadsScript.src = "https://www.googletagmanager.com/gtag/js?id=" + TRACK.GADS_ID;
+    document.head.appendChild(gadsScript);
+    gtag("js", new Date());
+    gtag("config", TRACK.GADS_ID);
   }
 
   // Meta Pixel (só carrega se PIXEL_ID configurado)
@@ -116,9 +120,14 @@
     var href = "https://wa.me/" + VITOR_WA + "?text=" + encodeURIComponent(msg);
     if (el.tagName === "A") { el.setAttribute("href", href); el.setAttribute("target", "_blank"); el.setAttribute("rel", "noopener"); }
     else { el.addEventListener("click", function () { window.open(href, "_blank", "noopener"); }); }
-    // conversão: clique no WhatsApp = Contact (Pixel) / vg_contact (GTM)
+    // conversão: clique no WhatsApp = Contact (Pixel/GTM) + Google Ads conversion
     el.addEventListener("click", function () {
       vgTrack("Contact", { method: "whatsapp", page: location.pathname });
+      try {
+        if (TRACK.GADS_WA && window.gtag) {
+          gtag("event", "conversion", { send_to: TRACK.GADS_WA });
+        }
+      } catch (e) {}
     });
   });
 
