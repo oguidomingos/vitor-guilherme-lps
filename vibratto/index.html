@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- LP Pre-lancamento VIBRATTO (Soltec Engenharia) · Aguas Claras, DF
      Baseado em /_template-lancamento. Conteudo: treinamento comercial Vibratto/Soltec (set/2026).
-     Imagens: substituir img/hero.jpg + img/g1..g4.jpg + img/planta.jpg quando renders disponiveis.
+     Imagens aplicadas: hero = render do empreendimento; galeria = entorno Aguas Claras (set/2026).
      Publico-alvo: investidor (liquidez, renda) + morador (qualidade de vida, comodidade). -->
 <title>VIBRATTO · Pre-lancamento 2 quartos em Aguas Claras — Vitor Guilherme</title>
 <meta name="description" content="VIBRATTO, Soltec Engenharia — pre-lancamento em Aguas Claras: 2 quartos a partir de 58 m², a tipologia de maior demanda de locacao do bairro. Proximo ao metro. Registre seu interesse com o corretor Vitor Guilherme." />
@@ -21,8 +21,9 @@
 <style>
 /* Vibratto — overrides de pre-lancamento */
 .hero--pre .hero__bg {
-  background-color: #1a1108;
-  background-image: linear-gradient(145deg, #2b1f0a 0%, #0e0b06 100%);
+  background-color: #0b1a10;
+  background-size: cover;
+  background-position: center top;
 }
 
 .badge--pre {
@@ -214,7 +215,7 @@
 
 <!-- 1. HERO -->
 <section class="hero hero--pre">
-  <div class="hero__bg placeholder"></div>
+  <div class="hero__bg" style="background-image:url(img/hero.jpg)"></div>
   <div class="hero__scrim"></div>
   <div class="hero__inner wrap">
     <div class="stagger">
@@ -337,14 +338,14 @@
 <section id="galeria" class="section-pad" style="padding-top:0">
   <div class="wrap">
     <span class="eyebrow reveal">Vibratto · Aguas Claras</span>
-    <h2 class="section-title reveal" style="margin-top:12px">Renders e imagens em breve.</h2>
+    <h2 class="section-title reveal" style="margin-top:12px">Entorno e perspectiva do empreendimento.</h2>
     <div class="gallery" style="margin-top:32px">
-      <div class="shot wide reveal" role="img" aria-label="Fachada Vibratto"></div>
-      <div class="shot reveal" role="img" aria-label="Area de lazer"></div>
-      <div class="shot reveal" role="img" aria-label="Vista interna"></div>
-      <div class="shot reveal" role="img" aria-label="Entorno Aguas Claras"></div>
+      <div class="shot wide reveal" style="background-image:url(img/g1.jpg)" data-full="img/g1.jpg" role="img" aria-label="Vista aerea de Aguas Claras — localizacao do Vibratto"></div>
+      <div class="shot reveal" style="background-image:url(img/g2.jpg)" data-full="img/g2.jpg" role="img" aria-label="Aguas Claras: verde e infraestrutura urbana consolidada"></div>
+      <div class="shot reveal" style="background-image:url(img/g3.jpg)" data-full="img/g3.jpg" role="img" aria-label="Avenida arborizada proxima ao empreendimento"></div>
+      <div class="shot reveal" style="background-image:url(img/g4.jpg)" data-full="img/g4.jpg" role="img" aria-label="Entorno de Aguas Claras — qualidade de vida e mobilidade"></div>
     </div>
-    <p class="reveal" style="color:#8a8172;font-size:.82rem;margin-top:16px">Imagens de referencia do entorno. Renders oficiais do empreendimento disponiveis no lancamento.</p>
+    <p class="reveal" style="color:#8a8172;font-size:.82rem;margin-top:16px">Fotos do entorno e perspectiva artistica do empreendimento. Plantas e renders oficiais disponiveis no lancamento.</p>
   </div>
 </section>
 
