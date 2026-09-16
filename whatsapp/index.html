@@ -154,25 +154,79 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   "use strict";
   /* ====================== CONFIG (troque aqui) ====================== */
   var CONFIG = {
-    // Número WhatsApp do Vitor (mesmo usado nas LPs). Só dígitos, com DDI 55.
-    PHONE: "5561991223005",
-    // Pixel do Facebook do Vitor. Deixe "" para desativar o rastreamento;
-    // preencha com o ID do pixel (ex.: "1234567890123456") para ativar.
+    PHONE: "5561985090580",
     PIXEL_ID: "",
-    // Mensagem padrão levada pro WhatsApp (usada se não vier ?msg= na URL).
     DEFAULT_MSG: "Olá Vitor! Vim pelo anúncio e quero falar com você.",
-    // Tempo (ms) da barra de loading antes do redirect automático.
     REDIRECT_DELAY: 3000
+  };
+
+  /* ====================== MAPA DE ANÚNCIOS =========================
+     Cada anúncio no Meta/Google recebe um slug curto (?anuncio=slug).
+     A URL do anúncio aponta para /whatsapp/?anuncio=<slug>
+     Prioridade: ?anuncio= > ?msg= > DEFAULT_MSG
+
+     — Meta Ads — ELEVA 25 (Terral · Águas Claras) —
+     eleva-decorado   → reel/foto do decorado
+     eleva-filme      → corte 30s do filme Terral ("é animal")
+     eleva-planta-45  → criativo da planta de 45 m²
+     eleva-planta-3q  → criativo das plantas de 3 quartos
+     eleva-skypool    → criativo da skypool suspensa (diferencial)
+     eleva-geral      → qualquer criativo genérico do ELEVA
+
+     — Meta Ads — VERSAT Home Resort (Villela e Carvalho · Águas Claras) —
+     versat-fachada   → render fachada (V-A — imagem 4:5)
+     versat-lazer     → carrossel de amenidades resort (V-B)
+     versat-decorado  → stories/reels do decorado (V-C)
+     versat-geral     → qualquer criativo genérico do VERSAT
+
+     — Meta Ads — Terreno Lago Sul (SHIS QI 25) —
+     lago-sul         → reel drone (padrão)
+
+     — Meta Ads — Galpão Vicente Pires —
+     galpao           → vídeo narrado (drone + narração)
+
+     — Google Ads (Search) — leads vindos de busca —
+     g-eleva          → busca "eleva 25 / apartamento águas claras"
+     g-lago-sul       → busca "terreno lago sul / lote QI 25"
+     g-galpao         → busca "galpão vicente pires"
+     g-versat         → busca "versat home resort"
+  ================================================================= */
+  var ANUNCIOS = {
+    /* ELEVA 25 */
+    "eleva-decorado":  "Olá Vitor! Vi o anúncio do decorado do ELEVA 25 e quero a tabela, as plantas e as condições.",
+    "eleva-filme":     "Olá Vitor! Vi o vídeo do ELEVA 25 (as áreas de lazer são incríveis!) e quero mais informações.",
+    "eleva-planta-45": "Olá Vitor! Vi o anúncio do ELEVA 25 e tenho interesse no apartamento de 45 m². Pode me enviar a tabela e condições?",
+    "eleva-planta-3q": "Olá Vitor! Vi o anúncio do ELEVA 25 e tenho interesse nos 3 quartos. Pode me enviar as plantas e condições?",
+    "eleva-skypool":   "Olá Vitor! Vi o anúncio da skypool do ELEVA 25 — incrível! Quero entender as condições do lançamento.",
+    "eleva-geral":     "Olá Vitor! Vi o anúncio do ELEVA 25 em Águas Claras e quero conversar sobre o lançamento.",
+
+    /* VERSAT */
+    "versat-fachada":  "Olá Vitor! Vi o anúncio da fachada do VERSAT Home Resort e quero conhecer os apartamentos de 3 quartos.",
+    "versat-lazer":    "Olá Vitor! Vi o anúncio do VERSAT (as áreas de lazer resort são impressionantes!) e quero mais informações.",
+    "versat-decorado": "Olá Vitor! Vi o anúncio com o decorado do VERSAT e quero entender as plantas e condições.",
+    "versat-geral":    "Olá Vitor! Vi o anúncio do VERSAT Home Resort e quero conversar sobre o lançamento.",
+
+    /* Lago Sul */
+    "lago-sul":        "Olá Vitor! Vi o anúncio do terreno no Lago Sul (SHIS QI 25) e quero saber o valor e mais detalhes.",
+
+    /* Galpão */
+    "galpao":          "Olá Vitor! Vi o anúncio do galpão na Vicente Pires e quero simular a renda do aluguel.",
+
+    /* Google Search */
+    "g-eleva":         "Olá Vitor! Pesquisei sobre o ELEVA 25 em Águas Claras e quero mais informações sobre o lançamento.",
+    "g-lago-sul":      "Olá Vitor! Pesquisei sobre terreno no Lago Sul e quero saber o valor e a documentação.",
+    "g-galpao":        "Olá Vitor! Pesquisei sobre galpão na Vicente Pires e quero os detalhes do imóvel.",
+    "g-versat":        "Olá Vitor! Pesquisei sobre o VERSAT Home Resort e quero mais informações."
   };
   /* ================================================================= */
 
   var qs = new URLSearchParams(location.search);
 
-  // sincroniza a duração da barra (CSS) com o CONFIG
   document.documentElement.style.setProperty("--REDIRECT_MS", CONFIG.REDIRECT_DELAY + "ms");
 
-  /* ---- Mensagem: ?msg= tem prioridade, senão a padrão ---- */
-  var msg = qs.get("msg") || CONFIG.DEFAULT_MSG;
+  /* ---- Mensagem: ?anuncio= > ?msg= > padrão ---- */
+  var anuncio = qs.get("anuncio") || "";
+  var msg = (anuncio && ANUNCIOS[anuncio]) || qs.get("msg") || CONFIG.DEFAULT_MSG;
   var waUrl = "https://wa.me/" + CONFIG.PHONE + "?text=" + encodeURIComponent(msg);
 
   var waBtn = document.getElementById("waBtn");
