@@ -1,4 +1,5 @@
 /* Vitor Guilherme LPs — comportamento compartilhado
+   CACHEBUST 2026-09-22T17:05-03 expoente-leads+queue
    - Tracking (GTM + Google Ads conversion)
    - Modal lead gate antes de qualquer WhatsApp
    - Topbar / reveal / lightbox / simulador simples
@@ -10,7 +11,7 @@
   var VITOR_WA = "5561985090580"; // (61) 98509-0580
 
   // Endpoint de persistência do lead (POST JSON). Logger jsonl na VPS.
-  var LEAD_ENDPOINT = "https://leads.pulso.marketing/vg-lead";
+  var LEAD_ENDPOINT = "https://leads.expoente.marketing/vg-lead";
 
   // ============================================================
   // TRACKING — Meta Pixel + Google Tag Manager + Google Ads
@@ -122,9 +123,33 @@
     try { localStorage.setItem("vg_lead", JSON.stringify(lead)); } catch (e) {}
   }
 
-  function persistLead(lead) {
-    storeLead(lead);
-    if (!LEAD_ENDPOINT) return;
+  var LEAD_QUEUE_KEY = "vg_lead_queue_v1";
+  function readLeadQueue() {
+    try {
+      var q = JSON.parse(localStorage.getItem(LEAD_QUEUE_KEY) || "[]");
+      return Array.isArray(q) ? q : [];
+    } catch (e) { return []; }
+  }
+  function writeLeadQueue(q) {
+    try { localStorage.setItem(LEAD_QUEUE_KEY, JSON.stringify(q || [])); } catch (e) {}
+  }
+  function enqueueLeadPayload(payload) {
+    var q = readLeadQueue();
+    var id = payload._qid || ("q_" + Date.now() + "_" + Math.random().toString(36).slice(2, 8));
+    payload._qid = id;
+    payload._queued_at = payload._queued_at || new Date().toISOString();
+    // dedup by qid
+    q = q.filter(function (x) { return x && x._qid !== id; });
+    q.push(payload);
+    // cap queue
+    if (q.length > 50) q = q.slice(-50);
+    writeLeadQueue(q);
+    return id;
+  }
+  function dequeueLeadPayload(qid) {
+    writeLeadQueue(readLeadQueue().filter(function (x) { return !x || x._qid !== qid; }));
+  }
+  function buildLeadPayload(lead) {
     var payload = {
       nome: lead.nome || "",
       phone: lead.telefone || lead.phone || "",
@@ -154,16 +179,49 @@
       payload.gbraid = q.get("gbraid") || "";
       payload.fbclid = q.get("fbclid") || "";
     } catch (e) {}
-    try {
-      fetch(LEAD_ENDPOINT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-        keepalive: true,
-        mode: "cors"
-      }).catch(function () {});
-    } catch (e) {}
+    return payload;
   }
+  function postLeadPayload(payload) {
+    if (!LEAD_ENDPOINT) return Promise.resolve(false);
+    return fetch(LEAD_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+      keepalive: true,
+      mode: "cors"
+    }).then(function (res) {
+      return !!(res && res.ok);
+    }).catch(function () { return false; });
+  }
+  function flushLeadQueue() {
+    var q = readLeadQueue();
+    if (!q.length) return;
+    // send sequentially to avoid stampede
+    var chain = Promise.resolve();
+    q.forEach(function (item) {
+      chain = chain.then(function () {
+        return postLeadPayload(item).then(function (ok) {
+          if (ok) dequeueLeadPayload(item._qid);
+        });
+      });
+    });
+    return chain;
+  }
+  function persistLead(lead) {
+    // Sempre salva local primeiro — nunca perder lead
+    storeLead(lead);
+    var payload = buildLeadPayload(lead);
+    enqueueLeadPayload(payload);
+    postLeadPayload(payload).then(function (ok) {
+      if (ok) dequeueLeadPayload(payload._qid);
+    });
+  }
+  // retry queue on load / online / periodic
+  try {
+    flushLeadQueue();
+    window.addEventListener("online", function () { flushLeadQueue(); });
+    setInterval(function () { flushLeadQueue(); }, 30000);
+  } catch (e) {}
 
   function buildWaUrl(msg) {
     return "https://wa.me/" + VITOR_WA + "?text=" + encodeURIComponent(msg);
@@ -322,26 +380,30 @@
     var msg = composeMsgWithLead(baseMsg, lead);
     var url = buildWaUrl(msg);
 
+    // Ordem obrigatória: validar (já feito) → salvar (local+POST/queue)
+    // → conversão Ads → dataLayer → SÓ ENTÃO abrir WA.
+    // Se POST falhar, fila localStorage + retry; conversão e WA seguem.
     persistLead(lead);
 
-    vgTrack("Lead", {
-      method: "modal",
-      source: lead.source || "modal",
-      page: location.pathname,
-      emp: lead.emp || ""
-    });
-    try {
-      window.dataLayer.push({
-        event: "vg_lead_modal",
-        nome: lead.nome,
-        telefone: lead.telefone,
-        interesse: lead.interesse || "",
-        page: location.pathname,
-        source: lead.source || "modal"
-      });
-    } catch (e) {}
-
     fireGadsWa(function () {
+      try {
+        vgTrack("Lead", {
+          method: "modal",
+          source: lead.source || "modal",
+          page: location.pathname,
+          emp: lead.emp || ""
+        });
+      } catch (e) {}
+      try {
+        window.dataLayer.push({
+          event: "vg_lead_modal",
+          nome: lead.nome,
+          telefone: lead.telefone,
+          interesse: lead.interesse || "",
+          page: location.pathname,
+          source: lead.source || "modal"
+        });
+      } catch (e) {}
       closeModal();
       openWaUrl(url, opts);
     });
