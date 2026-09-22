@@ -1,5 +1,5 @@
 /* Vitor Guilherme LPs — comportamento compartilhado
-   CACHEBUST 2026-09-22T17:05-03 expoente-leads+queue
+   CACHEBUST 2026-09-22T19:05-03 wa-canonical-556191223005-Evolution
    - Tracking (GTM + Google Ads conversion)
    - Modal lead gate antes de qualquer WhatsApp
    - Topbar / reveal / lightbox / simulador simples
@@ -8,7 +8,7 @@
   "use strict";
 
   // ---- Config do corretor (ajuste aqui) ----
-  var VITOR_WA = "5561985090580"; // (61) 98509-0580
+  var VITOR_WA = "556191223005"; // (61) 91223-0005 — canônico Evolution (chip monitorado)
 
   // Endpoint de persistência do lead (POST JSON). Logger jsonl na VPS.
   var LEAD_ENDPOINT = "https://leads.expoente.marketing/vg-lead";

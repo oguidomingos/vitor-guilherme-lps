@@ -29,7 +29,7 @@ Exemplos publicados a partir dele: [`/eleva-25/`](../eleva-25/) e [`/versat/`](.
 - `assets/styles.css` — seção "v2 (ago/2026)" tem as classes novas: `.hero .meta`, `.amen`, `.plans/.plan`,
   `.timeline`, `.loc .map.has-iframe`, `.lead` (form), `.devs`, `.broker .avatar--img`, `footer .ft-broker`.
 - `assets/app.js` — `data-wa` (links WhatsApp), lightbox, reveal e `form[data-lead-form]` (monta a mensagem com
-  nome/interesse/WhatsApp e abre `wa.me/5561985090580`). Número do Vitor em um único lugar: `VITOR_WA`.
+  nome/interesse/WhatsApp e abre `wa.me/556191223005`). Número do Vitor em um único lugar: `VITOR_WA`.
 - `assets/img/vitor.jpg` (640) e `vitor-320.jpg` — foto real do Vitor (perfil do WhatsApp, ago/2026).
 
 ## Fontes de conteúdo por empreendimento (onde buscar)
