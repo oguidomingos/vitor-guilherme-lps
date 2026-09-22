@@ -152,128 +152,76 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 (function(){
   "use strict";
-  /* ====================== CONFIG (troque aqui) ====================== */
   var CONFIG = {
     PHONE: "5561985090580",
-    PIXEL_ID: "",
     DEFAULT_MSG: "Olá Vitor! Vim pelo anúncio e quero falar com você.",
     REDIRECT_DELAY: 3000
   };
 
-  /* ====================== MAPA DE ANÚNCIOS =========================
-     Cada anúncio no Meta/Google recebe um slug curto (?anuncio=slug).
-     A URL do anúncio aponta para /whatsapp/?anuncio=<slug>
-     Prioridade: ?anuncio= > ?msg= > DEFAULT_MSG
-
-     — Meta Ads — ELEVA 25 (Terral · Águas Claras) —
-     eleva-decorado   → reel/foto do decorado
-     eleva-filme      → corte 30s do filme Terral ("é animal")
-     eleva-planta-45  → criativo da planta de 45 m²
-     eleva-planta-3q  → criativo das plantas de 3 quartos
-     eleva-skypool    → criativo da skypool suspensa (diferencial)
-     eleva-geral      → qualquer criativo genérico do ELEVA
-
-     — Meta Ads — VERSAT Home Resort (Villela e Carvalho · Águas Claras) —
-     versat-fachada   → render fachada (V-A — imagem 4:5)
-     versat-lazer     → carrossel de amenidades resort (V-B)
-     versat-decorado  → stories/reels do decorado (V-C)
-     versat-geral     → qualquer criativo genérico do VERSAT
-
-     — Meta Ads — Terreno Lago Sul (SHIS QI 25) —
-     lago-sul         → reel drone (padrão)
-
-     — Meta Ads — Galpão Vicente Pires —
-     galpao           → vídeo narrado (drone + narração)
-
-     — Google Ads (Search) — leads vindos de busca —
-     g-eleva          → busca "eleva 25 / apartamento águas claras"
-     g-lago-sul       → busca "terreno lago sul / lote QI 25"
-     g-galpao         → busca "galpão vicente pires"
-     g-versat         → busca "versat home resort"
-  ================================================================= */
   var ANUNCIOS = {
-    /* ELEVA 25 */
     "eleva-decorado":  "Olá Vitor! Vi o anúncio do decorado do ELEVA 25 e quero a tabela, as plantas e as condições.",
     "eleva-filme":     "Olá Vitor! Vi o vídeo do ELEVA 25 (as áreas de lazer são incríveis!) e quero mais informações.",
     "eleva-planta-45": "Olá Vitor! Vi o anúncio do ELEVA 25 e tenho interesse no apartamento de 45 m². Pode me enviar a tabela e condições?",
     "eleva-planta-3q": "Olá Vitor! Vi o anúncio do ELEVA 25 e tenho interesse nos 3 quartos. Pode me enviar as plantas e condições?",
     "eleva-skypool":   "Olá Vitor! Vi o anúncio da skypool do ELEVA 25 — incrível! Quero entender as condições do lançamento.",
     "eleva-geral":     "Olá Vitor! Vi o anúncio do ELEVA 25 em Águas Claras e quero conversar sobre o lançamento.",
-
-    /* VERSAT */
     "versat-fachada":  "Olá Vitor! Vi o anúncio da fachada do VERSAT Home Resort e quero conhecer os apartamentos de 3 quartos.",
     "versat-lazer":    "Olá Vitor! Vi o anúncio do VERSAT (as áreas de lazer resort são impressionantes!) e quero mais informações.",
     "versat-decorado": "Olá Vitor! Vi o anúncio com o decorado do VERSAT e quero entender as plantas e condições.",
     "versat-geral":    "Olá Vitor! Vi o anúncio do VERSAT Home Resort e quero conversar sobre o lançamento.",
-
-    /* Lago Sul */
     "lago-sul":        "Olá Vitor! Vi o anúncio do terreno no Lago Sul (SHIS QI 25) e quero saber o valor e mais detalhes.",
-
-    /* Galpão */
     "galpao":          "Olá Vitor! Vi o anúncio do galpão na Vicente Pires e quero simular a renda do aluguel.",
-
-    /* Google Search */
     "g-eleva":         "Olá Vitor! Pesquisei sobre o ELEVA 25 em Águas Claras e quero mais informações sobre o lançamento.",
     "g-lago-sul":      "Olá Vitor! Pesquisei sobre terreno no Lago Sul e quero saber o valor e a documentação.",
     "g-galpao":        "Olá Vitor! Pesquisei sobre galpão na Vicente Pires e quero os detalhes do imóvel.",
     "g-versat":        "Olá Vitor! Pesquisei sobre o VERSAT Home Resort e quero mais informações."
   };
-  /* ================================================================= */
 
   var qs = new URLSearchParams(location.search);
-
   document.documentElement.style.setProperty("--REDIRECT_MS", CONFIG.REDIRECT_DELAY + "ms");
 
-  /* ---- Mensagem: ?anuncio= > ?msg= > padrão ---- */
   var anuncio = qs.get("anuncio") || "";
   var msg = (anuncio && ANUNCIOS[anuncio]) || qs.get("msg") || CONFIG.DEFAULT_MSG;
-  var waUrl = "https://wa.me/" + CONFIG.PHONE + "?text=" + encodeURIComponent(msg);
 
-  var waBtn = document.getElementById("waBtn");
-  var status = document.getElementById("status");
-  waBtn.setAttribute("href", waUrl);
+  // UTM capture for app.js waRef
+  try {
+    if (qs.get("utm_source")) {
+      sessionStorage.setItem("vg_utm", JSON.stringify({
+        s: qs.get("utm_source") || "",
+        c: qs.get("utm_campaign") || "",
+        n: qs.get("utm_content") || ""
+      }));
+    }
+  } catch (e) {}
 
-  /* ---- Meta Pixel (só carrega se PIXEL_ID configurado) ---- */
-  var pixelOn = false;
-  if (CONFIG.PIXEL_ID) {
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
-    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', CONFIG.PIXEL_ID);
-    fbq('track', 'PageView');
-    pixelOn = true;
-  }
-
-  /* ---- Captura fbclid (campanha Abmeta) para atribuição ---- */
   var fbclid = qs.get("fbclid") || "";
   if (fbclid) { try { document.cookie = "fbclid=" + fbclid + ";path=/;max-age=604800"; } catch(e){} }
 
-  /* ---- Dispara Lead no load (a pessoa já veio do formulário Abmeta) ---- */
-  if (pixelOn && window.fbq) {
-    fbq('track', 'Lead', { content_name: 'WhatsApp Redirect Vitor', message: msg, fbclid: fbclid });
-  }
+  var status = document.getElementById("status");
+  var waBtn = document.getElementById("waBtn");
+  status.textContent = "Preencha seus dados para abrir o WhatsApp…";
+  waBtn.setAttribute("href", "#falar-whatsapp");
+  waBtn.addEventListener("click", function (ev) {
+    ev.preventDefault();
+    if (window.__vgGateWa) window.__vgGateWa(msg, { source: "whatsapp-redirect", redirect: true });
+  });
 
-  /* ---- Redireciona quando a barra completar (3s) ---- */
-  var redirected = false;
-  function go(){
-    if (redirected) return; redirected = true;
-    try { window.location.href = waUrl; }
-    catch(e){ status.textContent = "Toque no botão abaixo para abrir o WhatsApp."; }
-    // Fallback amigável: se em ~1.4s ainda estiver visível, WhatsApp não abriu
-    var before = Date.now();
-    setTimeout(function(){
-      if (!document.hidden && (Date.now() - before) < 3000) {
-        status.textContent = "É só tocar no botão para abrir o WhatsApp 👇";
-      }
-    }, 1400);
+  // Aguarda app.js e abre o modal (obrigatório antes do redirect)
+  function boot() {
+    if (window.__vgGateWa) {
+      window.__vgGateWa(msg, { source: "whatsapp-redirect", redirect: true });
+      return;
+    }
+    setTimeout(boot, 40);
   }
-  var timer = setTimeout(go, CONFIG.REDIRECT_DELAY);
-
-  /* ---- Clique manual antecipa o redirect (deixa o <a> nativo abrir) ---- */
-  waBtn.addEventListener("click", function(){ clearTimeout(timer); redirected = true; });
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
 })();
+</script>
+<script src="../assets/app.js?v=20260922-lead-modal"></script>
 </script>
 </body>
 </html>

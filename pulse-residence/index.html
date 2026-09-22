@@ -576,28 +576,8 @@ h1.display em { font-style: italic; color: var(--gold); }
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-543P3VS8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- GTM via app.js (track: pageview + whatsapp click) -->
-<script src="../assets/app.js" defer></script>
-
-<script>
-// WhatsApp helper
-const WA_NUM = '5561985090580';
-document.addEventListener('click', e => {
-  const el = e.target.closest('[data-wa]');
-  if (!el) return;
-  const msg = el.dataset.waMsg || 'Olá Vitor! Vi a página do Pulse Residence e quero saber mais.';
-  window.open(`https://wa.me/${WA_NUM}?text=${encodeURIComponent(msg)}`, '_blank');
-});
-// Topbar scroll
-const topbar = document.querySelector('.topbar');
-window.addEventListener('scroll', () => {
-  topbar.classList.toggle('scrolled', window.scrollY > 60);
-});
-// Reveal on scroll
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); } });
-}, { threshold: .12 });
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-</script>
+<!-- Tracking + modal WA via app.js compartilhado (sem handler inline duplicado) -->
+<script src="../assets/app.js?v=20260922-lead-modal" defer></script>
 
 <!-- TOP BAR -->
 <header class="topbar">

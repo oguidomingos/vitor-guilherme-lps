@@ -452,3 +452,56 @@ footer.ft .ft-broker .ft-wa svg { width: 16px; height: 16px; }
 }
 .hero--dim .hero h1, .hero--dim h1 { text-shadow: 0 2px 24px rgba(10,8,6,.45); }
 .hero--dim .sub { text-shadow: 0 1px 14px rgba(10,8,6,.5); }
+
+/* --- Lead modal gate (antes do WhatsApp) --- */
+html.vg-modal-open { overflow: hidden; }
+.vg-modal {
+  position: fixed; inset: 0; z-index: 200;
+  display: flex; align-items: flex-end; justify-content: center;
+  padding: 0; opacity: 0; pointer-events: none;
+  transition: opacity .25s var(--ease);
+}
+.vg-modal.is-open { opacity: 1; pointer-events: auto; }
+.vg-modal__backdrop {
+  position: absolute; inset: 0;
+  background: rgba(20,17,13,.55); backdrop-filter: blur(4px);
+}
+.vg-modal__panel {
+  position: relative; z-index: 1; width: 100%; max-width: 440px;
+  background: #fffdf8; border: 1px solid var(--line);
+  border-radius: 22px 22px 0 0;
+  box-shadow: var(--shadow);
+  padding: 22px 20px 28px;
+  transform: translateY(18px);
+  transition: transform .28s var(--ease);
+  max-height: min(92svh, 640px); overflow: auto;
+}
+.vg-modal.is-open .vg-modal__panel { transform: none; }
+.vg-modal__eyebrow {
+  font-size: .68rem; letter-spacing: .28em; text-transform: uppercase;
+  font-weight: 700; color: var(--bronze-ink); margin: 0 0 8px;
+}
+.vg-modal__panel h2 {
+  font-family: var(--font-disp); font-weight: 600; font-size: 1.55rem;
+  line-height: 1.15; letter-spacing: -.01em; margin: 0 0 8px;
+}
+.vg-modal__sub { font-size: .92rem; color: #6b6356; margin: 0 0 18px; line-height: 1.45; }
+.vg-modal__form { display: flex; flex-direction: column; gap: 12px; }
+.vg-field { display: flex; flex-direction: column; gap: 6px; font-size: .82rem; font-weight: 600; color: var(--ink); }
+.vg-field em { font-style: normal; font-weight: 500; opacity: .55; }
+.vg-field input {
+  width: 100%; padding: 13px 14px; font-size: 16px; font-family: var(--font-body);
+  color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 12px;
+}
+.vg-field input:focus { outline: none; border-color: var(--bronze); box-shadow: 0 0 0 3px rgba(176,131,75,.16); }
+.vg-modal__err { color: #9c2b2b; font-size: .82rem; font-weight: 600; margin: 0; }
+.vg-modal__submit {
+  margin-top: 6px; width: 100%; padding: 15px 18px; border: none; border-radius: 100px;
+  background: var(--wa); color: #fff; font-family: var(--font-body); font-size: 1rem; font-weight: 700;
+  cursor: pointer; box-shadow: 0 12px 28px -12px rgba(37,211,102,.7);
+}
+.vg-modal__submit:hover { background: var(--wa-dark); }
+@media (min-width: 560px) {
+  .vg-modal { align-items: center; padding: 24px; }
+  .vg-modal__panel { border-radius: 18px; padding: 28px 26px 30px; }
+}
