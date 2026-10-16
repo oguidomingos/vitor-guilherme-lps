@@ -1,0 +1,8 @@
+hero.jpg | Fachada da casa com piscina, área gourmet coberta e amplo jardim
+g1.jpg | Fachada frontal do sobrado sob céu azul, com entrada em pedra portuguesa
+g2.jpg | Sala de estar ampla e iluminada, com tapete, sofá e TV
+g3.jpg | Cozinha gourmet com ilha em mármore, armários planejados e janela ampla
+g4.jpg | Sala de jantar sofisticada com mesa de vidro e espelho redondo
+g5.jpg | Suíte master espaçosa e clara, com piso porcelanato
+g6.jpg | Banheiro da suíte com banheira de hidromassagem e box de vidro
+g7.jpg | Área gourmet coberta com churrasqueira e telhado aparente em madeira
