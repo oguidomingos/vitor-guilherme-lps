@@ -36,3 +36,11 @@
   .brm-lp .amen { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .brm-lp .amen .a { min-width: 0; overflow-wrap: anywhere; }
 }
+
+.brm-lp .price-source { font-size: .75rem; line-height: 1.5; margin-top: 12px; max-width: 60ch; color: rgba(255,255,255,.8); }
+.brm-lp .price-source a, .brm-lp .payment-copy a:not(.btn), .brm-lp #plantas .lead a { text-decoration: underline; text-underline-offset: 3px; }
+.brm-lp .payment-info { padding-top: 0; }
+.brm-lp .payment-copy { max-width: 75ch; margin-top: 20px; }
+.brm-lp .payment-copy p + p { margin-top: 16px; }
+.brm-lp .payment-copy .btn { margin-top: 24px; }
+.brm-lp .pprice .v { overflow-wrap: anywhere; }

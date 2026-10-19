@@ -1,6 +1,6 @@
 # Feedback BRM — Versat e Eleva
 
-Revisão: 18/10/2026. Fonte localizada fora do repositório:
+Revisão: 19/10/2026. Fonte localizada fora do repositório:
 `/root/projects/transcricao-vitor-fabiane-15out.md`, seção 4, itens 1–12,
 referentes ao relato de Vitor de 15/10. A transcrição é automática e não foi
 revisada pelo cliente. O item 13 é de infraestrutura e está fora desta tarefa.
@@ -15,20 +15,20 @@ revisada pelo cliente. O item 13 é de infraestrutura e está fora desta tarefa.
 | 4 | Eleva: incluir fotos próprias e simplificar no mesmo padrão. | Feito: foto existente `eleva-25/img/d0.jpg`, apresentação compacta e mesma estrutura do Versat. A identificação das fotos segue os comentários de origem já presentes nas LPs. |
 | 5 | CTA/formulário: pedir tabela e conversa com corretor. | Feito nas duas LPs: CTA principal, botão do formulário, opção inicial, mensagem do WhatsApp e CTA final. |
 | 6 | Pós-formulário: entregar tabela e acionar corretor. | Não feito integralmente: o fluxo existente encaminha a solicitação ao WhatsApp do Vitor; não existe tabela oficial anexada no repositório nem entrega automática verificada. Depende da tabela atualizada e da definição de entrega/atendimento. A página agora descreve uma solicitação, sem prometer entrega automática. |
-| 7 | Criativos com sinal, mensais, quantidade de parcelas e semestrais. | Não feito: faltam valores e condições aprovados pela BRM e materiais dos criativos. Não publicar números inferidos. |
+| 7 | Criativos com sinal, mensais, quantidade de parcelas e semestrais. | Pendente: pesquisa pública realizada em 19/10/2026 e preços das LPs atualizados; falta o fluxo contratual completo e os criativos. Ver PRECOS-FONTES.md. O simulador do portal não substitui a tabela da incorporadora. |
 | 8 | Enviar criativos em veiculação ao gestor BRM. | Não feito: faltam arquivos/lista dos criativos, destinatário e autorização de envio; nenhuma mensagem enviada. |
 | 9 | Alinhar expectativa de resultado em cerca de dois meses. | Não feito: requer conversa entre responsáveis; não é promessa para inserir nas LPs. |
-| 10 | Confirmar investimento: R$ 500 ou R$ 1.500. | Não feito: transcrição ambígua, depende de confirmação do Vitor. Nenhum valor de mídia publicado nas LPs. |
+| 10 | Confirmar investimento: R$ 500 ou R$ 1.500. | Feito: Guilherme confirmou aproximadamente R$ 1.000 em 19/10/2026. Referência interna de investimento em tráfego, sem periodicidade informada; não é preço de imóvel e não foi inserida nas LPs. |
 | 11 | Perguntar ao Vitor qual item ele esqueceu de mencionar. | Não feito: depende de resposta do Vitor e autorização para contatá-lo. |
 | 12 | Definir dono e data da revisão das LPs. | Não feito: esta revisão técnica ocorreu em 18/10/2026; responsável e data de aprovação comercial ainda precisam ser definidos pelo cliente. |
 
 ## Materiais pendentes
 
 Tabela oficial atualizada de cada empreendimento; fluxo de pagamento aprovado;
-criativos ativos e destinatário BRM; confirmação do investimento; complemento
+criativos ativos e destinatário BRM; complemento
 do feedback esquecido; responsável e data para revisão comercial. Nenhuma foto
 nova foi criada: foram reutilizadas as imagens já identificadas no projeto.
-Os preços e demais dados comerciais existentes não foram revalidados com a BRM.
+Preços pesquisados em fontes públicas em 19/10/2026, conforme PRECOS-FONTES.md; não houve validação comercial com a BRM.
 
 ## Arquivos da alteração
 
