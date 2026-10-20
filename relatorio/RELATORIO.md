@@ -87,3 +87,13 @@ Nada abaixo foi inventado; as páginas dizem que a tabela traz esses itens.
 - **Como editar:** mudar `src/versat.html` ou `src/eleva-25.html` e rodar `python3 scripts/build_lps.py` (preenche `srcset`, `width` e `height` das imagens). As outras LPs do site não foram tocadas.
 - Logger de leads `vg-lead-logger` (pm2) online; relatório de cliques: `python3 scripts/relatorio_vitor.py`.
 - A auto-resposta do logger ainda cita preços antigos (pendência do README, não alterada: é mensagem enviada em nome do Vitor).
+
+## Rodada 2 (20/10/2026): identidade visual padronizada
+
+- **SSOT criado:** `design.md` (não existia), com os tokens do design system do Vitor já usado no site (`assets/styles.css`): Playfair Display + Inter, ink `#14110d` / cream `#f6f2e9` / bronze `#b0834b`.
+- **Um CSS só:** `assets/lp3.css` agora contém tokens e todos os componentes (hero, cards de planta, formulários, galeria, FAQ, corretor, rodapé, barras de WhatsApp). O `<style>` de cada página ficou com 1 linha: `--emp` (Versat `#3f6b55`, Eleva `#d9622b`) e `--hero-pos`.
+- **Cor do empreendimento só como acento:** ponto do badge, traço dos kickers, fio da tag do card em destaque, ponto das legendas da galeria, fio dos números de destaque e da faixa do Eleva, marcador do FAQ aberto. Fundos, botões e preços são ink/cream/bronze nas duas.
+- **Removido:** fontes por empreendimento (Fraunces/Figtree e Archivo/Inter Tight), caixa-alta e cantos retos do Eleva, arcos do Versat, fundos verde/marinho, botões laranja/cobre, galeria 16:9 inline do Eleva.
+- **Não mudou:** texto (comparação automática do texto visível antes × depois: idêntico), preços com fonte/data, formulários, `data-wa`/`data-sec`, `lp.js`. A regra de respiro das capturas e o `lp.js` com evento de Lead (feitos por outra sessão em paralelo) foram preservados.
+- **Verificado ao vivo:** 11 links `wa.me` por página, sem modal, sem rolagem horizontal, todos os cliques e o lead de teste registrados. Altura: Versat 6.745 / 9.190 px, Eleva 6.146 / 8.852 px (desktop / celular).
+- Lado a lado (URLs públicas): `shots/lado-a-lado-desktop-dobra.jpg`, `shots/lado-a-lado-mobile-dobra.jpg`, `shots/lado-a-lado-desktop-full.jpg`, `shots/lado-a-lado-mobile-full.jpg`.

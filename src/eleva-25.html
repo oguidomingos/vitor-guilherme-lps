@@ -17,37 +17,11 @@
 <link rel="preload" as="image" href="img/v3/r-torre-sm.webp" imagesrcset="img/v3/r-torre-sm.webp 720w, img/v3/r-torre-lg.webp 1280w" imagesizes="(min-width:900px) 55vw, 100vw" fetchpriority="high" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,700;112,800&family=Inter+Tight:wght@400;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/lp3.css?v=20261020e" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/lp3.css?v=20261020f" />
 <style>
-/* Eleva 25: marinho e laranja, urbano. Grotesca larga (Archivo 112) + Inter Tight. Cantos retos. */
-:root{
-  --bg:#f3f4f7; --ink:#0b1630; --muted:#55607a; --line:rgba(11,22,48,.13); --card:#fff; --soft:#e7eaf1;
-  --accent:#f2561d; --accent-2:#f2561d; --on-accent:#fff;
-  --f-disp:'Archivo',system-ui,sans-serif; --f-body:'Inter Tight',system-ui,sans-serif; --w-disp:800;
-  --hero-bg:#0a1834; --hero-ink:#fff; --hero-pos:center 18%; --price-ink:#ff7d45;
-  --hero-scrim:linear-gradient(180deg,rgba(10,24,52,.5) 0%,rgba(10,24,52,0) 28%,rgba(10,24,52,0) 60%,#0a1834 100%);
-  --chip-bg:rgba(255,255,255,.07); --chip-line:rgba(255,255,255,.2); --r-chip:6px;
-  --r-btn:8px; --r-card:8px; --r-cap:12px;
-  --cap-bg:#0a1834; --cap-ink:#fff; --form-bg:#fff;
-  --top-bg:rgba(243,244,247,.92); --foot-bg:#07112a; --foot-ink:#c9cfdc; --mbar-bg:#0a1834; --brand-ls:.02em;
-}
-.hero h1{text-transform:uppercase;font-size:clamp(2.3rem,10.5vw,5.2rem);line-height:.93;letter-spacing:-.01em}
-.hero h1 em{font-style:normal;color:var(--price-ink)}
-.h2{text-transform:uppercase;letter-spacing:-.005em;line-height:.98}
-.h2 em{font-style:normal;color:var(--accent)}
-.cap h2,.plan h3,.broker h3{text-transform:uppercase}
-.badge{display:inline-block;font:700 .72rem/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;background:var(--accent);color:#fff;padding:8px 10px;border-radius:4px;margin-bottom:18px}
-@media (min-width:900px){.hero__media::after{background:linear-gradient(90deg,#0a1834 0%,rgba(10,24,52,0) 22%)}.hero h1{font-size:clamp(2.6rem,4.4vw,4.3rem)}.hero .promise{max-width:40ch}}
-.strip{background:var(--accent);color:#fff}
-.strip .wrap{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding-block:26px}
-@media (min-width:900px){.strip .wrap{grid-template-columns:repeat(4,1fr);padding-block:30px}}
-.strip b{display:block;font:800 clamp(1.5rem,6vw,2.2rem)/1 var(--f-disp);letter-spacing:-.01em}
-.strip span{font-size:.86rem;opacity:.92}
-.split{display:grid;gap:10px}
-@media (min-width:900px){.split{grid-template-columns:1fr 1fr;gap:56px;align-items:end}}
-.facts .n{color:var(--ink)}
-.facts > div{border-top:3px solid var(--accent);padding-top:12px}
+/* Eleva 25: acento laranja. Só acento pontual e enquadramento do hero; todo o resto vem de assets/lp3.css (design.md). */
+:root{--emp:#d9622b;--hero-pos:center 18%}
 </style>
 </head>
 <body data-emp="eleva-25" data-emp-nome="Eleva 25">
@@ -108,7 +82,7 @@
           <h3>3 quartos · 71 m²</h3>
           <ul><li><b>3</b> quartos</li><li><b>1</b> suíte</li><li>terraço</li><li>plantas de 68 a 73 m²</li></ul>
           <div class="plan__p"><span class="k">referência Apto · tabela de 05/08/2026</span><div class="v">R$ 955.553</div></div>
-          <a class="btn btn--accent" data-wa data-wa-id="planta-71" data-wa-msg="Olá Vitor! Quero a tabela e o fluxo do apartamento de 71 m² do Eleva 25.">Quero a tabela do 71 m²</a>
+          <a class="btn btn--primary" data-wa data-wa-id="planta-71" data-wa-msg="Olá Vitor! Quero a tabela e o fluxo do apartamento de 71 m² do Eleva 25.">Quero a tabela do 71 m²</a>
         </div>
       </article>
       <article class="plan reveal">
@@ -136,12 +110,12 @@
       <div class="reveal"><h3>Viu "a partir de R$ 709.796"?</h3><p>Esse número está na página da Terral, mas sem dizer a unidade nem a data. Não use como preço de 3 quartos. Há também compactos de 2 quartos (cerca de 45 m²) e coberturas de 133 e 172 m², sem valor público: pergunte.</p></div>
       <div class="reveal"><h3>O que só a tabela mostra</h3><p>Sinal, quanto de FGTS entra, número e valor das mensais e semestrais, saldo nas chaves, índice de correção e as unidades livres por andar.</p></div>
     </div>
-    <p class="fine reveal" style="margin-top:14px">Vagas variam por unidade. Valores sujeitos a alteração e à disponibilidade.</p>
+    <p class="fine note reveal">Vagas variam por unidade. Valores sujeitos a alteração e à disponibilidade.</p>
   </div>
 </section>
 
 <!-- 3. LOCALIZAÇÃO: argumento principal do Eleva, sobe para logo depois das plantas -->
-<section class="sec" id="localizacao" style="padding-top:0" data-sec="localizacao">
+<section class="sec sec--flush" id="localizacao" data-sec="localizacao">
   <div class="wrap loc">
     <div>
       <span class="kicker reveal">Localização</span>
@@ -152,18 +126,18 @@
         <li><span class="d">8 min</span><div><b>Parque de Águas Claras</b><span>segundo o site do lançamento (sem informar se a pé ou de carro)</span></div></li>
         <li><span class="d">Lote 18</span><div><b>Rua 25 Sul, Águas Claras</b><span>Brasília · DF</span></div></li>
       </ul>
-      <a class="btn btn--wa" style="margin-top:24px" data-wa data-wa-id="loc-visita" data-wa-msg="Olá Vitor! Quero agendar uma visita ao decorado do Eleva 25.">{{WA}}Agendar visita ao decorado</a>
+      <div class="btnrow"><a class="btn btn--wa" data-wa data-wa-id="loc-visita" data-wa-msg="Olá Vitor! Quero agendar uma visita ao decorado do Eleva 25.">{{WA}}Agendar visita ao decorado</a></div>
     </div>
     <div class="map reveal"><iframe title="Mapa: Rua 25 Sul, Águas Claras" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Rua+25+Sul,+%C3%81guas+Claras,+Bras%C3%ADlia+-+DF&amp;z=16&amp;output=embed"></iframe></div>
   </div>
 </section>
 
 <!-- 4. CAPTURA 1: 3 campos, contrapartida concreta (padrão 5) -->
-<section class="sec" id="receber-tabela" style="padding-top:0" data-sec="captura-1">
+<section class="sec sec--flush" id="receber-tabela" data-sec="captura-1">
   <div class="wrap">
     <div class="cap reveal">
       <div>
-        <span class="kicker" style="color:var(--price-ink)">Tabela do Eleva 25</span>
+        <span class="kicker kicker--dark">Tabela do Eleva 25</span>
         <h2>Receba a tabela com o fluxo de pagamento.</h2>
         <p class="l">Eu te mando no WhatsApp a tabela vigente da planta que você escolher, com as unidades que ainda estão livres.</p>
         <ul class="gives"><li>Tabela com sinal, mensais e semestrais</li><li>Unidades livres por andar e posição</li><li>Simulação com a sua entrada e o seu FGTS</li></ul>
@@ -176,7 +150,7 @@
             <select name="interesse"><option>3 quartos · 71 m²</option><option>3 quartos · 77 m²</option><option>3 quartos · 91 m²</option><option>2 quartos compacto</option><option>Cobertura</option><option>Ainda não sei</option></select></label>
           <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <p class="cap-err" hidden></p>
-          <button class="btn btn--accent btn--block" type="submit">Quero a tabela com o fluxo</button>
+          <button class="btn btn--primary btn--block" type="submit">Quero a tabela com o fluxo</button>
           <p class="fine">Seus dados vão só para o Vitor te enviar a tabela do Eleva 25. Sem spam.</p>
         </form>
         <div class="cap-done" hidden>
@@ -190,7 +164,7 @@
 </section>
 
 <!-- 5. PRODUTO EM IMAGENS: perspectivas oficiais da Terral -->
-<section class="sec" id="por-dentro" style="padding-top:0" data-sec="galeria">
+<section class="sec sec--flush" id="por-dentro" data-sec="galeria">
   <div class="wrap">
     <div class="split">
       <div><span class="kicker reveal">O prédio</span>
@@ -198,16 +172,16 @@
       <p class="lead reveal">Skypool com raia de 32 m, skygym e rooftop com a vista de Águas Claras; beach side, quadra, coworking e cinema nos outros pavimentos.</p>
     </div>
     <div class="rail">
-      <figure class="wide" style="--ar:16/9" data-full="img/v3/r-skypool-lg.webp"><img data-v3="r-skypool" alt="Skypool no 11º andar com deck e espreguiçadeiras" sizes="(min-width:900px) 50vw, 82vw"><figcaption>Skypool · 11º andar</figcaption></figure>
-      <figure style="--ar:16/9" data-full="img/v3/r-skygym-lg.webp"><img data-v3="r-skygym" alt="Skygym com pé-direito duplo e janelas de vidro" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Skygym</figcaption></figure>
-      <figure style="--ar:16/9" data-full="img/v3/r-beach-lg.webp"><img data-v3="r-beach" alt="Piscina beach side com prainha" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Beach side</figcaption></figure>
-      <figure style="--ar:16/9" data-full="img/v3/r-living-c-lg.webp"><img data-v3="r-living-c" alt="Living integrado de apartamento de 3 quartos" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Apartamento · living</figcaption></figure>
-      <figure style="--ar:16/9" data-full="img/v3/r-salao-lg.webp"><img data-v3="r-salao" alt="Salão de festas" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Salão de festas</figcaption></figure>
-      <figure style="--ar:16/9" data-full="img/v3/r-coworking-lg.webp"><img data-v3="r-coworking" alt="Coworking com mesas e vista para o jardim" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Coworking</figcaption></figure>
-      <figure style="--ar:16/9" data-full="img/v3/r-quadra-lg.webp"><img data-v3="r-quadra" alt="Quadra e piscina vistas de cima" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Quadra</figcaption></figure>
-      <figure class="wide" style="--ar:16/9" data-full="img/v3/r-garagem-eletrico-lg.webp"><img data-v3="r-garagem-eletrico" alt="Garagem com vagas e carregadores de carro elétrico" sizes="(min-width:900px) 50vw, 82vw"><figcaption>Garagem com carregadores</figcaption></figure>
-      <figure style="--ar:16/9" data-full="img/v3/r-cinema-lg.webp"><img data-v3="r-cinema" alt="Cine club" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Cine club</figcaption></figure>
-      <figure style="--ar:16/9" data-full="img/v3/r-aerea-lg.webp"><img data-v3="r-aerea" alt="Vista aérea do pátio de lazer entre as torres" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Pátio entre as torres</figcaption></figure>
+      <figure class="wide land" data-full="img/v3/r-skypool-lg.webp"><img data-v3="r-skypool" alt="Skypool no 11º andar com deck e espreguiçadeiras" sizes="(min-width:900px) 50vw, 82vw"><figcaption>Skypool · 11º andar</figcaption></figure>
+      <figure class="land" data-full="img/v3/r-skygym-lg.webp"><img data-v3="r-skygym" alt="Skygym com pé-direito duplo e janelas de vidro" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Skygym</figcaption></figure>
+      <figure class="land" data-full="img/v3/r-beach-lg.webp"><img data-v3="r-beach" alt="Piscina beach side com prainha" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Beach side</figcaption></figure>
+      <figure class="land" data-full="img/v3/r-living-c-lg.webp"><img data-v3="r-living-c" alt="Living integrado de apartamento de 3 quartos" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Apartamento · living</figcaption></figure>
+      <figure class="land" data-full="img/v3/r-salao-lg.webp"><img data-v3="r-salao" alt="Salão de festas" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Salão de festas</figcaption></figure>
+      <figure class="land" data-full="img/v3/r-coworking-lg.webp"><img data-v3="r-coworking" alt="Coworking com mesas e vista para o jardim" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Coworking</figcaption></figure>
+      <figure class="land" data-full="img/v3/r-quadra-lg.webp"><img data-v3="r-quadra" alt="Quadra e piscina vistas de cima" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Quadra</figcaption></figure>
+      <figure class="wide land" data-full="img/v3/r-garagem-eletrico-lg.webp"><img data-v3="r-garagem-eletrico" alt="Garagem com vagas e carregadores de carro elétrico" sizes="(min-width:900px) 50vw, 82vw"><figcaption>Garagem com carregadores</figcaption></figure>
+      <figure class="land" data-full="img/v3/r-cinema-lg.webp"><img data-v3="r-cinema" alt="Cine club" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Cine club</figcaption></figure>
+      <figure class="land" data-full="img/v3/r-aerea-lg.webp"><img data-v3="r-aerea" alt="Vista aérea do pátio de lazer entre as torres" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Pátio entre as torres</figcaption></figure>
     </div>
     <p class="hint">Arraste para o lado →</p>
     <div class="facts reveal">
@@ -216,16 +190,16 @@
       <div><div class="n">90×90</div><div class="t">porcelanato, paredes acústicas e fechadura eletrônica</div></div>
       <div><div class="n">Elétrico</div><div class="t">carro compartilhado, bikes e vagas com carregador</div></div>
     </div>
-    <p class="fine reveal" style="margin-top:16px">Perspectivas artísticas da Terral (terralincorporadora.com.br), ilustrativas. Mobiliário e decoração não fazem parte da unidade; vale o memorial descritivo. O decorado de 3 quartos você conhece na visita.</p>
+    <p class="fine note reveal">Perspectivas artísticas da Terral (terralincorporadora.com.br), ilustrativas. Mobiliário e decoração não fazem parte da unidade; vale o memorial descritivo. O decorado de 3 quartos você conhece na visita.</p>
   </div>
 </section>
 
 <!-- 6. DÚVIDAS + QUEM ATENDE (padrão 7) -->
-<section class="sec" id="duvidas" style="padding-top:0" data-sec="faq">
+<section class="sec sec--flush" id="duvidas" data-sec="faq">
   <div class="wrap duo">
     <div>
       <span class="kicker reveal">Dúvidas de quem está decidindo</span>
-      <h2 class="h2 reveal" style="margin-bottom:12px">Antes de pedir a tabela</h2>
+      <h2 class="h2 reveal">Antes de pedir a tabela</h2>
       <details class="reveal"><summary>Quando entrega?</summary><p>As fontes divergem: anúncios falam em maio de 2027 e um portal em outubro de 2028; a Terral não publica a data na página. A data que vale é a do contrato, e eu te mostro antes de qualquer proposta.</p></details>
       <details class="reveal"><summary>Existe opção mais barata que o 3 quartos?</summary><p>A Terral divulga compactos de 2 quartos, de cerca de 45 m², e um "a partir de R$ 709.796" sem dizer a unidade. Eu confirmo na tabela qual unidade é e se ainda está disponível.</p></details>
       <details class="reveal"><summary>Dá para usar FGTS e financiar o saldo?</summary><p>Em geral, sim: o FGTS entra na composição e o saldo das chaves pode ser financiado no banco. Quanto entra e quando depende da tabela vigente; eu faço a conta com os seus números.</p></details>
@@ -243,11 +217,11 @@
 </section>
 
 <!-- 7. CAPTURA 2: visita ao decorado -->
-<section class="sec" id="visita" style="padding-top:0" data-sec="captura-2">
+<section class="sec sec--flush" id="visita" data-sec="captura-2">
   <div class="wrap">
     <div class="cap reveal">
       <div>
-        <span class="kicker" style="color:var(--price-ink)">Visita ao decorado</span>
+        <span class="kicker kicker--dark">Visita ao decorado</span>
         <h2>Quer ver de perto? Eu marco com você.</h2>
         <p class="l">Visitar é a forma mais rápida de sentir o tamanho do apartamento e a distância até o metrô.</p>
         <ul class="gives"><li>Visita acompanhada, no seu horário</li><li>Tabela atualizada em mãos na hora</li></ul>
@@ -260,7 +234,7 @@
             <select name="interesse"><option>Visita ao decorado · dia útil</option><option>Visita ao decorado · fim de semana</option><option>Antes quero receber a tabela</option></select></label>
           <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <p class="cap-err" hidden></p>
-          <button class="btn btn--accent btn--block" type="submit">Quero visitar o decorado</button>
+          <button class="btn btn--primary btn--block" type="submit">Quero visitar o decorado</button>
           <p class="fine">Seus dados vão só para o Vitor combinar a visita. Sem spam.</p>
         </form>
         <div class="cap-done" hidden>

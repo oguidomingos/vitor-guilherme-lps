@@ -4,8 +4,10 @@ Páginas estáticas. As duas LPs de lançamento foram **reconstruídas em 20/10/
 
 | LP | URL | Fonte | Identidade |
 |---|---|---|---|
-| Versat Home Resort (Villela e Carvalho, Rua Copaíba, Águas Claras Sul) | https://vitorguilhermeimoveis.com.br/versat/ | `src/versat.html` | verde-floresta, areia e cobre · Fraunces + Figtree · imagens em arco |
-| Eleva 25 (Terral, Rua 25 Sul, Águas Claras) | https://vitorguilhermeimoveis.com.br/eleva-25/ | `src/eleva-25.html` | marinho e laranja · Archivo largo + Inter Tight · cantos retos |
+| Versat Home Resort (Villela e Carvalho, Rua Copaíba, Águas Claras Sul) | https://vitorguilhermeimoveis.com.br/versat/ | `src/versat.html` | identidade do Vitor; acento `--emp` verde-floresta |
+| Eleva 25 (Terral, Rua 25 Sul, Águas Claras) | https://vitorguilhermeimoveis.com.br/eleva-25/ | `src/eleva-25.html` | identidade do Vitor; acento `--emp` laranja |
+
+**Identidade visual (SSOT): `design.md`.** As duas LPs usam o mesmo sistema (`assets/lp3.css`): Playfair Display + Inter, ink / cream / bronze, mesmos componentes. A página só define `--emp` (acento pontual do empreendimento) e `--hero-pos`.
 
 Leia primeiro: **`relatorio/RELATORIO.md`** (o que mudou, antes/depois, pendências), `benchmarking.md` (de onde saiu a estrutura) e `auditoria-imagens.md` (imagem por imagem).
 

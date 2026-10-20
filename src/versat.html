@@ -17,35 +17,11 @@
 <link rel="preload" as="image" href="img/v3/r-complexo-aquatico-sm.webp" imagesrcset="img/v3/r-complexo-aquatico-sm.webp 720w, img/v3/r-complexo-aquatico-lg.webp 1440w" imagesizes="(min-width:900px) 55vw, 100vw" fetchpriority="high" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="../assets/lp3.css?v=20261020e" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/lp3.css?v=20261020f" />
 <style>
-/* Versat: verde-floresta, areia e cobre. Serifa suave (Fraunces) + sans redonda (Figtree). Arcos de resort. */
-:root{
-  --bg:#f3ede2; --ink:#14271f; --muted:#5a665f; --line:rgba(20,39,31,.14); --card:#fbf8f2; --soft:#ebe3d4;
-  --accent:#a65a2a; --accent-2:#2f5a46; --on-accent:#fff;
-  --f-disp:'Fraunces',Georgia,serif; --f-body:'Figtree',system-ui,sans-serif; --w-disp:600;
-  --hero-bg:#0f2a22; --hero-ink:#f3ede2; --hero-pos:center 40%; --price-ink:#e9b98a;
-  --hero-scrim:linear-gradient(180deg,rgba(15,42,34,.45) 0%,rgba(15,42,34,0) 30%,rgba(15,42,34,0) 62%,#0f2a22 100%);
-  --chip-bg:rgba(243,237,226,.08); --chip-line:rgba(243,237,226,.22); --r-chip:999px;
-  --r-btn:999px; --r-card:22px; --r-cap:28px;
-  --cap-bg:#0f2a22; --cap-ink:#f3ede2; --form-bg:#f3ede2;
-  --top-bg:rgba(243,237,226,.9); --foot-bg:#0b201a; --foot-ink:#d9d2c3; --mbar-bg:#0f2a22;
-}
-.hero h1 em{font-style:italic;color:var(--price-ink)}
-.h2 em{font-style:italic;color:var(--accent)}
-.badge{display:inline-flex;align-items:center;gap:8px;font:700 .72rem/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--price-ink);margin-bottom:16px}
-.badge::before{content:"";width:28px;height:1.5px;background:currentColor}
-@media (min-width:900px){
-  .hero__media{margin:104px 40px 40px 0;border-radius:520px 520px 28px 28px}
-  .hero__media::after{background:linear-gradient(180deg,rgba(15,42,34,0) 60%,rgba(15,42,34,.35))}
-}
-.rail figure{border-radius:200px 200px 18px 18px}
-.rail figure.land{border-radius:18px}
-.plan__img{border-radius:0}
-.facts{padding:28px 22px;border-radius:var(--r-card);background:var(--soft)}
-.split{display:grid;gap:10px}
-@media (min-width:900px){.split{grid-template-columns:1fr 1fr;gap:56px;align-items:end}}
+/* Versat: acento verde-floresta. Só acento pontual e enquadramento do hero; todo o resto vem de assets/lp3.css (design.md). */
+:root{--emp:#3f6b55;--hero-pos:center 40%}
 </style>
 </head>
 <body data-emp="versat" data-emp-nome="Versat Home Resort">
@@ -107,7 +83,7 @@
           <h3>3 quartos · 108 m²</h3>
           <ul><li><b>3</b> quartos</li><li><b>1</b> suíte</li><li>varanda gourmet</li><li>vaga a confirmar</li></ul>
           <div class="plan__p"><span class="k">referência Apto · tabela de 16/10/2026</span><div class="v">R$ 1.395.582,37</div></div>
-          <a class="btn btn--accent" data-wa data-wa-id="planta-108" data-wa-msg="Olá Vitor! Quero a tabela e o fluxo do apartamento de 108 m² do Versat Home Resort.">Quero a tabela do 108 m²</a>
+          <a class="btn btn--primary" data-wa data-wa-id="planta-108" data-wa-msg="Olá Vitor! Quero a tabela e o fluxo do apartamento de 108 m² do Versat Home Resort.">Quero a tabela do 108 m²</a>
         </div>
       </article>
       <article class="plan reveal">
@@ -125,16 +101,16 @@
       <div class="reveal"><h3>O que já dá para saber</h3><p>Faixa de valor por metragem (acima) e entrega prevista para dezembro de 2028 (portal Apto; a data contratual está no contrato).</p></div>
       <div class="reveal"><h3>O que só a tabela mostra</h3><p>Sinal, quanto de FGTS entra, número e valor das mensais e semestrais, saldo nas chaves, índice de correção e as unidades livres por andar. Muda com o tempo, por isso não está em portal.</p></div>
     </div>
-    <p class="fine reveal" style="margin-top:14px">Metragens exatas e número de vagas variam por unidade; as fontes públicas divergem entre 1 e 2 vagas no 108 m². Valores sujeitos a alteração e à disponibilidade.</p>
+    <p class="fine note reveal">Metragens exatas e número de vagas variam por unidade; as fontes públicas divergem entre 1 e 2 vagas no 108 m². Valores sujeitos a alteração e à disponibilidade.</p>
   </div>
 </section>
 
 <!-- 3. CAPTURA 1: 3 campos, contrapartida concreta (padrão 5) -->
-<section class="sec" id="receber-tabela" style="padding-top:0" data-sec="captura-1">
+<section class="sec sec--flush" id="receber-tabela" data-sec="captura-1">
   <div class="wrap">
     <div class="cap reveal">
       <div>
-        <span class="kicker" style="color:var(--price-ink)">Tabela do Versat</span>
+        <span class="kicker kicker--dark">Tabela do Versat</span>
         <h2>Receba a tabela com o fluxo de pagamento da planta que você quer.</h2>
         <p class="l">Eu te mando no WhatsApp, sem cadastro em site de construtora e sem fila de atendimento.</p>
         <ul class="gives"><li>Tabela da planta, com sinal, mensais e semestrais</li><li>Unidades livres por andar, hoje</li><li>Simulação com a sua entrada e o seu FGTS</li></ul>
@@ -147,7 +123,7 @@
             <select name="interesse"><option>3 quartos · 95 m²</option><option>3 quartos · 108 m²</option><option>Garden</option><option>Penthouse · 210 m²</option><option>Ainda não sei</option></select></label>
           <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <p class="cap-err" hidden></p>
-          <button class="btn btn--accent btn--block" type="submit">Quero a tabela com o fluxo</button>
+          <button class="btn btn--primary btn--block" type="submit">Quero a tabela com o fluxo</button>
           <p class="fine">Seus dados vão só para o Vitor te enviar a tabela do Versat. Sem spam.</p>
         </form>
         <div class="cap-done" hidden>
@@ -161,7 +137,7 @@
 </section>
 
 <!-- 4. PRODUTO EM IMAGENS: decorado primeiro, depois o clube -->
-<section class="sec" id="por-dentro" style="padding-top:0" data-sec="galeria">
+<section class="sec sec--flush" id="por-dentro" data-sec="galeria">
   <div class="wrap">
     <div class="split">
       <div><span class="kicker reveal">O apartamento decorado</span>
@@ -186,22 +162,22 @@
     </div>
 
     <div class="rail">
-      <figure class="wide land" style="--ar:16/10" data-full="img/v3/r-piscina-lg.webp"><img data-v3="r-piscina" alt="Piscina adulto com deck e vista ao entardecer" sizes="(min-width:900px) 50vw, 82vw"><figcaption>Piscina adulto</figcaption></figure>
+      <figure class="wide land" data-full="img/v3/r-piscina-lg.webp"><img data-v3="r-piscina" alt="Piscina adulto com deck e vista ao entardecer" sizes="(min-width:900px) 50vw, 82vw"><figcaption>Piscina adulto</figcaption></figure>
       <figure class="land" data-full="img/v3/r-gourmet-lg.webp"><img data-v3="r-gourmet" alt="Espaço gourmet com sala de estar e mesa de jantar" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Espaço gourmet</figcaption></figure>
       <figure class="land" data-full="img/v3/r-fitness-lg.webp"><img data-v3="r-fitness" alt="Academia com equipamentos e vista para o jardim" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Fitness</figcaption></figure>
       <figure class="land" data-full="img/v3/r-spa-lg.webp"><img data-v3="r-spa" alt="Spa com hidromassagem" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Spa</figcaption></figure>
       <figure class="land" data-full="img/v3/r-terraco-gourmet-lg.webp"><img data-v3="r-terraco-gourmet" alt="Terraço gourmet com ombrelone e poltronas" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Terraço gourmet</figcaption></figure>
       <figure class="land" data-full="img/v3/r-piscina-infantil-lg.webp"><img data-v3="r-piscina-infantil" alt="Piscina infantil iluminada" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Piscina infantil</figcaption></figure>
       <figure class="land" data-full="img/v3/r-pet-lg.webp"><img data-v3="r-pet" alt="Pet place com gramado e brinquedos" sizes="(min-width:900px) 25vw, 82vw"><figcaption>Pet place</figcaption></figure>
-      <figure class="wide land" style="--ar:16/10" data-full="img/v3/r-fachada-noite-lg.webp"><img data-v3="r-fachada-noite" alt="Fachada do Versat Home Resort à noite" sizes="(min-width:900px) 50vw, 82vw" style="object-position:center 35%"><figcaption>Fachada</figcaption></figure>
+      <figure class="wide land" data-full="img/v3/r-fachada-noite-lg.webp"><img data-v3="r-fachada-noite" alt="Fachada do Versat Home Resort à noite" sizes="(min-width:900px) 50vw, 82vw" style="object-position:center 35%"><figcaption>Fachada</figcaption></figure>
     </div>
     <p class="hint">Arraste para o lado →</p>
-    <p class="fine reveal" style="margin-top:16px">Fotos do apartamento decorado e perspectivas artísticas da incorporação (versathomeresort.com.br), ilustrativas. Mobiliário e decoração não fazem parte da unidade; vale o memorial descritivo.</p>
+    <p class="fine note reveal">Fotos do apartamento decorado e perspectivas artísticas da incorporação (versathomeresort.com.br), ilustrativas. Mobiliário e decoração não fazem parte da unidade; vale o memorial descritivo.</p>
   </div>
 </section>
 
 <!-- 5. LOCALIZAÇÃO -->
-<section class="sec" id="localizacao" style="padding-top:0" data-sec="localizacao">
+<section class="sec sec--flush" id="localizacao" data-sec="localizacao">
   <div class="wrap loc">
     <div>
       <span class="kicker reveal">Localização</span>
@@ -211,7 +187,7 @@
         <li><span class="d">EPTG</span><div><b>Saída para o Plano Piloto</b><span>pela EPTG, sem atravessar Águas Claras</span></div></li>
         <li><span class="d">Perto</span><div><b>Águas Claras Shopping e DF Plaza</b><span>comércio, escolas e serviços do dia a dia</span></div></li>
       </ul>
-      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:24px">
+      <div class="btnrow">
         <a class="btn btn--wa" data-wa data-wa-id="loc-visita" data-wa-msg="Olá Vitor! Quero agendar uma visita ao decorado do Versat Home Resort.">{{WA}}Agendar visita ao decorado</a>
         <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Copa%C3%ADba+%C3%81guas+Claras+Bras%C3%ADlia+DF" target="_blank" rel="noopener">Abrir no Google Maps</a>
       </div>
@@ -221,11 +197,11 @@
 </section>
 
 <!-- 6. DÚVIDAS + QUEM ATENDE (padrão 7) -->
-<section class="sec" id="duvidas" style="padding-top:0" data-sec="faq">
+<section class="sec sec--flush" id="duvidas" data-sec="faq">
   <div class="wrap duo">
     <div>
       <span class="kicker reveal">Dúvidas de quem está decidindo</span>
-      <h2 class="h2 reveal" style="margin-bottom:12px">Antes de pedir a tabela</h2>
+      <h2 class="h2 reveal">Antes de pedir a tabela</h2>
       <details class="reveal"><summary>Quando entrega?</summary><p>A previsão pública é dezembro de 2028 (portal Apto). A data que vale é a do contrato, e eu te mostro antes de qualquer proposta.</p></details>
       <details class="reveal"><summary>Dá para usar FGTS e financiar o saldo?</summary><p>Em geral, sim: o FGTS entra na composição e o saldo das chaves pode ser financiado no banco. Quanto entra e quando depende da tabela vigente; eu faço a conta com os seus números.</p></details>
       <details class="reveal"><summary>Quantas vagas tem cada apartamento?</summary><p>O 95 m² tem 1 vaga com infraestrutura de recarga elétrica; a penthouse, 3. No 108 m² as fontes divergem entre 1 e 2: a tabela por unidade confirma.</p></details>
@@ -243,11 +219,11 @@
 </section>
 
 <!-- 7. CAPTURA 2: visita ao decorado -->
-<section class="sec" id="visita" style="padding-top:0" data-sec="captura-2">
+<section class="sec sec--flush" id="visita" data-sec="captura-2">
   <div class="wrap">
     <div class="cap reveal">
       <div>
-        <span class="kicker" style="color:var(--price-ink)">Visita ao decorado</span>
+        <span class="kicker kicker--dark">Visita ao decorado</span>
         <h2>Prefere ver de perto? Eu marco o horário com você.</h2>
         <p class="l">Ver o decorado é a forma mais rápida de saber se o Versat é o seu lugar.</p>
         <ul class="gives"><li>Visita acompanhada, no seu horário</li><li>Tabela atualizada em mãos na hora</li></ul>
@@ -260,7 +236,7 @@
             <select name="interesse"><option>Visita ao decorado · dia útil</option><option>Visita ao decorado · fim de semana</option><option>Antes quero receber a tabela</option></select></label>
           <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <p class="cap-err" hidden></p>
-          <button class="btn btn--accent btn--block" type="submit">Quero visitar o decorado</button>
+          <button class="btn btn--primary btn--block" type="submit">Quero visitar o decorado</button>
           <p class="fine">Seus dados vão só para o Vitor combinar a visita. Sem spam.</p>
         </form>
         <div class="cap-done" hidden>
