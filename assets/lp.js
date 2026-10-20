@@ -181,6 +181,12 @@
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") lb.classList.remove("open"); });
   }
 
+  // Barra fixa de WhatsApp (celular): some enquanto o botão do hero está visível, para não duplicar.
+  var mbar = document.querySelector(".mbar"), heroCta = document.querySelector(".hero .actions");
+  if (mbar && heroCta && "IntersectionObserver" in window) {
+    new IntersectionObserver(function (es) { mbar.classList.toggle("is-hidden", es[0].isIntersecting); }).observe(heroCta);
+  }
+
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = new Date().getFullYear();
 })();

@@ -1,23 +1,26 @@
 # LPs do corretor Vitor Guilherme
 
-Páginas estáticas (sem build). Este README cobre as duas LPs de lançamento reestruturadas em 20/10/2026:
+Páginas estáticas. As duas LPs de lançamento foram **reconstruídas em 20/10/2026 (versão 3)** e estão no ar:
 
-| LP | Pasta | Identidade |
-|---|---|---|
-| Versat Home Resort (Villela e Carvalho, Rua Copaíba, Águas Claras Sul) | `versat/` | verde-floresta, areia e cobre · Cormorant Garamond + Hanken Grotesk · imagens em arco |
-| Eleva 25 (Terral, Rua 25 Sul, Águas Claras) | `eleva-25/` | marinho/céu e laranja · Bricolage Grotesque + Instrument Sans · cantos generosos |
+| LP | URL | Fonte | Identidade |
+|---|---|---|---|
+| Versat Home Resort (Villela e Carvalho, Rua Copaíba, Águas Claras Sul) | https://vitorguilhermeimoveis.com.br/versat/ | `src/versat.html` | verde-floresta, areia e cobre · Fraunces + Figtree · imagens em arco |
+| Eleva 25 (Terral, Rua 25 Sul, Águas Claras) | https://vitorguilhermeimoveis.com.br/eleva-25/ | `src/eleva-25.html` | marinho e laranja · Archivo largo + Inter Tight · cantos retos |
 
-Arquivos compartilhados: `assets/lp.css` (só estrutura), `assets/lp.js` (tracking, registro de cliques, captura). As outras LPs da pasta continuam usando `assets/app.js` (com modal) e não foram alteradas.
+Leia primeiro: **`relatorio/RELATORIO.md`** (o que mudou, antes/depois, pendências), `benchmarking.md` (de onde saiu a estrutura) e `auditoria-imagens.md` (imagem por imagem).
 
-## O que mudou
+## Como editar e publicar
 
-- **Modal removido.** Todo botão de WhatsApp é um link direto `wa.me` (funciona até sem JavaScript). Não existe mais nenhum bloqueio antes da leitura.
-- **Cliques 100% registrados** mesmo sem modal (ver "Relatório para o Vitor").
-- **Captura no meio e no fim**, depois do conteúdo de valor: bloco 1 logo após plantas, valores e "como funciona o pagamento" (contrapartida: tabela com sinal e parcelas); bloco 2 no fim (contrapartida: visita ao decorado). Nome + WhatsApp + planta de interesse, com aviso de uso dos dados.
-- **Narrativa linear** no formato da LP do Leandro (`oguidomingos/leandro-mrv-torres-do-poente-lp`): hero → faixa de dados → sobre → galeria → plantas e valores → condições → captura → localização → dúvidas → corretor → captura → rodapé. Tom próximo, foco em quem decide.
-- **Sem a marca da assessoria** e sem nomes de empresas ligadas à antiga sociedade (verificado por grep nos arquivos novos).
-- **Preços corrigidos e com fonte** (tabela abaixo). Removido o "a partir de R$ 709.796" do Eleva.
-- Rodapé com nome e CRECI do Vitor: **dados não existem no repo**, ficam como placeholder amarelo visível (ver pendências).
+1. Editar `src/<lp>.html` (imagem: `<img data-v3="nome" alt="..." sizes="...">`, arquivos em `<lp>/img/v3/nome-{sm,lg}.webp`).
+2. `python3 scripts/build_lps.py` gera `versat/index.html` e `eleva-25/index.html`.
+3. Publicar na Hostinger (conta `u630398133`, `public_html`): upload por arquivo via API (`/api/hosting/v1/files/upload-urls` + TUS, `override=true`). Subir só os arquivos alterados; um deploy de pasta inteira sobrescreve o site todo.
+4. Conferir a URL pública em navegador e commitar (`origin` = `github.com/oguidomingos/vitor-guilherme-lps`, branch `main`).
+
+Compartilhados: `assets/lp3.css` (estrutura), `assets/lp.js` (tracking, registro de cliques, captura, barra fixa). As outras LPs da pasta usam `assets/app.js` e não foram alteradas.
+
+## Estrutura (7 dobras, ver benchmarking.md)
+
+Hero (foto, promessa, chips de metragem, "a partir de" com fonte e data, um botão "Receber tabela e fluxo no WhatsApp") → plantas e valores → captura 1 (3 campos) → produto em imagens → localização → dúvidas + corretor → captura 2 (visita). No Eleva a localização vem logo depois das plantas. Barra fixa de WhatsApp no celular; botão flutuante no desktop. Sem modal: todo botão é `wa.me` direto e todo clique é registrado. Sem a marca da assessoria e sem nomes ligados à antiga sociedade.
 
 ## Relatório para o Vitor (cliques e leads)
 
@@ -128,10 +131,10 @@ Para **cada empreendimento** (Versat e Eleva 25), pedir ao Vitor a tabela comerc
 ## Pendências técnicas e decisões do Guilherme
 
 - **Auto-resposta do logger com preços antigos:** ao receber um lead, o logger manda WhatsApp automático pelo número do Vitor com "a partir de R$ 654.311,14 / 996.885,30" (Eleva) e "R$ 1.146.759,73" (Versat), valores que não batem com esta página. Texto em `infra/vg-lead-logger-server.js` (`EMPREENDIMENTOS`). **Não alterado**: muda mensagem enviada em nome do Vitor. Decidir se atualiza ou remove os valores.
-- **Publicação:** as páginas em `vitorguilhermeimoveis.com.br` são servidas de outro lugar (o repo tem baseline "cópia da box"); falta publicar estes arquivos lá (inclui `assets/lp.css`, `assets/lp.js`, `assets/vitor-320.jpg` e as pastas `img/w/`). Os testes rodaram em servidor local, falando com o logger real.
+- **Publicação:** resolvida em 20/10/2026 (versão 3 no ar, ver `relatorio/RELATORIO.md`). A entrega anterior de 20/10 (5b13615) nunca chegou a ser publicada.
 - **GTM/Google Ads:** o container `GTM-543P3VS8` e a conversão de WhatsApp continuam, agora disparando a cada clique no WhatsApp **e** a cada envio de formulário. Revisar com a BRM se isso duplica conversões.
 - **Medição pelo Meta Pixel:** vem pelo GTM (como antes); confirmar que o evento de clique/lead chega no Meta (`vg_wa_click`, `vg_lead_form` no dataLayer).
-- Plantas técnicas, vídeo do decorado e prova social ainda não estão nas páginas.
+- Plantas técnicas, vídeo do decorado, fotos do decorado do Eleva e prova social ainda não estão nas páginas.
 
 ## Verificação feita em 20/10/2026
 

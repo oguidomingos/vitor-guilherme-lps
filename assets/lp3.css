@@ -156,6 +156,8 @@ footer .legal{font-size:.74rem;opacity:.7;margin-top:14px;max-width:110ch;line-h
 
 /* WhatsApp sempre à mão: barra fixa no celular, botão flutuante no desktop */
 .mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--mbar-bg);box-shadow:0 -10px 30px -12px rgba(0,0,0,.35)}
+.mbar{transition:transform .3s}
+.mbar.is-hidden{transform:translateY(120%)}
 .mbar .btn{width:100%;min-height:52px}
 .fab{display:none}
 @media (min-width:900px){
