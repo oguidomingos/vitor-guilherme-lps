@@ -151,6 +151,10 @@
       send(p, false);
       fireGadsWa();
       push("vg_lead_form", { section: p.section, interesse: interesse });
+      // Evento padrão de Lead (Meta): mesmo event_id nos dois caminhos para o Meta deduplicar.
+      var leadId = p.click_id;
+      try { if (typeof window.fbq === "function") window.fbq("track", "Lead", {}, { eventID: leadId }); } catch (e) {}
+      push("generate_lead", { event_id: leadId, section: p.section });
       form.hidden = true;
       if (done) {
         var nm = done.querySelector("[data-nome]");
@@ -183,8 +187,17 @@
 
   // Barra fixa de WhatsApp (celular): some enquanto o botão do hero está visível, para não duplicar.
   var mbar = document.querySelector(".mbar"), heroCta = document.querySelector(".hero .actions");
-  if (mbar && heroCta && "IntersectionObserver" in window) {
-    new IntersectionObserver(function (es) { mbar.classList.toggle("is-hidden", es[0].isIntersecting); }).observe(heroCta);
+
+  // Barra fixa também some enquanto uma captura está na tela: não cobre o botão de enviar.
+  if (mbar && "IntersectionObserver" in window) {
+    var capsOn = new Set(), heroOn = false;
+    var sync = function () { mbar.classList.toggle("is-hidden", heroOn || capsOn.size > 0); };
+    if (heroCta) new IntersectionObserver(function (es) { heroOn = es[0].isIntersecting; sync(); }).observe(heroCta);
+    var capIo = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) capsOn.add(e.target); else capsOn.delete(e.target); });
+      sync();
+    });
+    document.querySelectorAll("form[data-capture]").forEach(function (f) { capIo.observe(f); });
   }
 
   var y = document.querySelector("[data-year]");

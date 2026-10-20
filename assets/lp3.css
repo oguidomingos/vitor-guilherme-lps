@@ -160,7 +160,10 @@ footer .legal{font-size:.74rem;opacity:.7;margin-top:14px;max-width:110ch;line-h
 .mbar.is-hidden{transform:translateY(120%)}
 .mbar .btn{width:100%;min-height:52px}
 .fab{display:none}
+/* respiro para a barra fixa não cobrir o botão de enviar do formulário */
+.sec[data-sec^="captura"]{padding-bottom:calc(92px + env(safe-area-inset-bottom))}
 @media (min-width:900px){
+  .sec[data-sec^="captura"]{padding-bottom:64px}
   .mbar{display:none}
   .fab{display:inline-flex;position:fixed;right:24px;bottom:24px;z-index:60;min-height:58px;border-radius:999px;box-shadow:0 14px 34px -10px rgba(0,0,0,.45)}
 }
