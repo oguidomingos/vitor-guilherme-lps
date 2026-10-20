@@ -1,0 +1,2927 @@
+{
+ "eleva25aguasclaras": {
+  "slug": "eleva25aguasclaras",
+  "url_req": "https://eleva25aguasclaras.com.br",
+  "ts": "2026-10-20 15:04",
+  "status": 200,
+  "desktop": {
+   "title": "Eleva 25 Águas Claras · Terral | Apartamentos 3 Quartos e Cobertura",
+   "url": "https://eleva25aguasclaras.com.br/",
+   "scrollH": 16443,
+   "docH": 16443,
+   "heads": [
+    {
+     "tag": "H1",
+     "y": 391,
+     "t": "ELEVA 25 ÁGUAS CLARAS"
+    },
+    {
+     "tag": "H2",
+     "y": 1876,
+     "t": "SEU LAZER, ELEVADO."
+    },
+    {
+     "tag": "H2",
+     "y": 5081,
+     "t": "UMA FACHADA QUE CONVERSA COM A CIDADE."
+    },
+    {
+     "tag": "H2",
+     "y": 6007,
+     "t": "A ENERGIA RENOVADA."
+    },
+    {
+     "tag": "H2",
+     "y": 7445,
+     "t": "TREINE COM A VISTA DE ÁGUAS CLARAS."
+    },
+    {
+     "tag": "H2",
+     "y": 8422,
+     "t": "FEITO PARA O SEU DIA A DIA."
+    },
+    {
+     "tag": "H2",
+     "y": 9857,
+     "t": "ESCOLHA O SEU APARTAMENTO."
+    },
+    {
+     "tag": "H2",
+     "y": 10857,
+     "t": "CADA DETALHE, ELEVADO."
+    },
+    {
+     "tag": "H2",
+     "y": 11814,
+     "t": "UM PROJETO ICÔNICO, DE ASSINATURA INTERNACIONAL."
+    },
+    {
+     "tag": "H2",
+     "y": 12490,
+     "t": "A PAISAGEM URBANA SOB UM NOVO PONTO DE VISTA."
+    },
+    {
+     "tag": "H2",
+     "y": 13027,
+     "t": "EM FRENTE A TUDO O QUE IMPORTA."
+    },
+    {
+     "tag": "H2",
+     "y": 13719,
+     "t": "ANDAR POR ANDAR."
+    },
+    {
+     "tag": "H2",
+     "y": 14529,
+     "t": "BEM-ESTAR, TECNOLOGIA E VIDA SUSTENTÁVEL."
+    },
+    {
+     "tag": "H3",
+     "y": 14799,
+     "t": "CERTIFICAÇÃO FITWEL®"
+    },
+    {
+     "tag": "H3",
+     "y": 14799,
+     "t": "SEGURANÇA COM IA"
+    },
+    {
+     "tag": "H3",
+     "y": 14799,
+     "t": "SUSTENTABILIDADE"
+    },
+    {
+     "tag": "H3",
+     "y": 14799,
+     "t": "READY TO LIVE"
+    },
+    {
+     "tag": "H3",
+     "y": 15165,
+     "t": "MOBILIDADE ELÉTRICA"
+    },
+    {
+     "tag": "H2",
+     "y": 15462,
+     "t": "PRONTO PARA ELEVAR?"
+    }
+   ],
+   "wa": [
+    {
+     "t": "Agendar visita",
+     "href": "https://wa.me/5561993515758?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20ao%20Eleva%2025.",
+     "y": 658,
+     "fixed": true,
+     "visible": true
+    },
+    {
+     "t": "Fale com um corretor",
+     "href": "https://wa.me/5561993515758?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Eleva%2025%20e%20quero%20falar%20com%20um%20corretor.",
+     "y": 658,
+     "fixed": true,
+     "visible": true
+    },
+    {
+     "t": "Agendar visita",
+     "href": "https://wa.me/5561993515758?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20ao%20Eleva%2025.",
+     "y": 8701,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "Pedir tabela de valores",
+     "href": "https://wa.me/5561993515758?text=Ol%C3%A1!%20Quero%20a%20tabela%20de%20valores%20e%20plantas%20do%20Eleva%2025.",
+     "y": 10577,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "Falar no WhatsApp",
+     "href": "https://wa.me/5561993515758?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Eleva%2025.%20Pode%20me%20enviar%20plantas%2C%20valores%20e%20condi%C3%A7%C3%B5es%3F",
+     "y": 15666,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "WhatsApp: (61) 99351-5758",
+     "href": "https://wa.me/5561993515758",
+     "y": 16256,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "Falar no WhatsApp",
+     "href": "https://wa.me/5561993515758?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Eleva%2025%20e%20quero%20mais%20informa%C3%A7%C3%B5es.",
+     "y": 720,
+     "fixed": true,
+     "visible": true
+    }
+   ],
+   "ctas": [
+    {
+     "t": "Contato",
+     "y": 16
+    },
+    {
+     "t": "Falar com corretor",
+     "y": 9
+    },
+    {
+     "t": "Agendar visita",
+     "y": 658
+    },
+    {
+     "t": "Fale com um corretor",
+     "y": 658
+    },
+    {
+     "t": "Agendar visita",
+     "y": 8701
+    },
+    {
+     "t": "Pedir tabela de valores",
+     "y": 10577
+    },
+    {
+     "t": "Falar no WhatsApp",
+     "y": 15666
+    },
+    {
+     "t": "WhatsApp: (61) 99351-5758",
+     "y": 16256
+    },
+    {
+     "t": "Falar com corretor",
+     "y": 16144
+    },
+    {
+     "t": "Tabela de valores",
+     "y": 16175
+    },
+    {
+     "t": "Agendar visita",
+     "y": 16206
+    }
+   ],
+   "forms": [
+    {
+     "y": 361,
+     "visible": false,
+     "n": 0,
+     "fields": [],
+     "submit": []
+    }
+   ],
+   "looseInputs": 0,
+   "videos": 1,
+   "vids": [
+    {
+     "y": 2471,
+     "autoplay": false,
+     "src": "https://eleva25aguasclaras.com.br/assets/video/eleva25-lp.mp4"
+    }
+   ],
+   "iframes": [],
+   "ytLinks": 1,
+   "sections": 15,
+   "hero": [
+    "Lazer",
+    "Destaques",
+    "Plantas",
+    "Localização",
+    "Sobre",
+    "Contato",
+    "LANÇAMENTO TERRAL · 3 QUARTOS · DF",
+    "ÁGUAS CLARAS",
+    "Em frente à estação de metrô de Águas Claras. Apartamentos de 3 quartos e coberturas duplex, de 68 a 172 m². Primeiro do DF com certificação Fitwel®.",
+    "ROLE PARA DESCOBRIR"
+   ],
+   "text": "Lazer\nDestaques\nPlantas\nLocalização\nSobre\nContato\nFalar com corretor\nLANÇAMENTO TERRAL · 3 QUARTOS · DF\nELEVA 25\nÁGUAS CLARAS\n\nEm frente à estação de metrô de Águas Claras. Apartamentos de 3 quartos e coberturas duplex, de 68 a 172 m². Primeiro do DF com certificação Fitwel®.\n\nAgendar visita\nFale com um corretor\nROLE PARA DESCOBRIR\nLAZER MULTINÍVEIS\nSEU LAZER, ELEVADO.\n\nMais de 20 espaços distribuídos por quatro pavimentos temáticos, do térreo ao 11º.\n\nSkypool\nSauna úmida\nSkyGym\nSalão de Festas Gourmet\nChurrasqueiras\nCook Show & Cine Club\nSala de Massagem\nBeauty Care\nPlayground\nQuadra Multiesportes\nCoworking\nPet Place\nArraste para ver as perspectivas\nASSISTA AO FILME\nARQUITETURA · DESTAQUES\nUMA FACHADA QUE CONVERSA COM A CIDADE.\n\nFachada ativa e terraços comerciais que dialogam com a rua. Arquitetura autoral, de assinatura internacional.\n\nFACHADA ATIVA\nÁrea comercial no embasamento que interage com o espaço público de forma harmônica.\nTERRAÇOS COMERCIAIS\nPrivativos, dando exclusividade aos estabelecimentos e qualificando o conceito.\nASSINATURA AUTORAL\nArquitetura internacional que requalifica o espaço urbano do entorno.\nSKYPOOL · 11º PAVIMENTO\nA ENERGIA\nRENOVADA.\n\nO laranja foi a cor escolhida para a piscina com raia de 32 m. Mergulhe, pedale na hidrobike, relaxe na hidromassagem e eleve os seus sentidos, todos os dias.\n\nVer todo o lazer\nSKYGYM · ASSINATURA O2 FITNESS\nTREINE COM A VISTA DE ÁGUAS CLARAS.\n\nAcademia boutique com assinatura da O2 Fitness, no 11º pavimento, com mezanino e fechamento de vidro que privilegia a vista.\n\n192\nm² em dois pavimentos\n11º\npavimento, vista aberta\nO2\nFitness · academia boutique\nVidro\nMezanino e fechamento panorâmico\nINTERIORES\nFEITO PARA\nO SEU DIA A DIA.\n\nDo 3 quartos à cobertura duplex. Plantas pensadas para cada momento da vida.\n\nAgendar visita\nPLANTAS\nESCOLHA O SEU APARTAMENTO.\n\nDo 3 quartos à cobertura duplex. Arraste para explorar.\n\n3Q\n68,78 m²\n3 Quartos · 1 suíte · Torre B\nVer planta →\n3Q\n71,66 m²\n3 Quartos Ponta · Torre B\nVer planta →\n3Q\n76,56 m²\n3 Quartos Meio · Terraço Íntimo · Torre B\nVer planta →\n3Q\n82,92 m²\n3 Quartos Esquina · Terraço · Torre B\nVer planta →\n3Q\n91,45 m²\n3 Quartos Esquina · Terraço Íntimo · Torre B\nVer planta →\nCobertura\n133,42 m²\nCobertura Linear · 2401 · Torre B\nPlanta sob consulta →\nDuplex\n172,81 m²\nCobertura Duplex · 2209 · Torre B\nPlanta sob consulta →\nPedir tabela de valores\nPOR DENTRO\nCADA DETALHE, ELEVADO.\n\nPlantas eficientes e acabamento de alto padrão, pensados para durar e para viver bem.\n\n3\nquartos · 1 suíte\n68-165\nm² · até cobertura duplex\nFitwel®\n1º do Distrito Federal\nAutoral\nArquitetura internacional\nPAREDES SLIM ACÚSTICAS\n20% mais finas, mais área útil, com isolamento sonoro 30% superior ao convencional.\nPORCELANATO 90×90\nPiso de grande formato com acabamento natural e bancadas em granito escovado.\nTERRAÇO GOURMET\nBancada em rocha, cuba e ponto para churrasqueira, a extensão do seu living.\nPREVISÃO DE SPA\nInfraestrutura para spa nas unidades com terraço descoberto.\nPRONTO PARA CLIMATIZAR\nFechadura eletrônica e infraestrutura de ar-condicionado: um ponto por quarto e na sala.\nPLANTAS FLEXÍVEIS\nCômodos com integração e reversibilidade e circulação mínima para o melhor aproveitamento.\n\nVer a ficha técnica completa do Eleva 25\n\nARQUITETURA COM ASSINATURA\nUM PROJETO ICÔNICO, DE ASSINATURA INTERNACIONAL.\n\nProjeto de arquitetura, interiores e áreas comuns da Architects Office, agência liderada por Greg Bousquet, um dos fundadores da Triptyque Architecture, com trajetória premiada pelo mundo.\n\nAo lado da Crosara Arquitetura e do paisagismo autoral de Renata Tilli, o Eleva 25 requalifica o espaço urbano e conversa com a personalidade de quem mora.\n\nL'ARBRE BLANC · Montpellier\nTHE METROPOLITAN · Viena\nVM HOUSES · Copenhagen\nSKYBRIDGE\nA PAISAGEM URBANA SOB UM NOVO PONTO DE VISTA.\n\nUma passarela revestida de vidro nas laterais que vai além de uma simples conexão entre espaços: uma obra de arte funcional, que reúne elegância, modernidade e engenharia sofisticada.\n\nCONTEMPLE A CIDADE QUE ACOLHE.\n\nLOCALIZAÇÃO\nEM FRENTE A TUDO O QUE IMPORTA.\n\nRua 25 Sul, Lote 18 · Águas Claras · DF. A estação de metrô bem à sua frente; shopping, parque e conveniências a poucos minutos a pé.\n\n3 min.\nEstação de metrô Águas Claras\n5 min.\nAv. Jacarandá\n7 min.\nÁguas Claras Shopping\n8 min.\nParque de Águas Claras\nLAZER POR PAVIMENTO\nANDAR POR ANDAR.\n\nAbra cada pavimento para ver todos os espaços.\n\nTÉRREO\nA CHEGADA\n4 espaços\n2º PAVIMENTO\nA PRATICIDADE\n3 espaços\n4º PAVIMENTO\nO ENCONTRO\n10 espaços\n11º PAVIMENTO\nO MOVIMENTO\n8 espaços\n\nPerguntas frequentes sobre o Eleva 25\n\nDIFERENCIAIS\nBEM-ESTAR, TECNOLOGIA\nE VIDA SUSTENTÁVEL.\n1º\nCERTIFICAÇÃO FITWEL®\n\nO primeiro do DF com Fitwel 1 Star: saúde e bem-estar projetados em cada ambiente.\n\nIA\nSEGURANÇA COM IA\nAnálise preditiva e ações preventivas\nPrecisão e otimização da segurança\nMonitoramento constante, sem perda de qualidade\nECO\nSUSTENTABILIDADE\nEnergia fotovoltaica nas áreas comuns\nSensores de presença e iluminação LED\nIrrigação automatizada e bacias de duplo acionamento\nAPP\nREADY TO LIVE\n\nÁreas comuns entregues decoradas e equipadas, com app do condomínio para reserva de espaços e controle de acesso.\n\nMOB\nMOBILIDADE ELÉTRICA\n2\nbicicletas elétricas\n2\npatinetes elétricos\n1\ncarro elétrico compartilhado\n3\nvagas com carregador\nPRONTO PARA ELEVAR?\n\nFale agora com um corretor e receba plantas, valores e condições do lançamento.\n\nFalar no WhatsApp\nResposta em minutos\nImagens meramente ilustrativas. Os acabamentos, móveis, equipamentos e demais objetos de decoração são representativos. Serão entregues pela incorporadora apenas os itens especificados no Memorial Descritivo do Empreendimento. Rua 25 Sul, Lote 18 · Águas Claras · DF. TERRAL 130 DF BETA EMPREENDIMENTOS IMOBILIÁRIOS LTDA., CNPJ/MF nº 40.830.478/0001-63. Memorial de Incorporação registrado sob o R29 junto à Matrícula nº 140.926 do 3º Ofício de Registro de Imóveis do Distrito Federal.\n\nEleve a essência do viver.\n\nEleva 25 Águas Claras\nRua 25 Sul, Lote 18 · Águas Claras\nBrasília · Distrito Federal · CEP 71930-000\n\nWhatsApp: (61) 99351-5758\nEMPREENDIMENTO\nSobre o Eleva 25\nLocalização\nDestaques\nPlantas\nLazer\nTIPOLOGIAS\n3 Quartos · Torre B\nCobertura Linear · 133,42 m²\nCobertura Duplex · 172,81 m²\nCONTATO\nFalar com corretor\nTabela de valores\nAgendar visita\n© 2026 Eleva 25 · Terral. Todos os direitos reservados.\nTerral\nINCORPORADORA\nTerral Vendas\nATENDIMENTO"
+  },
+  "mobile": {
+   "scrollH": 15529,
+   "docH": 15529,
+   "wa": [
+    {
+     "t": "Agendar visita",
+     "href": "https://wa.me/5561993515758?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20ao%20Eleva%2025.",
+     "y": 658,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "Fale com um corretor",
+     "href": "https://wa.me/5561993515758?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Eleva%2025%20e%20quero%20falar%20com%20um%20corretor.",
+     "y": 724,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "Agendar visita",
+     "href": "https://wa.me/5561993515758?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20ao%20Eleva%2025.",
+     "y": 5602,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "Pedir tabela de valores",
+     "href": "https://wa.me/5561993515758?text=Ol%C3%A1!%20Quero%20a%20tabela%20de%20valores%20e%20plantas%20do%20Eleva%2025.",
+     "y": 6734,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "Falar no WhatsApp",
+     "href": "https://wa.me/5561993515758?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Eleva%2025.%20Pode%20me%20enviar%20plantas%2C%20valores%20e%20condi%C3%A7%C3%B5es%3F",
+     "y": 14263,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "WhatsApp: (61) 99351-5758",
+     "href": "https://wa.me/5561993515758",
+     "y": 14946,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "Falar no WhatsApp",
+     "href": "https://wa.me/5561993515758?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Eleva%2025%20e%20quero%20mais%20informa%C3%A7%C3%B5es.",
+     "y": 15459,
+     "fixed": true,
+     "visible": true
+    }
+   ],
+   "forms": [
+    {
+     "y": 15075,
+     "visible": false,
+     "n": 0,
+     "fields": [],
+     "submit": []
+    }
+   ],
+   "sections": 16,
+   "hero": [
+    "LANÇAMENTO TERRAL · 3 QUARTOS · DF",
+    "ÁGUAS CLARAS",
+    "Em frente à estação de metrô de Águas Claras. Apartamentos de 3 quartos e coberturas duplex, de 68 a 172 m². Primeiro do DF com certificação Fitwel®."
+   ],
+   "ctas": [
+    {
+     "t": "Agendar visita",
+     "y": 658
+    },
+    {
+     "t": "Fale com um corretor",
+     "y": 724
+    },
+    {
+     "t": "Agendar visita",
+     "y": 5602
+    },
+    {
+     "t": "Pedir tabela de valores",
+     "y": 6734
+    },
+    {
+     "t": "Falar no WhatsApp",
+     "y": 14263
+    },
+    {
+     "t": "WhatsApp: (61) 99351-5758",
+     "y": 14946
+    },
+    {
+     "t": "Falar com corretor",
+     "y": 15255
+    },
+    {
+     "t": "Tabela de valores",
+     "y": 15286
+    },
+    {
+     "t": "Agendar visita",
+     "y": 15317
+    }
+   ]
+  }
+ },
+ "eleva25sul": {
+  "slug": "eleva25sul",
+  "url_req": "https://eleva25sul.com/",
+  "ts": "2026-10-20 15:05",
+  "error": "Page.goto: net::ERR_NAME_NOT_RESOLVED at https://eleva25sul.com/\nCall log:\n  - navigating to \"https://eleva25sul.com/\", waiting until \"domcontentloaded\"\n"
+ },
+ "eleva25-combr": {
+  "slug": "eleva25-combr",
+  "url_req": "https://eleva25.com.br",
+  "ts": "2026-10-20 15:05",
+  "status": 200,
+  "desktop": {
+   "title": "LP Eleva - E25",
+   "url": "https://eleva25.com.br/",
+   "scrollH": 17312,
+   "docH": 17312,
+   "heads": [
+    {
+     "tag": "H2",
+     "y": 651,
+     "t": "Fitwell"
+    },
+    {
+     "tag": "H2",
+     "y": 683,
+     "t": "Seu Refúgio Particular"
+    },
+    {
+     "tag": "H2",
+     "y": 715,
+     "t": "Plantas"
+    },
+    {
+     "tag": "H2",
+     "y": 747,
+     "t": "Arquitetura Internacional"
+    },
+    {
+     "tag": "H2",
+     "y": 2606,
+     "t": "ACABAMENTO"
+    },
+    {
+     "tag": "H2",
+     "y": 4540,
+     "t": "A SUA ALTURA"
+    },
+    {
+     "tag": "H2",
+     "y": 6525,
+     "t": "PLANTAS"
+    },
+    {
+     "tag": "H2",
+     "y": 6581,
+     "t": "45,52 M²"
+    },
+    {
+     "tag": "H2",
+     "y": 7144,
+     "t": "2Q | 606, 806 E 1006 | TORRE A"
+    },
+    {
+     "tag": "H2",
+     "y": 6581,
+     "t": "45,52 M²"
+    },
+    {
+     "tag": "H2",
+     "y": 7134,
+     "t": "2Q | 605, 805 E 1005 | TORRE A"
+    },
+    {
+     "tag": "H2",
+     "y": 6581,
+     "t": "71,66 M²"
+    },
+    {
+     "tag": "H2",
+     "y": 7399,
+     "t": "3Q PONTA | 1504, 1704, 1904 E 2104 | TORRE B"
+    },
+    {
+     "tag": "H2",
+     "y": 6581,
+     "t": "68,78 M²"
+    },
+    {
+     "tag": "H2",
+     "y": 7105,
+     "t": "3Q | 1510, 1710, 1910 E 2110 | TORRE B"
+    },
+    {
+     "tag": "H2",
+     "y": 6581,
+     "t": "76,97 M²"
+    },
+    {
+     "tag": "H2",
+     "y": 6965,
+     "t": "3Q | 1412, 1612, 1812 E 2012 | TORRE B"
+    },
+    {
+     "tag": "H2",
+     "y": 6581,
+     "t": "91,45M²"
+    },
+    {
+     "tag": "H2",
+     "y": 6982,
+     "t": "3Q ESQUINA | 1201, 1401, 1601, 1801, 2001 E 2201 | TORRE B | TERRAÇO ÍNTIMO"
+    },
+    {
+     "tag": "H2",
+     "y": 6581,
+     "t": "82,92M²"
+    },
+    {
+     "tag": "H2",
+     "y": 6982,
+     "t": "3Q ESQUINA | 501, 701, 901, 1101, 1301, 1501, 1701, 1901, 2101 E 2301 | TORRE B | TERRAÇO"
+    },
+    {
+     "tag": "H2",
+     "y": 6581,
+     "t": "172,81M²"
+    },
+    {
+     "tag": "H2",
+     "y": 6965,
+     "t": "COBERTURA DUPLEX 3Q | 2209 | TORRE B"
+    },
+    {
+     "tag": "H2",
+     "y": 6581,
+     "t": "133,42M²"
+    },
+    {
+     "tag": "H2",
+     "y": 7238,
+     "t": "COBERTURA LINEAR 3Q | 2401 TORRE B | TERRAÇO ÍNTIMO"
+    },
+    {
+     "tag": "H2",
+     "y": 7590,
+     "t": "ENTRE EM CONTATO"
+    },
+    {
+     "tag": "H2",
+     "y": 8308,
+     "t": "EM FRENTE À ESTAÇÃO ÁGUAS CLARAS"
+    },
+    {
+     "tag": "H2",
+     "y": 8364,
+     "t": "WOLKABILITY"
+    },
+    {
+     "tag": "H2",
+     "y": 9130,
+     "t": "Conforto, tecnologia com IA e plantas inteligente"
+    },
+    {
+     "tag": "H2",
+     "y": 12078,
+     "t": "COWORKING (GRAB & GO MARKET)"
+    },
+    {
+     "tag": "H2",
+     "y": 12078,
+     "t": "BEACHSIDE"
+    },
+    {
+     "tag": "H2",
+     "y": 12078,
+     "t": "PLAYGROUND"
+    },
+    {
+     "tag": "H2",
+     "y": 12078,
+     "t": "BRINQUEDOTECA"
+    },
+    {
+     "tag": "H2",
+     "y": 12078,
+     "t": "PETPLACE"
+    },
+    {
+     "tag": "H2",
+     "y": 12078,
+     "t": "CHURRASQUEIRAS"
+    },
+    {
+     "tag": "H2",
+     "y": 12078,
+     "t": "COOK SHOW & CINE CLUB"
+    },
+    {
+     "tag": "H2",
+     "y": 12078,
+     "t": "SALÃO DE FESTAS"
+    },
+    {
+     "tag": "H2",
+     "y": 12078,
+     "t": "SKYPOOL"
+    },
+    {
+     "tag": "H2",
+     "y": 12078,
+     "t": "MINI MARKET"
+    },
+    {
+     "tag": "H2",
+     "y": 12078,
+     "t": "SMART LAUNDRY"
+    },
+    {
+     "tag": "H2",
+     "y": 12078,
+     "t": "ESPAÇO DELIVERY"
+    },
+    {
+     "tag": "H2",
+     "y": 12078,
+     "t": "SAUNA ÚMIDA"
+    },
+    {
+     "tag": "H2",
+     "y": 12078,
+     "t": "SALA DE MASSAGEM"
+    },
+    {
+     "tag": "H2",
+     "y": 12078,
+     "t": "BEAUTY CARE"
+    },
+    {
+     "tag": "H2",
+     "y": 12078,
+     "t": "ESTAÇÃO DE CICLISTA"
+    },
+    {
+     "tag": "H2",
+     "y": 12078,
+     "t": "COWORKING (GRAB & GO MARKET)"
+    },
+    {
+     "tag": "H2",
+     "y": 12078,
+     "t": "BEACHSIDE"
+    },
+    {
+     "tag": "H2",
+     "y": 12936,
+     "t": "ESPAÇO MOBILIDADE"
+    },
+    {
+     "tag": "H2",
+     "y": 13552,
+     "t": "2 BICICLETAS ELÉTRICAS"
+    },
+    {
+     "tag": "H2",
+     "y": 14120,
+     "t": "2 PATINETES ELÉTRICOS"
+    },
+    {
+     "tag": "H2",
+     "y": 14688,
+     "t": "1 CARRO ELÉTRICO COMPARTILHADO"
+    },
+    {
+     "tag": "H2",
+     "y": 15256,
+     "t": "3 VAGAS COM CARREGADOR ELÉTRICO"
+    },
+    {
+     "tag": "H2",
+     "y": 15312,
+     "t": "ARQUITETURA AUTORAL INTERNACIONAL"
+    },
+    {
+     "tag": "H3",
+     "y": 15735,
+     "t": "ARCHITECTS OFFICE"
+    },
+    {
+     "tag": "H3",
+     "y": 15735,
+     "t": "CROSARA ARQUITETURA"
+    },
+    {
+     "tag": "H3",
+     "y": 15735,
+     "t": "RENATA TILLI PAISAGISMO"
+    }
+   ],
+   "wa": [],
+   "ctas": [
+    {
+     "t": "Contato",
+     "y": 779
+    },
+    {
+     "t": "Enviar",
+     "y": 7861
+    }
+   ],
+   "forms": [
+    {
+     "y": 7684,
+     "visible": true,
+     "n": 4,
+     "fields": [
+      "form_fields[nome]",
+      "form_fields[email]",
+      "form_fields[telefone]",
+      "form_fields[consentimento]"
+     ],
+     "submit": [
+      "Enviar"
+     ]
+    }
+   ],
+   "looseInputs": 0,
+   "videos": 0,
+   "vids": [],
+   "iframes": [],
+   "ytLinks": 0,
+   "sections": 0,
+   "hero": [
+    "Fitwell",
+    "Seu Refúgio Particular",
+    "Plantas",
+    "Arquitetura Internacional",
+    "Contato"
+   ],
+   "text": "Fitwell\nSeu Refúgio Particular\nPlantas\nArquitetura Internacional\nContato\n\n2 Quartos\n\n1 suíte + Banheiro social \n\nTerraço balcão\n\nPlanta inteligente\n\n45 m²\n\nSistema com Acoustic Wall \n\nDesign minimalista e funcional \n\nFechadura eletrônica\n\nACABAMENTO\n\nPiso Porcelanato de grande formato (90x90) com acabamento natural\n\nParede acustic wall com desempenho acústico superior\n\nBancadas em granito escovado\n\nForro de gesso acortonado com tabica técnica\n\nJanelas com até 2m de vão de abertura\n\nBanheiro 100% revestido (piso e paredes)\n\nA SUA ALTURA\n\nPonto de gás na cozinha\n\nTanque para lavar roupas\n\nEspaço para máquina de lavar roupas\n\nFechadura eletrônica na porta principal\n\nInfraestrutura para ar-condicionado com ponto por quarto e um na sala de estar.\n\nTerraço gourmet com bancada em rocha, cuba de metal, torneira, ponto de esgoto e ponto elétrico para churrasqueira\n\nPrevisão para spas nas unidades com terraço descoberto.\n\nPLANTAS\n45,52 M²\n2Q | 606, 806 E 1006 | TORRE A\nVer planta\n45,52 M²\n2Q | 605, 805 E 1005 | TORRE A\nVer planta\n71,66 M²\n3Q PONTA | 1504, 1704, 1904 E 2104 | TORRE B\nVer planta\n68,78 M²\n3Q | 1510, 1710, 1910 E 2110 | TORRE B\nVer planta\n76,97 M²\n3Q | 1412, 1612, 1812 E 2012 | TORRE B\nVer planta\n91,45M²\n3Q ESQUINA | 1201, 1401, 1601, 1801, 2001 E 2201 | TORRE B | TERRAÇO ÍNTIMO\nVer planta\n82,92M²\n3Q ESQUINA | 501, 701, 901, 1101, 1301, 1501, 1701, 1901, 2101 E 2301 | TORRE B | TERRAÇO\nVer planta\n172,81M²\nCOBERTURA DUPLEX 3Q | 2209 | TORRE B\nVer planta\n133,42M²\nCOBERTURA LINEAR 3Q | 2401 TORRE B | TERRAÇO ÍNTIMO\nVer planta\nENTRE EM CONTATO\n\nELEVE A ESSÊNCIA  DO VIVER\n\nNome\nE-mail\nTelefone\nConsentimento\nLi e concordo com a Política de Privacidade\nEnviar\nEM FRENTE À ESTAÇÃO ÁGUAS CLARAS\nWOLKABILITY\n\nEstação de Metrô\n\n3 minutos\n\nAv. Jacarandá\n\n5 minutos\n\nÁguas Claras Shopping\n\n7 minutos\n\nParque Águas Claras\n\n8 minutos\n\nO PRIMEIRO EMPREENDIMENTO DO DISTRITO FEDERAL COM CERTIFICAÇÃO INTERNACIONAL FITWEL\n\nLocalização\nestratégica que\nproporciona uma\nvida mais saudável\ne tranquila.\n\nAmbientes de lazer que\npromovem a prática de\natividades físicas,\ncontribuindo com a saúde\ne o bem-estar físico.\n\nEstímulo à\nalimentação saudável\npor meio de horta e\ndisponibilidade de água\nfiltrada nas áreas comuns.\n\nDesign ativo aplicado\nna projeção dos\nambientes para estimular\num estilo de vida mais\ndinâmico\n\nPraticidades no dia\na dia, como a implementação\nde espaço para minimercado\ne vending machines.\n\nCarsharing / Bikesharing\nO compartilhamento de\nmeios de transporte como\ncultura colaborativa.\n\nAmbientes que\nestimulam o\nequilíbrio emocional\ne o autocuidado\n\nSistema de conforto\nacústico nas\nunidades privativas\n\nACADEMIA SKYGYM\n\nAssinatura da Academia Boutique O2 FITNESS\n\nUm conceito inovador, exclusivo\ne contemporâneo em um espaço\ndiferenciado para você cuidar\ndo que mais importa: A SUA SAÚDE!\n\nConforto, tecnologia com IA e plantas inteligente\n\nMonitoramento nas áreas comuns de pets,\nmoradores e funcionários, além de análise de\natitudes suspeitas.\n\nOtimização\ndo trabalho\nde segurança\n\nPrecisão\nnas análises\n\nCapacidade de\nanálise preditiva\n\nGarantia de\ntomada de ações\npreventivas\n\nMonitoramento\nconstante sem\nperda de qualidade.\n\nTerraços comerciais privativos\n\nOs terraços dos espaços comerciais aumentam as\npossibilidades e dão exclusividade aos\nestabelecimentos, qualificando ainda mais o\nconceito da fachada ativa.\n\nSEU REFÚGIO PARTICULAR\nCOWORKING (GRAB & GO MARKET)\nBEACHSIDE\nPLAYGROUND\nBRINQUEDOTECA\nPETPLACE\nCHURRASQUEIRAS\nCOOK SHOW & CINE CLUB\nSALÃO DE FESTAS\nSKYPOOL\nMINI MARKET\nSMART LAUNDRY\nESPAÇO DELIVERY\nSAUNA ÚMIDA\nSALA DE MASSAGEM\nBEAUTY CARE\nESTAÇÃO DE CICLISTA\nCOWORKING (GRAB & GO MARKET)\nBEACHSIDE\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\nESPAÇO MOBILIDADE\nReafirmando o propósito em inovação e sustentabilidade, o Espaço Mobilidade incentiva a cultura colaborativa entregando modais para uso compartilhado entre os moradores, além de vagas para carregamento de carro elétrico\n2 BICICLETAS ELÉTRICAS\n2 PATINETES ELÉTRICOS\n1 CARRO ELÉTRICO COMPARTILHADO\n3 VAGAS COM CARREGADOR ELÉTRICO\nARQUITETURA AUTORAL INTERNACIONAL\nARCHITECTS OFFICE\n\nProjeto arquitetônico, interiores e áreas comum desenvolvido pela ARCHITECTS OFFICE, uma agência de arquitetura e design de interiores liderada por Greg Bousquet, um dos fundadores da Triptyque Architecture, que consolidou ao longo de 21 anos uma trajetória marcada por projetos e premiações por todo o globo. A agência, com sede no Brasil (AO-SP) e em Portugal, dada a parceria com João Vieira (AO-LX), se destaca pelo ponto de equilíbrio entre o global e o local, o técnico e o artístico, o orgânico e o mineral, a cidade e a natureza.\n\nCROSARA ARQUITETURA\n\nA CROSARA ARQUITETURA foi fundada pelo seu sócio Julio Crosara, onde congrega uma equipe que busca sempre atender da melhor forma seus clientes. Ao longo de sete anos, a Crosara projetou mais de 3 milhões de metros quadrados, principalmente em Brasília, mas também em outros estados. Fazer uma arquitetura elegante e arrojada sem se esquecer de todos os detalhes técnicos é o princípio que direciona o trabalho da empresa..\n\nRENATA TILLI PAISAGISMO\n\nCom alma de artista, Renata Tilli não faz jardins, e sim compõe paisagens. Em seu estúdio, sediado em São Paulo, ela afirma que um paisagista, além de dominar as técnicas, precisa ter sensibilidade e envolvimento com suas criações, de modo que elas sejam capazes de emocionar.\nSeu olhar rigoroso, crítico e apurado foi lapidado pela incansável observação da estética da natureza. Com toda a sua experiência, ela considera a profissão de paisagista totalmente empírica.\n\nParticipação:\nVendas:\n\nTERRAL 130 DF BETA EMPREENDIMENTOS IMOBILIÁRIOS LTDA., CNPJ/MF nº 40.830.478/0001-63. Memorial de Incorporação registrado sob o R29 junto à Matrícula de número 140.926 do 3º Ofício de Registro de Imóveis do Distrito Federal. Imagens meramente ilustrativas. Os acabamentos, móveis, equipamentos e demais objetos de decoração são representativos. Serão entregues pela incorporadora apenas os itens especificados no Memorial Descritivo do Empreendimento. O paisagismo apresentado é meramente ilustrativo e não representa as espécies, porte e tamanho definitivos, mas respeitará o projeto de paisagismo nos termos do Memorial Descritivo registrado. A vegetação que compõe o paisagismo das unidades privativas é meramente ilustrativa. Os spas privativos não serão entregues pela incorporadora. Os toldos e o piso apresentados nas lojas são sugestão de decoração e não compõem os elemento de entrega pela incorporadora. A instalação de toldos deverá obedecer aos termos previstos na convenção de condomínio do empreendimento. A locação de elementos estruturais pode variar de acordo com exigências técnicas, incluindo peitoris de alvenaria não ilustrados nas imagens. As imagens poderão não retratar fielmente as cores, texturas, brilhos e reflexos naturais dos materiais presentes no projeto a ser aprovado por se tratar de material digital."
+  },
+  "mobile": {
+   "scrollH": 21489,
+   "docH": 21489,
+   "wa": [],
+   "forms": [
+    {
+     "y": 6668,
+     "visible": true,
+     "n": 4,
+     "fields": [
+      "form_fields[nome]",
+      "form_fields[email]",
+      "form_fields[telefone]",
+      "form_fields[consentimento]"
+     ],
+     "submit": [
+      "Enviar"
+     ]
+    }
+   ],
+   "sections": 0,
+   "hero": [
+    "2 Quartos",
+    "1 suíte + Banheiro social",
+    "Terraço balcão",
+    "Planta inteligente",
+    "45 m²",
+    "Sistema com Acoustic Wall",
+    "Design minimalista e funcional"
+   ],
+   "ctas": [
+    {
+     "t": "Enviar",
+     "y": 6869
+    }
+   ]
+  }
+ },
+ "versataguasclarasresort": {
+  "slug": "versataguasclarasresort",
+  "url_req": "https://versataguasclarasresort.com.br",
+  "ts": "2026-10-20 15:06",
+  "status": 200,
+  "desktop": {
+   "title": "Versat Home Resort — Águas Claras, DF",
+   "url": "https://www.versataguasclarasresort.com.br/",
+   "scrollH": 10061,
+   "docH": 10061,
+   "heads": [
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Complexo Aquático"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Terraço Gourmet"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Sala Integrada"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Varanda Gourmet"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Academia by Six"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Spa by Eliá"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Praça Versat"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Coworking Exclusivo"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Complexo Aquático"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Terraço Gourmet"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Sala Integrada"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Varanda Gourmet"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Academia by Six"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Spa by Eliá"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Praça Versat"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Coworking Exclusivo"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Complexo Aquático"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Terraço Gourmet"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Sala Integrada"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Varanda Gourmet"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Academia by Six"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Spa by Eliá"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Praça Versat"
+    },
+    {
+     "tag": "H3",
+     "y": 1157,
+     "t": "Coworking Exclusivo"
+    },
+    {
+     "tag": "H2",
+     "y": 1425,
+     "t": "Morar no seu clube privativo"
+    },
+    {
+     "tag": "H3",
+     "y": 1765,
+     "t": "Padrão Premium"
+    },
+    {
+     "tag": "H3",
+     "y": 2333,
+     "t": "Varanda Gourmet"
+    },
+    {
+     "tag": "H3",
+     "y": 2901,
+     "t": "Terraço Gourmet"
+    },
+    {
+     "tag": "H3",
+     "y": 3946,
+     "t": "Praça Versat"
+    },
+    {
+     "tag": "H3",
+     "y": 3924,
+     "t": "Complexo Aquático"
+    },
+    {
+     "tag": "H3",
+     "y": 3924,
+     "t": "Espaço Gourmet"
+    },
+    {
+     "tag": "H3",
+     "y": 3946,
+     "t": "Salão de Festas"
+    },
+    {
+     "tag": "H3",
+     "y": 3924,
+     "t": "Coworking Exclusivo"
+    },
+    {
+     "tag": "H3",
+     "y": 3946,
+     "t": "Pet Place"
+    },
+    {
+     "tag": "H3",
+     "y": 3946,
+     "t": "Mercadinho"
+    },
+    {
+     "tag": "H3",
+     "y": 4562,
+     "t": "Academia"
+    },
+    {
+     "tag": "H3",
+     "y": 4562,
+     "t": "Spa"
+    },
+    {
+     "tag": "H2",
+     "y": 5288,
+     "t": "Conectado ao melhor de Águas Claras"
+    },
+    {
+     "tag": "H3",
+     "y": 6598,
+     "t": "Sala Integrada"
+    },
+    {
+     "tag": "H3",
+     "y": 6508,
+     "t": "Quarto"
+    },
+    {
+     "tag": "H3",
+     "y": 6600,
+     "t": "Varanda Gourmet"
+    },
+    {
+     "tag": "H3",
+     "y": 6598,
+     "t": "Suíte com Varanda"
+    },
+    {
+     "tag": "H3",
+     "y": 6508,
+     "t": "Sala de Estar"
+    },
+    {
+     "tag": "H3",
+     "y": 6600,
+     "t": "Terraço Gourmet"
+    },
+    {
+     "tag": "H3",
+     "y": 6598,
+     "t": "Living Premium"
+    },
+    {
+     "tag": "H2",
+     "y": 8003,
+     "t": "Fachada Noturna"
+    },
+    {
+     "tag": "H3",
+     "y": 8571,
+     "t": "\"Cada segundo importa.\""
+    }
+   ],
+   "wa": [
+    {
+     "t": "WhatsApp",
+     "href": "https://wa.me/556199091371?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Versat%20Home%20Resort.",
+     "y": 9347,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "WhatsApp",
+     "href": "https://wa.me/556199091371",
+     "y": 9704,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "Fale conosco pelo WhatsApp",
+     "href": "https://wa.me/556199091371?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Versat%20Home%20Resort.%20Pode%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F",
+     "y": 716,
+     "fixed": true,
+     "visible": true
+    }
+   ],
+   "ctas": [
+    {
+     "t": "Contato",
+     "y": 36
+    },
+    {
+     "t": "Agendar Visita",
+     "y": 19
+    },
+    {
+     "t": "Conheça o apartamento decorado",
+     "y": 522
+    },
+    {
+     "t": "Conhecer o Conceito",
+     "y": 522
+    },
+    {
+     "t": "Quero Conhecer",
+     "y": 4798
+    },
+    {
+     "t": "Quero Conhecer",
+     "y": 4798
+    },
+    {
+     "t": "Receber Apresentação Exclusiva",
+     "y": 9347
+    },
+    {
+     "t": "WhatsApp",
+     "y": 9347
+    },
+    {
+     "t": "Contato",
+     "y": 9852
+    },
+    {
+     "t": "WhatsApp",
+     "y": 9704
+    }
+   ],
+   "forms": [],
+   "looseInputs": 0,
+   "videos": 1,
+   "vids": [
+    {
+     "y": 6817,
+     "autoplay": true,
+     "src": "https://www.versataguasclarasresort.com.br/ImagensVersat/video%20Versat/IMG_7321.MOV"
+    }
+   ],
+   "iframes": [],
+   "ytLinks": 0,
+   "sections": 9,
+   "hero": [
+    "VERSAT",
+    "HOME RESORT",
+    "Conceito",
+    "Lazer",
+    "Localização",
+    "Unidades",
+    "Contato",
+    "Agendar Visita",
+    "ÁGUAS CLARAS · DISTRITO FEDERAL",
+    "95,54 a 108 m²",
+    "210 m²",
+    "PENTHOUSE",
+    "RI: R15-145019",
+    "Quebramos a barreira do espaço/tempo para criar um morar inigualável em Águas Claras.",
+    "Conheça o apartamento decorado",
+    "Conhecer o Conceito"
+   ],
+   "text": "V\nVERSAT\nHOME RESORT\nConceito\nLazer\nLocalização\nUnidades\nContato\nAgendar Visita\n\nÁGUAS CLARAS · DISTRITO FEDERAL\n\n3Q\n•\n95,54 a 108 m²\n3Q\n•\n210 m²\n\nPENTHOUSE\n\nRI: R15-145019\n\nQuebramos a barreira do espaço/tempo para criar um morar inigualável em Águas Claras.\n\nConheça o apartamento decorado\nConhecer o Conceito\nAQUÁTICO\nComplexo Aquático\nPENTHOUSE\nTerraço Gourmet\nLIVING\nSala Integrada\nVARANDA\nVaranda Gourmet\nFITNESS PREMIUM\nAcademia by Six\nSPA PREMIUM\nSpa by Eliá\nCONVIVÊNCIA\nPraça Versat\nTRABALHO\nCoworking Exclusivo\nAQUÁTICO\nComplexo Aquático\nPENTHOUSE\nTerraço Gourmet\nLIVING\nSala Integrada\nVARANDA\nVaranda Gourmet\nFITNESS PREMIUM\nAcademia by Six\nSPA PREMIUM\nSpa by Eliá\nCONVIVÊNCIA\nPraça Versat\nTRABALHO\nCoworking Exclusivo\nAQUÁTICO\nComplexo Aquático\nPENTHOUSE\nTerraço Gourmet\nLIVING\nSala Integrada\nVARANDA\nVaranda Gourmet\nFITNESS PREMIUM\nAcademia by Six\nSPA PREMIUM\nSpa by Eliá\nCONVIVÊNCIA\nPraça Versat\nTRABALHO\nCoworking Exclusivo\n\nO CONCEITO\n\nMorar no seu\nclube privativo\n\nQuebramos a barreira do espaço/tempo para criar um morar inigualável. O clube fica no seu quintal — sem trânsito, sem perda de tempo.\n\nAPARTAMENTO PREMIUM\nPadrão\nPremium\n\nSala integrada, 3 quartos sendo 1 suíte, varanda gourmet. Planta inteligente com 96 m² de puro conforto.\n\nSABER MAIS\n01\nVARANDA GOURMET\nVaranda\nGourmet\n\nVaranda ampliada com churrasqueira a carvão e ofurô privativos. Penthouse 3 Suítes com 207 a 210 m² de sofisticação.\n\nSABER MAIS\n02\nPENTHOUSE · EXCLUSIVO\nTerraço\nGourmet\n\nVista panorâmica de Águas Claras com terraço gourmet privativo. 210 m² de luxo e exclusividade absoluta.\n\nSABER MAIS\n03\n\nCONVIVÊNCIA\n\nPraça Versat\n\nAQUÁTICO\n\nComplexo Aquático\n\nGASTRONOMIA\n\nEspaço Gourmet\n\nEVENTOS\n\nSalão de Festas\n\nTRABALHO\n\nCoworking Exclusivo\n\nPET FRIENDLY\n\nPet Place\n\nCONVENIÊNCIA\n\nMercadinho\n\nPARCERIAS EXCLUSIVAS\n\nParcerias que elevam\no seu padrão de vida\n\nMarcas de excelência integradas ao seu condomínio. Porque cada segundo do seu tempo importa.\n\nFITNESS PREMIUM\nAcademia\n\nby Six\n\nEquipamentos de última geração e treinos personalizados. Uma academia digna dos melhores clubes do mundo — sem sair do seu condomínio.\n\nQuero Conhecer\nSPA PREMIUM\nSpa\n\nby Eliá\n\nTratamentos corporais, relaxamento profundo e estética com a assinatura exclusiva Eliá. Bem-estar de alto padrão sem sair de casa.\n\nQuero Conhecer\n\nONDE ESTAMOS\n\nConectado ao\nmelhor de\nÁguas Claras\n\nRua Copaíba, Lote 03 · Águas Claras, DF.\nEm terreno elevado com vistas privilegiadas e ventilação natural exclusiva.\n\nBrasília, DF\nEPTG\nMetrô\nDF Plaza\nShopping\n\nCONVENIÊNCIAS\n\nDF Plaza e Águas Claras Shopping a poucos minutos. Supermercados e restaurantes ao alcance.\n\nACESSOS ESTRATÉGICOS\n\nAcesso direto ao Plano Piloto pela EPTG. Próximo ao Metrô de Águas Claras.\n\nVISTA PRIVILEGIADA\n\nTerreno elevado com ventilação natural e vistas panorâmicas exclusivas.\n\nEDUCAÇÃO & SAÚDE\n\nFaculdades, colégios e clínicas de saúde de qualidade nas proximidades.\n\nPLANTAS & AMBIENTES\n\nDescubra seus\nnovos espaços\n\nArraste para explorar. Clique para ampliar.\n\nTenho Interesse\n\nLIVING\n\nSala Integrada\n\nDORMITÓRIO\n\nQuarto\n\nVARANDA\n\nVaranda Gourmet\n\nMASTER SUITE\n\nSuíte com Varanda\n\nLIVING\n\nSala de Estar\n\nPENTHOUSE · 210 M²\n\nTerraço Gourmet\n\nALTO ACABAMENTO\n\nLiving Premium\n\nMAIS QUE UM ENDEREÇO\n\nUm estilo de vida\ncompleto\n\nImagine acordar e ter à sua disposição academia, spa, piscinas, espaço gourmet e muito mais — tudo no seu condomínio. Sem trânsito. Sem perda de tempo.\n\nNo Versat Home Resort, o tempo que você economiza é dedicado ao que realmente importa: sua família, seu bem-estar, a sua vida.\n\nLazer para todas as idades sem sair de casa\nParcerias exclusivas: Fitness Six · Spa Eliá\nVista privilegiada em terreno elevado\nAcesso estratégico via EPTG e Metrô\nAgende sua Visita\n\nDESIGN & ARQUITETURA\n\n01 / 06\nFachada Noturna\n\nDesign & Arquitetura\n\nUma silhueta imponente ilumina a noite de Águas Claras. A fachada contemporânea do Versat Home Resort é um marco arquitetônico que define o padrão de sofisticação da região.\n\nMANIFESTO\n\n\"Cada segundo importa.\"\n\nPRÓXIMO PASSO\n\nSeu novo lar\nespera por você\n\nConverse com nossos consultores e receba uma apresentação exclusiva do Versat Home Resort. Disponibilidade limitada.\n\nReceber Apresentação Exclusiva\nWhatsApp\n\nDesde 1968, uma das construtoras mais respeitadas de Brasília. Mais de 55 anos entregando imóveis com qualidade, inovação e respeito aos prazos.\n\nV\nVERSAT\nHOME RESORT\n\nUm marco de sofisticação e design em Águas Claras, Distrito Federal.\nTime is Life.\n\nRI: R15-145019\n\nNAVEGAÇÃO\n\nConceito\nLazer\nLocalização\nUnidades\nContato\n\nCONTATO\n\nWhatsApp\n\nRua Copaíba, Lote 03\n\nÁguas Claras · Brasília, DF\n\nDesenvolvimento: BRM ASSET e ENGEMIL\n·\nConstrução: Villela e Carvalho\n·\nGestão de Vendas: BEIRAMAR\n\n© 2025 Versat Home Resort. Todos os direitos reservados.\n\nAs imagens são meramente ilustrativas. Todos os itens que compõem o projeto serão entregues conforme memorial descritivo do empreendimento e respectivo compromisso de compra e venda de unidade autônoma. Materiais, vegetação e mobiliários poderão sofrer pequenas alterações conforme disponibilidade de mercado. RI: R15-145019"
+  },
+  "mobile": {
+   "scrollH": 12462,
+   "docH": 12462,
+   "wa": [
+    {
+     "t": "WhatsApp",
+     "href": "https://wa.me/556199091371?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Versat%20Home%20Resort.",
+     "y": 11189,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "WhatsApp",
+     "href": "https://wa.me/556199091371",
+     "y": 12030,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "Fale conosco pelo WhatsApp",
+     "href": "https://wa.me/556199091371?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Versat%20Home%20Resort.%20Pode%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F",
+     "y": 3015,
+     "fixed": true,
+     "visible": true
+    }
+   ],
+   "forms": [],
+   "sections": 9,
+   "hero": [
+    "ÁGUAS CLARAS · DISTRITO FEDERAL",
+    "95,54 a 108 m²",
+    "210 m²",
+    "PENTHOUSE",
+    "RI: R15-145019",
+    "Quebramos a barreira do espaço/tempo para criar um morar inigualável em Águas Claras.",
+    "Conheça o apartamento decorado",
+    "Conhecer o Conceito"
+   ],
+   "ctas": [
+    {
+     "t": "Conheça o apartamento decorado",
+     "y": 618
+    },
+    {
+     "t": "Conhecer o Conceito",
+     "y": 700
+    },
+    {
+     "t": "Quero Conhecer",
+     "y": 5119
+    },
+    {
+     "t": "Quero Conhecer",
+     "y": 5559
+    },
+    {
+     "t": "Receber Apresentação Exclusiva",
+     "y": 11124
+    },
+    {
+     "t": "WhatsApp",
+     "y": 11189
+    },
+    {
+     "t": "Contato",
+     "y": 11927
+    },
+    {
+     "t": "WhatsApp",
+     "y": 12030
+    }
+   ]
+  }
+ },
+ "versathomeresort": {
+  "slug": "versathomeresort",
+  "url_req": "https://versathomeresort.com.br",
+  "ts": "2026-10-20 15:07",
+  "status": 200,
+  "desktop": {
+   "title": "Versat Home Resort – Versat",
+   "url": "https://versathomeresort.com.br/",
+   "scrollH": 7425,
+   "docH": 7425,
+   "heads": [
+    {
+     "tag": "H2",
+     "y": 187,
+     "t": "Time is Life"
+    },
+    {
+     "tag": "H2",
+     "y": 1190,
+     "t": "MORAR NO SEU CLUBE PRIVATIVO: MAIS TEMPO PARA DIVERSÃO E LAZER!"
+    },
+    {
+     "tag": "H2",
+     "y": 2691,
+     "t": "FITNESS PREMIUM"
+    },
+    {
+     "tag": "H2",
+     "y": 2812,
+     "t": "by"
+    },
+    {
+     "tag": "H2",
+     "y": 3158,
+     "t": "SPA PREMIUM"
+    },
+    {
+     "tag": "H2",
+     "y": 3279,
+     "t": "by"
+    },
+    {
+     "tag": "H2",
+     "y": 3577,
+     "t": "MAIS QUE UM ENDEREÇO, UM ESTILO DE VIDA."
+    },
+    {
+     "tag": "H2",
+     "y": 3950,
+     "t": "CONECTADO AO MELHOR DE ÁGUAS CLARAS."
+    },
+    {
+     "tag": "H3",
+     "y": 4076,
+     "t": "RUA COPAÍBA, LOTE 03 ÁGUAS CLARAS, DISTRITO FEDERAL."
+    },
+    {
+     "tag": "H2",
+     "y": 4782,
+     "t": "UM MARCO DE SOFISTICAÇÃO E DESIGN."
+    },
+    {
+     "tag": "H2",
+     "y": 5277,
+     "t": "FACHADA MODERNA E PAISAGISMO ELEGANTE PARA OFERECER UMA RECEPÇÃO ÚNICA E EXCLUSIVA, TRANSFORMANDO A CHEGADA EM CASA EM UM MOMENTO ESPECIAL QUE REFLETE O MELHOR "
+    },
+    {
+     "tag": "H2",
+     "y": 6430,
+     "t": "CADA SEGUNDO IMPORTA."
+    },
+    {
+     "tag": "H2",
+     "y": 7197,
+     "t": "Desenvolvimento:"
+    },
+    {
+     "tag": "H2",
+     "y": 7197,
+     "t": "Construção:"
+    },
+    {
+     "tag": "H2",
+     "y": 7197,
+     "t": "Gestão de vendas:"
+    }
+   ],
+   "wa": [],
+   "ctas": [
+    {
+     "t": "Enviar",
+     "y": 719
+    }
+   ],
+   "forms": [
+    {
+     "y": 507,
+     "visible": true,
+     "n": 4,
+     "fields": [
+      "form_fields[nome]",
+      "form_fields[email]",
+      "form_fields[telefone]",
+      "form_fields[consentimento]"
+     ],
+     "submit": [
+      "Enviar"
+     ]
+    }
+   ],
+   "looseInputs": 0,
+   "videos": 0,
+   "vids": [],
+   "iframes": [],
+   "ytLinks": 0,
+   "sections": 6,
+   "hero": [
+    "Time is Life",
+    "QUEBRAMOS A BARREIRA DO ESPAÇO/TEMPO PARA CRIAR UM MORAR INIGUALÁVEL.",
+    "Cadastre-se agora e receba condições exclusivas através dos nossos consultores.",
+    "Política de Privacidade",
+    "Enviar"
+   ],
+   "text": "Time is Life\n\nQUEBRAMOS A BARREIRA DO ESPAÇO/TEMPO PARA CRIAR UM MORAR INIGUALÁVEL.\n\nCadastre-se agora e receba condições exclusivas através dos nossos consultores.\n\nNome\nEmail\nTelefone\nConsentimento\n Li e concordo com a Política de Privacidade\nEnviar\nMORAR NO SEU CLUBE PRIVATIVO: MAIS TEMPO PARA DIVERSÃO E LAZER!\n\nO CONCEITO DE HOME RESORT OFERECE A VOCÊ E SUA FAMÍLIA UM VERDADEIRO CONDOMÍNIO CLUBE, COM OPÇÕES DE LAZER PARA TODAS AS IDADES: PISCINAS, QUADRAS, ACADEMIA, PLAYGROUND E MUITO MAIS.\n\nPRAÇA VERSAT\nBRINQUEDOTECA\nBRINQUEDOTECA (ESPAÇO EXTERNO)\nHOME RESORT\nPISCINA ADULTO\nPISCINA INFANTIL\nGOURMET\nGOURMET\nVARANDA GOURMET\nSALÃO DE FESTAS\nCHURRASQUEIRA\nCOWORKING\nMERCADINHO\nBICICLETÁRIO\nOFICIA / BICICLETÁRIO\nPET PLACE\nPRAÇA VERSAT\nBRINQUEDOTECA\nBRINQUEDOTECA (ESPAÇO EXTERNO)\nHOME RESORT\nPISCINA ADULTO\nPISCINA INFANTIL\nFITNESS PREMIUM\nby\n\nA PARCERIA TRAZ EQUIPAMENTOS MODERNOS E TREINOS PERSONALIZADOS, GARANTINDO UMA EXPERIÊNCIA FITNESS INCOMPARÁVEL E COMPLETA PARA OS MORADORES. COM A ASSINATURA SIX, CADA TREINO SE TRANSFORMA EM UM MOMENTO DE EXCELÊNCIA.\n\nSPA PREMIUM\nby\n\nBELEZA E BEM-ESTAR: SPA EXCLUSIVO ELIÁ PARA CUIDADOS DE ALTO PADRÃO.\n\nMAIS QUE UM ENDEREÇO, UM ESTILO DE VIDA.\n\nIMAGINE UM LUGAR ONDE CADA DIA É REPLETO DE DIVERSÃO E CONFORTO, SEM PRECISAR SAIR DE CASA. O CONCEITO DE HOME RESORT OFERECE A VOCÊ E SUA FAMÍLIA UM VERDADEIRO CONDOMÍNIO CLUBE, COM OPÇÕES DE LAZER PARA TODAS AS IDADES: PISCINAS, QUADRAS, ACADEMIA, PLAYGROUND E MUITO MAIS.\n\nCONECTADO AO MELHOR DE ÁGUAS CLARAS.\nRUA COPAÍBA, LOTE 03 ÁGUAS CLARAS, DISTRITO FEDERAL.\n\n• CONVENIÊNCIAS E FACILIDADE DE ACESSO\n\nVIVER NO VERSAT HOME RESORT É TER SHOPPINGS, SUPERMERCADOS E RESTAURANTES RENOMADOS AO ALCANCE. COM O DF PLAZA E ÁGUAS CLARAS SHOPPING PRÓXIMOS, HÁ UMA VARIEDADE DE OPÇÕES DE COMPRAS E LAZER. FACULDADES E COLÉGIOS GARANTEM UMA EDUCAÇÃO DE QUALIDADE PARA TODA A FAMÍLIA.\n\n• UM LUGAR PARA VIVER BEM\n\nO VERSAT HOME RESORT É PARA QUEM VALORIZA O TEMPO E BUSCA EXCLUSIVIDADE. EM UM TERRENO ELEVADO, PROPORCIONA VISTAS INCRÍVEIS E VENTILAÇÃO PRIVILEGIADA. A VARANDA GOURMET CONVIDA A APRECIAR CADA PÔR DO SOL COM A CIDADE AOS SEUS PÉS. \n\n• ACESSOS ESTRATÉGICOS\n\nCOM FÁCIL ACESSO AO PLANO PILOTO PELA EPTG, O VERSAT ESTÁ ESTRATEGICAMENTE LOCALIZADO. PRÓXIMO AO METRÔ, OFERECE MOBILIDADE EFICIENTE PARA QUEM BUSCA PRATICIDADE NO DIA A DIA.\n\n• UM ESTILO DE VIDA COMPLETO\n\nTRANSFORME SEU COTIDIANO COM CONVENIÊNCIA E SOFISTICAÇÃO. AQUI, TUDO FOI PLANEJADO PARA OFERECER O MELHOR EM CONFORTO E PRATICIDADE. VENHA VIVER EM UM LUGAR ONDE CADA DETALHE ELEVA SUA QUALIDADE DE VIDA.\n\nUM MARCO DE SOFISTICAÇÃO E DESIGN.\nFACHADA MODERNA E PAISAGISMO ELEGANTE PARA OFERECER UMA RECEPÇÃO ÚNICA E EXCLUSIVA, TRANSFORMANDO A CHEGADA EM CASA EM UM MOMENTO ESPECIAL QUE REFLETE O MELHOR DO ESTILO DE VIDA SOFISTICADO.\nCADA SEGUNDO IMPORTA.\nQUARTO\nSALA INTEGRADA\nVARANDA COM CHURRASQUEIRA A CARVÃO E OFURÔ\nSALA\nSUÍTE COM VARANDA\nSALA\nSUÍTE COM VARANDA\nQUARTO\nSALA INTEGRADA\nVARANDA COM CHURRASQUEIRA A CARVÃO E OFURÔ\nSALA\nSUÍTE COM VARANDA\nSALA\nTENHO INTERESSE\nDesenvolvimento:\nConstrução:\nGestão de vendas:\n\nAs imagens são meramente ilustrativas. Todos os itens que compõem o projeto serão entregues conforme memorial descritivo do empreendimento e respectivo compromisso de compra e venda de unidade autônoma. Materiais, vegetação e mobiliários poderão sofrer pequenas alterações conforme disponibilidade de mercado. Na entrega do empreendimento a vegetação poderá apresentar diferenças de tamanho e porte, mas estará de acordo com o projeto paisagístico. RI: R15-145019\n\n "
+  },
+  "mobile": {
+   "scrollH": 7734,
+   "docH": 7734,
+   "wa": [],
+   "forms": [
+    {
+     "y": 719,
+     "visible": true,
+     "n": 4,
+     "fields": [
+      "form_fields[nome]",
+      "form_fields[email]",
+      "form_fields[telefone]",
+      "form_fields[consentimento]"
+     ],
+     "submit": [
+      "Enviar"
+     ]
+    }
+   ],
+   "sections": 6,
+   "hero": [
+    "Time is Life",
+    "QUEBRAMOS A BARREIRA DO ESPAÇO/TEMPO PARA CRIAR UM MORAR INIGUALÁVEL.",
+    "Cadastre-se agora e receba condições exclusivas através dos nossos consultores."
+   ],
+   "ctas": [
+    {
+     "t": "Enviar",
+     "y": 925
+    }
+   ]
+  }
+ },
+ "villela-versat": {
+  "slug": "villela-versat",
+  "url_req": "https://construtoravillela.com.br/versat/",
+  "ts": "2026-10-20 15:07",
+  "status": 403,
+  "desktop": {
+   "title": "Um momento…",
+   "url": "https://construtoravillela.com.br/versat/",
+   "scrollH": 800,
+   "docH": 800,
+   "heads": [
+    {
+     "tag": "H1",
+     "y": 128,
+     "t": "construtoravillela.com.br"
+    },
+    {
+     "tag": "H2",
+     "y": 186,
+     "t": "Executando verificação de segurança"
+    }
+   ],
+   "wa": [],
+   "ctas": [],
+   "forms": [],
+   "looseInputs": 0,
+   "videos": 0,
+   "vids": [],
+   "iframes": [],
+   "ytLinks": 0,
+   "sections": 0,
+   "hero": [
+    "construtoravillela.com.br",
+    "Executando verificação de segurança",
+    "Este site utiliza um serviço de segurança para proteção contra bots maliciosos. Esta página é exibida enquanto o site verifica se você não é um bot.",
+    "Cloudflare",
+    "Privacidade"
+   ],
+   "text": "construtoravillela.com.br\nExecutando verificação de segurança\n\nEste site utiliza um serviço de segurança para proteção contra bots maliciosos. Esta página é exibida enquanto o site verifica se você não é um bot.\n\nRay ID: a4d8eee31e8735e0\nDesempenho e segurança da Cloudflare\nPrivacidade"
+  },
+  "mobile": {
+   "scrollH": 844,
+   "docH": 844,
+   "wa": [],
+   "forms": [],
+   "sections": 0,
+   "hero": [
+    "construtoravillela.com.br",
+    "Executando verificação de segurança",
+    "Este site utiliza um serviço de segurança para proteção contra bots maliciosos. Esta página é exibida enquanto o site verifica se você não é um bot.",
+    "Cloudflare",
+    "Privacidade"
+   ],
+   "ctas": []
+  }
+ },
+ "terral-eleva25": {
+  "slug": "terral-eleva25",
+  "url_req": "https://www.terralincorporadora.com.br/lancamento/eleva25/71",
+  "ts": "2026-10-20 15:08",
+  "status": 200,
+  "desktop": {
+   "title": "Eleva25 - R. 25 Sul | Águas Claras - Razão Social: Terral Incorporações e Participações LTDA.",
+   "url": "https://www.terralincorporadora.com.br/lancamento/eleva25/71",
+   "scrollH": 4567,
+   "docH": 4111,
+   "heads": [
+    {
+     "tag": "H1",
+     "y": 646,
+     "t": "Eleva25"
+    },
+    {
+     "tag": "H3",
+     "y": 873,
+     "t": "O empreendimento | Eleva25"
+    },
+    {
+     "tag": "H3",
+     "y": 1221,
+     "t": "Facilidades e áreas comuns | Eleva25"
+    },
+    {
+     "tag": "H3",
+     "y": 1905,
+     "t": "Unidades | Eleva25"
+    },
+    {
+     "tag": "H3",
+     "y": 2446,
+     "t": "Comodidades do Empreendimento"
+    },
+    {
+     "tag": "H3",
+     "y": 605,
+     "t": "A partir de"
+    },
+    {
+     "tag": "H3",
+     "y": 2752,
+     "t": "Localização"
+    },
+    {
+     "tag": "H2",
+     "y": 3711,
+     "t": "Endereços"
+    },
+    {
+     "tag": "H3",
+     "y": 3749,
+     "t": "Unidade Goiânia:"
+    },
+    {
+     "tag": "H3",
+     "y": 3817,
+     "t": "Unidade Brasília:"
+    },
+    {
+     "tag": "H2",
+     "y": 3711,
+     "t": "Central de Atendimento"
+    },
+    {
+     "tag": "H3",
+     "y": 3749,
+     "t": "Goiânia"
+    },
+    {
+     "tag": "H3",
+     "y": 3765,
+     "t": "(62) 3242-6533"
+    },
+    {
+     "tag": "H3",
+     "y": 3789,
+     "t": "Brasília"
+    },
+    {
+     "tag": "H3",
+     "y": 3805,
+     "t": "(61) 3264-7704"
+    },
+    {
+     "tag": "H3",
+     "y": 3829,
+     "t": "Arapiraca"
+    },
+    {
+     "tag": "H3",
+     "y": 3845,
+     "t": "(82) 99950-0198"
+    },
+    {
+     "tag": "H2",
+     "y": 3711,
+     "t": "Fale com a Central de Privacidade"
+    }
+   ],
+   "wa": [
+    {
+     "t": "Iniciar a conversa",
+     "href": "",
+     "y": 0,
+     "fixed": true,
+     "visible": false
+    },
+    {
+     "t": "(62) 3242-6533",
+     "href": "https://api.whatsapp.com/send?phone=+556232426533&text='Olá, gostaria de saber mais sobre '",
+     "y": 3765,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "(61) 3264-7704",
+     "href": "https://api.whatsapp.com/send?phone=+556132647704&text='Olá, gostaria de saber mais sobre '",
+     "y": 3805,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "(82) 99950-0198",
+     "href": "https://api.whatsapp.com/send?phone=+5582999500198&text='Olá, gostaria de saber mais sobre '",
+     "y": 3845,
+     "fixed": false,
+     "visible": true
+    }
+   ],
+   "ctas": [
+    {
+     "t": "Corretor",
+     "y": 52
+    },
+    {
+     "t": "Fale Conosco",
+     "y": 108
+    },
+    {
+     "t": "ENVIAR FORMULÁRIO",
+     "y": 1008
+    },
+    {
+     "t": "FALAR NO WHATSAPP",
+     "y": 1080
+    },
+    {
+     "t": "Conheça a Teresa",
+     "y": 3561
+    },
+    {
+     "t": "Portal do Corretor",
+     "y": 3585
+    },
+    {
+     "t": "Fale Conosco",
+     "y": 3492
+    }
+   ],
+   "forms": [
+    {
+     "y": 730,
+     "visible": true,
+     "n": 4,
+     "fields": [
+      "nome",
+      "email",
+      "telefoneCelular",
+      "mensagem"
+     ],
+     "submit": [
+      "ENVIAR FORMULÁRIO"
+     ]
+    },
+    {
+     "y": 0,
+     "visible": false,
+     "n": 0,
+     "fields": [],
+     "submit": [
+      "Iniciar a conversa"
+     ]
+    },
+    {
+     "y": 0,
+     "visible": false,
+     "n": 0,
+     "fields": [],
+     "submit": [
+      "Enviar"
+     ]
+    }
+   ],
+   "looseInputs": 0,
+   "videos": 0,
+   "vids": [],
+   "iframes": [],
+   "ytLinks": 1,
+   "sections": 1,
+   "hero": [
+    "Quem Somos",
+    "Empreendimentos",
+    "Goiânia/GO",
+    "Brasília/DF",
+    "Arapiraca/AL",
+    "Ver Todos",
+    "Acompanhe sua obra",
+    "Blog",
+    "Encontros",
+    "Todas as Regiões",
+    "GOIÂNIA/GO",
+    "BRASÍLIA/DF",
+    "ARAPIRACA/AL",
+    "NOSSOS PORTAIS",
+    "Corretor",
+    "Cliente",
+    "ATENDIMENTO",
+    "Fale Conosco",
+    "Consulte nossas Vagas",
+    "ACOMPANHE SUA OBRA",
+    "Início",
+    "Águas Claras",
+    "Em obras",
+    "COMPARTILHAR",
+    "Eleva25",
+    "VER NO MAPA",
+    "Metragem",
+    "46 m² até 91 m²",
+    "quarto(s)",
+    "2,3",
+    "Apartamento",
+    "A partir de",
+    "Nós entramos em contato com você"
+   ],
+   "text": "Quem Somos\nEmpreendimentos\nGoiânia/GO\nBrasília/DF\nArapiraca/AL\nVer Todos\nAcompanhe sua obra\nBlog\nEncontros\nTodas as Regiões\nGOIÂNIA/GO\nBRASÍLIA/DF\nARAPIRACA/AL\nNOSSOS PORTAIS\nCorretor\nCliente\nATENDIMENTO\nFale Conosco\nConsulte nossas Vagas\nACOMPANHE SUA OBRA\nInício\nEmpreendimentos\nEleva25\nÁguas Claras - Brasília\n 43 Fotos\nEm obras\nCOMPARTILHAR\nEleva25\nR. 25 Sul, Águas Claras, Brasília, DF VER NO MAPA\nMetragem\n46 m² até 91 m²\nquarto(s)\n2,3\nApartamento\nACOMPANHAMENTO DA OBRA\nO empreendimento | Eleva25\n\nUm novo conceito de casa com o essencial para você viver bem. Unidades de 2 e 3Q com suítes, várias opções de plantas e com certificação fitwel, reconhecido por proporcionar qualidade de vida por meio de incentivo às melhores práticas em saúde, bem-estar e desensolvimento social. Em Águas Claras.\n\nFacilidades e áreas comuns | Eleva25\n\nMultisensações e experiências personalizadas para cada tipo de morador.\n\n- Lobby com pé-direito duplo: Ambientes decorados e mobiliados com design minimalista.\n\n\n\n- Coworking: Um cenário estimulante para o seu sucesso profissional.\n\n\n\n- Carsharing: Conforto e comodidade para o dia a dia com uso de carro compartilhado, entregue ao condomínio para uso comum aos moradores.\n\n\n\n- Espaço mobilidade: Para incentivar a cultura colaborativa, com: 2 bicicletas elétricas, 2 patinetes elétricos, 1 carro elétrico compartilhado, 3 vagas com carregador elétrico.\n\n\n\n- Espaço Delivery: Para eficiência das entregas, de forma organizada e segura, com Smart Lockers e armazenamento com refrigeração.\n\n\n\n- Smart Laundry: Espaço de lavanderia operado pela OMO Lavanderia.\n\n\n\n- Estação ciclista: Equipada com tudo o que você precisa para cuidar da sua Bike.\n\n\n\n- Beachside: Piscina com areia compactada, prainha e jatos d'água.\n\n\n\n- Cook show & Cine club: Um ambiente acolhedor para preparo gastronômico enquanto assiste sua programação favorita.\n\n\n\n- E muito mais...\n\nUnidades | Eleva25\n\nConcepção de plantas que privilegiam a melhor eficiência na distribuição dos espaços, além de mais flexibilidade no uso dos cômodos.\n\n\n\n- Paredes slim com tratamento acústico: Paredes 20% mais finas, com atenuação sonora 30% superior às paredes convencionais.\n\n\n\n- Integração e reversibilidade dos cômodos: Plantas pensadas para o aumento da sala ou aumento da suíte. \n\n\n\n- Rodapé slim: Ideal para a melhor acomodação dos móveis no apartamento.\n\n\n\n- Laje técnica mínima: Espaço dimensionado para equipamentos multisplit, reduzindo o tamanho da laje técnica. \n\n\n\n- Acabamento a sua altura. Conheça! \n\nComodidades do Empreendimento\nAcademia\nAcesso 24 Horas\nConvenções\nEstacionamento Visitantes\nPiscina\nPlayground\nQuadra Poliesportiva\nSalão de Festas\nSalão de Jogos\nVer mais\nA partir de\nR$ 709.796\nGostou deste empreendimento?\nNós entramos em contato com você\nAo enviar estou de acordo com as Políticas de Privacidade da empresa\nENVIAR FORMULÁRIO\nFALAR NO WHATSAPP\nLocalização\n+\n−\nLeaflet | © OpenStreetMap contributors, Map data © OpenStreetMap\nEmpreendimentos\nEm Breve\nEm Obras\nLançamentos\nEntregues\nAcompanhe as obras\nInstitucional\nTerral Conceito\nQuem Somos\nPortal do Cliente\nConheça a Teresa\nPortal do Corretor\nEncontros\nBlog\nÚltimas Notícias\nContato\nFale Conosco\nConsulte nossas Vagas\nPolítica de Privacidade\nPolítica de Privacidade Candidato\nOuvidoria de Obras\nEndereços\nUnidade Goiânia:\nRua 1132, Quadra: 235A, Lote: 06B, Número: 133 Setor Marista. CEP: 74180-110 – Goiânia – GO\nUnidade Brasília:\nSHS Quadra 6, Conjunto A Complexo Brasil 21, bloco E, sala 320, CEP: 70.316-109 - Brasília-DF\nCentral de Atendimento\n\nGoiânia\n (62) 3242-6533\n\nBrasília\n (61) 3264-7704\n\nArapiraca\n (82) 99950-0198\n\nFale com a Central de Privacidade\nprivacidade.incorporadora@terral.com.br\n\n2022 Copyright - Razão Social: Terral Incorporações e Participações LTDA. CNPJ 13.070.562/0001-53 - Todos os direitos reservados\n\nDesenvolvimento:"
+  },
+  "mobile": {
+   "scrollH": 5545,
+   "docH": 5545,
+   "wa": [
+    {
+     "t": "(62) 3242-6533",
+     "href": "https://api.whatsapp.com/send?phone=+556232426533&text='Olá, gostaria de saber mais sobre '",
+     "y": 4416,
+     "fixed": true,
+     "visible": true
+    },
+    {
+     "t": "Iniciar a conversa",
+     "href": "",
+     "y": 4701,
+     "fixed": true,
+     "visible": false
+    },
+    {
+     "t": "(62) 3242-6533",
+     "href": "https://api.whatsapp.com/send?phone=+556232426533&text='Olá, gostaria de saber mais sobre '",
+     "y": 5117,
+     "fixed": false,
+     "visible": true
+    }
+   ],
+   "forms": [
+    {
+     "y": 3037,
+     "visible": true,
+     "n": 8,
+     "fields": [
+      "finalidade",
+      "select-multiple",
+      "Digite o Bairro, Cidade ou Empreeendimen",
+      "tipos",
+      "valorMinimo",
+      "valorMaximo",
+      "areaMinima",
+      "areaMaxima"
+     ],
+     "submit": [
+      "PESQUISAR"
+     ]
+    },
+    {
+     "y": -95071,
+     "visible": true,
+     "n": 4,
+     "fields": [
+      "nome",
+      "email",
+      "telefoneCelular",
+      "mensagem"
+     ],
+     "submit": [
+      "ENVIAR FORMULÁRIO"
+     ]
+    },
+    {
+     "y": 4701,
+     "visible": false,
+     "n": 0,
+     "fields": [],
+     "submit": [
+      "Iniciar a conversa"
+     ]
+    },
+    {
+     "y": 4701,
+     "visible": false,
+     "n": 0,
+     "fields": [],
+     "submit": [
+      "Enviar"
+     ]
+    }
+   ],
+   "sections": 1,
+   "hero": [
+    "Em obras",
+    "COMPARTILHAR",
+    "Eleva25",
+    "VER NO MAPA",
+    "Metragem",
+    "46 m² até 91 m²",
+    "quarto(s)",
+    "2,3",
+    "Apartamento",
+    "ACOMPANHAMENTO DA OBRA",
+    "A partir de",
+    "Nós entramos em contato com você",
+    "Políticas de Privacidade",
+    "ENVIAR FORMULÁRIO",
+    "FALAR NO WHATSAPP"
+   ],
+   "ctas": [
+    {
+     "t": "Corretor",
+     "y": 4076
+    },
+    {
+     "t": "Fale Conosco",
+     "y": 4139
+    },
+    {
+     "t": "FALE COM ESPECIALISTA",
+     "y": 4303
+    },
+    {
+     "t": "FALE COM ESPECIALISTA",
+     "y": 4303
+    },
+    {
+     "t": "RECEBER ATENDIMENTO",
+     "y": 5485
+    },
+    {
+     "t": "ENVIAR FORMULÁRIO",
+     "y": -94737
+    },
+    {
+     "t": "FALAR NO WHATSAPP",
+     "y": -94672
+    },
+    {
+     "t": "Conheça a Teresa",
+     "y": 4759
+    },
+    {
+     "t": "Portal do Corretor",
+     "y": 4785
+    },
+    {
+     "t": "Fale Conosco",
+     "y": 4783
+    }
+   ]
+  }
+ },
+ "markimoveis-eleva25": {
+  "slug": "markimoveis-eleva25",
+  "url_req": "https://markimoveis.com/imovel/eleva-25-2-e-3-quartos-com-lazer-completo-aguas-claras-df/160",
+  "ts": "2026-10-20 15:08",
+  "status": 200,
+  "desktop": {
+   "title": "Eleva 25 - 2 e 3 Quartos Com Lazer Completo - Águas Claras/DF",
+   "url": "https://markimoveis.com/imovel/eleva-25-2-e-3-quartos-com-lazer-completo-aguas-claras-df/160",
+   "scrollH": 5911,
+   "docH": 5911,
+   "heads": [
+    {
+     "tag": "H1",
+     "y": 625,
+     "t": "Residencial Eleva 25 - 2 e 3 Quartos Com Lazer Completo em Àguas Claras"
+    },
+    {
+     "tag": "H2",
+     "y": 992,
+     "t": "Descrição do imóvel"
+    },
+    {
+     "tag": "H2",
+     "y": 2683,
+     "t": "Cômodos"
+    },
+    {
+     "tag": "H2",
+     "y": 2895,
+     "t": "Áreas"
+    },
+    {
+     "tag": "H2",
+     "y": 3135,
+     "t": "Outras Informações"
+    },
+    {
+     "tag": "H2",
+     "y": 3491,
+     "t": "Proximidades"
+    },
+    {
+     "tag": "H2",
+     "y": 4058,
+     "t": "Localização"
+    },
+    {
+     "tag": "H2",
+     "y": 4520,
+     "t": "Gostou do imóvel?"
+    },
+    {
+     "tag": "H2",
+     "y": 1396,
+     "t": "Agende agora sua visita"
+    },
+    {
+     "tag": "H2",
+     "y": 4719,
+     "t": "Imóveis similares"
+    },
+    {
+     "tag": "H3",
+     "y": 5487,
+     "t": "Mark William - CEO"
+    },
+    {
+     "tag": "H3",
+     "y": 5487,
+     "t": "Menu"
+    },
+    {
+     "tag": "H3",
+     "y": 5487,
+     "t": "Social"
+    }
+   ],
+   "wa": [
+    {
+     "t": "(61) 99191-2518",
+     "href": "#",
+     "y": 58,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "(61) 9 9191-2518",
+     "href": "#",
+     "y": 783,
+     "fixed": true,
+     "visible": true
+    },
+    {
+     "t": "WhatsApp",
+     "href": "",
+     "y": 1263,
+     "fixed": true,
+     "visible": true
+    },
+    {
+     "t": "(61) 99191-2518",
+     "href": "#",
+     "y": 5622,
+     "fixed": false,
+     "visible": true
+    }
+   ],
+   "ctas": [
+    {
+     "t": "Contato",
+     "y": 145
+    },
+    {
+     "t": "Whatsapp",
+     "y": 145
+    },
+    {
+     "t": "Compartilhar no WhatsApp",
+     "y": 4592
+    },
+    {
+     "t": "WhatsApp",
+     "y": 1263
+    },
+    {
+     "t": "Agendar visita",
+     "y": 1475
+    },
+    {
+     "t": "Contato",
+     "y": 5582
+    },
+    {
+     "t": "Whatsapp",
+     "y": 5616
+    }
+   ],
+   "forms": [
+    {
+     "y": 840,
+     "visible": true,
+     "n": 5,
+     "fields": [
+      "name",
+      "Seu telefone",
+      "email",
+      "message",
+      "check"
+     ],
+     "submit": [
+      "WhatsApp",
+      "E-mail"
+     ]
+    },
+    {
+     "y": 0,
+     "visible": false,
+     "n": 0,
+     "fields": [],
+     "submit": []
+    }
+   ],
+   "looseInputs": 0,
+   "videos": 0,
+   "vids": [],
+   "iframes": [
+    {
+     "src": "https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LcerJsUAAAAAKw6v70xur2BM2Y5k3tG74wSoSk8&co=aHR0cHM6Ly9tYXJraW1vdmVpcy5jb206NDQz&hl=pt-B",
+     "y": 726
+    }
+   ],
+   "ytLinks": 2,
+   "sections": 1,
+   "hero": [
+    "(61) 99191-2518",
+    "Início",
+    "Sobre",
+    "Contato",
+    "Whatsapp",
+    "Financie",
+    "Negocie seu Imóvel",
+    "Mais fotos",
+    "Em construção",
+    "Residencial Eleva 25 - 2 e 3 Quartos Com Lazer Completo em Àguas Claras",
+    "Residencial Eleva 25 Águas Claras - Sul - Águas Claras/DF",
+    "R$ 580.083,20",
+    "Mark",
+    "CRECI - 28492-DF"
+   ],
+   "text": "(61) 99191-2518\nInício\nSobre\nContato\nWhatsapp\nFinancie\nNegocie seu Imóvel\nImóveis Favoritos\nMais fotos\nEm construção\n16 Fotos\nResidencial Eleva 25 - 2 e 3 Quartos Com Lazer Completo em Àguas Claras\nResidencial Eleva 25 Águas Claras - Sul - Águas Claras/DF\n2 Dormitórios\n1 Suíte\n45,54 m² (Privativa)\nEm construção (Situação)\nDescrição do imóvel\n\n\n\n\nApresentamos o Eleva25, um empreendimento que redefine o conceito de moradia, oferecendo o essencial para uma vida de qualidade.\n\n\n\n\nLocalizado em Águas Claras, uma das melhores regiões do Distrito Federal, o Eleva25 é o primeiro empreendimento da região com a prestigiosa certificação internacional Fitwel, reconhecida por incentivar práticas que promovem saúde, bem-estar e desenvolvimento social.\n\n\n\n\nAs unidades de 2 e 3 quartos com suítes do Eleva25 foram projetadas com várias opções de plantas, privilegiando a eficiência na distribuição dos espaços e a flexibilidade no uso dos cômodos.\n\n\n\n\nO conceito disruptivo de Plantas Borboleta garante o máximo aproveitamento dos espaços, proporcionando experiências personalizadas para cada tipo de morador.\n\n\n\n\nO Eleva25 oferece uma série de comodidades e serviços exclusivos:\n\n\n\n\nLobby com pé-direito duplo: Ambientes decorados e mobiliados com design minimalista.\nCoworking: Um cenário estimulante para o seu sucesso profissional.\nCarsharing: Conforto e comodidade para o dia a dia com uso de carro compartilhado.\nEspaço mobilidade: Incentivo à cultura colaborativa com bicicletas elétricas, patinetes elétricos, carro elétrico compartilhado e vagas com carregador elétrico.\nEspaço Delivery: Eficiência nas entregas, de forma organizada e segura, com Smart Lockers e armazenamento com refrigeração.\nSmart Laundry: Espaço de lavanderia operado pela OMO Lavanderia.\nEstação ciclista: Equipada com tudo o que você precisa para cuidar da sua Bike.\nBeachside: Piscina com areia compactada, prainha e jatos d’água.\nCook show & Cine club: Um ambiente acolhedor para preparo gastronômico enquanto assiste sua programação favorita.\n\nE muito mais…\n\n\n\n\nAs paredes slim com tratamento acústico são 20% mais finas, com atenuação sonora 30% superior às paredes convencionais.\n\n\n\n\nAs plantas foram pensadas para o aumento da sala ou aumento da suíte, com rodapé slim ideal para a melhor acomodação dos móveis no apartamento. A laje técnica mínima foi dimensionada para equipamentos multisplit, reduzindo o tamanho da laje técnica.\n\n\n\n\nA tabela de preços é válida somente até 31/05/2024 e todas as parcelas, à exceção da parcela de sinal, serão corrigidas pelo INCC-FGV.\n\n\n\n\nA conclusão física da obra está prevista para maio/2027. A entrega das chaves está condicionada à adimplência do cliente e escrituração do imóvel. As despesas cartoriais de registro e financiamento, ITBI, se houver, são de responsabilidade do adquirente.\nA emissão do termo Habite-se não está vinculada à entrega das chaves.\n\n\n\n\nO preço da unidade constante na tabela está expresso em Reais, sem juros e sem correção e já inclui as vagas de garagem e escaninhos, se for o caso, definidos para a unidade.\n\n\n\n\nVenha conhecer o Eleva25, um empreendimento que eleva o padrão de moradia a novas alturas. Entre em contato conosco para mais informações.\n\n\n\n\nMark William/Diretor de Marketing e Corretor\n\nCRECI 28492 - DF\n\nContato: 61 99191-2518\n\n\n\n\nAs informações estão sujeitas a alterações. Consulte o corretor responsável.\n\nCômodos\n2 Dormitórios, sendo 1 suíte\n2 Banheiros\nÁreas\nÁrea Privativa:\n45,54m²\nOutras Informações\nReferência:\n160\nIdade do imóvel:\n2 anos\nPerfil:\nResidencial/Comercial\nPossui mobília?:\nSem mobília\nPrevisão de entrega:\nMaio/2027\nProximidades\nBanco\nEscola\nEscola de idioma\nFaculdade\nFarmácia\nHospital\nIgreja\nMetrô\nPadaria\nPraça\nRodovia\nShopping\nSupermercado\nTransporte público\nLocalização\nR. 25 Sul, Águas Claras, Brasília, DF - Sul - Águas Claras/DF - 71927-180\n Leaflet\nPara aplicar o zoom no mapa, segure a tecla Ctrl\nGostou do imóvel?\nSalve ele nos seus favoritos ou então compartilhe com alguém no WhatsApp:\nCompartilhar no WhatsApp\nSalvar nos Favoritos\nImprimir\nR$ 580.083,20\nMark\nCRECI - 28492-DF\n(61) 9 9191-2518\nsuporte@markimoveis.com\nCopiado!\nNome\nTelefone\nE-mail\nMensagem\n Concordo com a Política de Privacidade\nWhatsApp\nE-mail\nAgende agora sua visita\n\nFaça um agendamento de visita para conhecer melhor o imóvel.\n\nAgendar visita\nImóveis similares\nEm construção\nRef.: 118VENDA\nSul - Águas Claras/DF\nApartamento Alto Padrão LV 31 - Residencial Ligia Valois\nDormitórios 2, sendo 1 suíte\nGaragens 1\nÁrea Privativa 55m²\nR$ 560.324,32\nEm construção\nRef.: 104VENDA\nÁguas Claras/DF\nResidencial Ouro Branco VI\nDormitórios 3, sendo 2 suítes\nGaragens 1\nÁrea Privativa 94,17m²\nR$ 911.000,00\nEm construção\nRef.: 128VENDA\nNorte - Águas Claras/DF\nReserva Park Clube - 2 e 3 Quartos + Cobertura\nDormitórios 2, sendo 1 suíte\nGaragens 1\nÁrea Privativa 63,18m²\nR$ 582.000,00\nEm construção\nRef.: 141VENDA\nArreal - Águas Claras/DF\nResidencial Rodrigo Muniz - 1 e 2 Quartos em Águas Claras\nDormitórios 2, sendo 1 suíte\nGaragens 1\nÁrea Privativa 57,33m²\nR$ 515.000,00\nMark William - CEO\nCNPJ - 44.125.692/0001-70\nRua 01 Chc 106 A, 125 - Vicente Pires, Taguatinga - Brasília/DF, 72001-410\n(61) 99191-2518\nVer e-mail\nCopiado!\n\nCompra Um Imóvel Não Precisa Ser Um Drama.\n\n\n\n\nTemos o Plano Para Uma Negociação Rápida, Segura , Transparente e Pelo Melhor Preço.\"\n\n\n\n\nCRECI: 28492 - DF\n\nMenu\nInício\nSobre\nContato\nWhatsapp\nFinancie\nNegocie seu Imóvel\nSocial\n© Copyright 2026 - Mark William - CEO - Todos os direitos reservados\n\nSITE PARA IMOBILIARIA"
+  },
+  "mobile": {
+   "scrollH": 9746,
+   "docH": 9746,
+   "wa": [
+    {
+     "t": "(61) 9 9191-2518",
+     "href": "#",
+     "y": 7009,
+     "fixed": true,
+     "visible": true
+    },
+    {
+     "t": "WhatsApp",
+     "href": "",
+     "y": 7488,
+     "fixed": true,
+     "visible": true
+    },
+    {
+     "t": "(61) 99191-2518",
+     "href": "#",
+     "y": 8901,
+     "fixed": false,
+     "visible": true
+    }
+   ],
+   "forms": [
+    {
+     "y": 7065,
+     "visible": true,
+     "n": 5,
+     "fields": [
+      "name",
+      "Seu telefone",
+      "email",
+      "message",
+      "check"
+     ],
+     "submit": [
+      "WhatsApp",
+      "E-mail"
+     ]
+    },
+    {
+     "y": 8902,
+     "visible": false,
+     "n": 0,
+     "fields": [],
+     "submit": []
+    }
+   ],
+   "sections": 1,
+   "hero": [
+    "Mark William - CEO",
+    "Mais fotos",
+    "Em construção",
+    "R$ 580.083,20",
+    "Residencial Eleva 25 - 2 e 3 Quartos Com Lazer Completo em Àguas Claras",
+    "Residencial Eleva 25 Águas Claras - Sul - Águas Claras/DF"
+   ],
+   "ctas": [
+    {
+     "t": "WhatsApp",
+     "y": 7488
+    },
+    {
+     "t": "Agendar visita",
+     "y": 7696
+    },
+    {
+     "t": "Contato",
+     "y": 9214
+    },
+    {
+     "t": "Whatsapp",
+     "y": 9247
+    },
+    {
+     "t": "Contato",
+     "y": 9088
+    },
+    {
+     "t": "Whatsapp",
+     "y": 9137
+    }
+   ]
+  }
+ },
+ "reservaparque-ac": {
+  "slug": "reservaparque-ac",
+  "url_req": "https://reservaparqueaguasclaras.com.br/lancamento-torre-05-reserva-parque-clube-sua-oportunidade-de-ouro-em-aguas-claras",
+  "ts": "2026-10-20 15:09",
+  "status": 200,
+  "desktop": {
+   "title": "Lançamento Torre 05 Reserva Parque Clube - Tabela 00",
+   "url": "https://reservaparqueaguasclaras.com.br/lancamento-torre-05-reserva-parque-clube-sua-oportunidade-de-ouro-em-aguas-claras/",
+   "scrollH": 5294,
+   "docH": 5294,
+   "heads": [
+    {
+     "tag": "H1",
+     "y": 140,
+     "t": "LANÇAMENTO TORRE 05 – RESERVA PARQUE CLUBE: Sua Oportunidade de Ouro em Águas Claras!"
+    },
+    {
+     "tag": "H2",
+     "y": 1071,
+     "t": "25 de Outubro: O Dia que Você Estava Esperando Chegou!"
+    },
+    {
+     "tag": "H3",
+     "y": 1274,
+     "t": "Um Projeto da Maior Construtora do Brasil"
+    },
+    {
+     "tag": "H3",
+     "y": 1511,
+     "t": "Apartamentos Pensados Para Sua Vida"
+    },
+    {
+     "tag": "H3",
+     "y": 1905,
+     "t": "Tabela 00: Condições Imbatíveis!"
+    },
+    {
+     "tag": "H3",
+     "y": 2093,
+     "t": "Obras em Ritmo Acelerado"
+    },
+    {
+     "tag": "H3",
+     "y": 2513,
+     "t": "Mais de 40 Itens de Lazer Prontos Para Você!"
+    },
+    {
+     "tag": "H3",
+     "y": 3565,
+     "t": "Sustentabilidade e Inteligência"
+    },
+    {
+     "tag": "H3",
+     "y": 3764,
+     "t": "Localização Única em Águas Claras"
+    },
+    {
+     "tag": "H3",
+     "y": 3952,
+     "t": "Por Que Escolher a Torre 05 Agora?"
+    },
+    {
+     "tag": "H3",
+     "y": 4178,
+     "t": "Não Perca Esta Oportunidade!"
+    }
+   ],
+   "wa": [],
+   "ctas": [
+    {
+     "t": "Corretor",
+     "y": 20
+    },
+    {
+     "t": "Agendar Visita",
+     "y": 66
+    },
+    {
+     "t": "1.3. Tabela 00: Condições Imbatíveis!",
+     "y": 887
+    },
+    {
+     "t": "corretor",
+     "y": 4584
+    },
+    {
+     "t": "agendar visita",
+     "y": 4669
+    },
+    {
+     "t": "contato",
+     "y": 4711
+    },
+    {
+     "t": "valores",
+     "y": 4966
+    }
+   ],
+   "forms": [],
+   "looseInputs": 0,
+   "videos": 0,
+   "vids": [],
+   "iframes": [],
+   "ytLinks": 0,
+   "sections": 0,
+   "hero": [
+    "Ir para o conteúdo",
+    "Áreas de Lazer",
+    "Torres",
+    "Financiamento",
+    "Corretor",
+    "Construtora",
+    "Agendar Visita",
+    "Blog",
+    "Ficha Técnica",
+    "Localização",
+    "LANÇAMENTO TORRE 05 – RESERVA PARQUE CLUBE: Sua Oportunidade de Ouro em Águas Claras!",
+    "Fechar",
+    "política de privacidade.",
+    "Aceitar"
+   ],
+   "text": "Ir para o conteúdo\nApartamentos\nÁreas de Lazer\nTorres\nGaleria\nFinanciamento\nCorretor\nConstrutora\nAgendar Visita\nBlog\nFicha Técnica\nProximidades\nLocalização\nLANÇAMENTO TORRE 05 – RESERVA PARQUE CLUBE: Sua Oportunidade de Ouro em Águas Claras!\n\nÍndice [Fechar]\n\n1. 25 de Outubro: O Dia que Você Estava Esperando Chegou!\n1.1. Um Projeto da Maior Construtora do Brasil\n1.2. Apartamentos Pensados Para Sua Vida\n1.3. Tabela 00: Condições Imbatíveis!\n1.4. Obras em Ritmo Acelerado\n1.5. Mais de 40 Itens de Lazer Prontos Para Você!\n1.6. Sustentabilidade e Inteligência\n1.7. Localização Única em Águas Claras\n1.8. Por Que Escolher a Torre 05 Agora?\n1.9. Não Perca Esta Oportunidade!\n25 de Outubro: O Dia que Você Estava Esperando Chegou!\n\nSe você sonha em morar na localização mais desejada de Águas Claras, esta é a sua chance! No dia 25 de outubro, acontece o lançamento oficial da Torre 05 do Reserva Parque Clube com Tabela 00 – os melhores preços do ano neste empreendimento que já é referência na região.\n\nPrepare-se para conhecer um projeto que une localização privilegiada, infraestrutura completa e as condições de pagamento mais facilitadas que você já viu. Esta não é apenas mais uma torre: é a oportunidade perfeita para você e sua família viverem com qualidade, conforto e segurança em um condomínio já consolidado e em pleno funcionamento.\n\nUm Projeto da Maior Construtora do Brasil\n\nQuando falamos em Direcional, falamos em tradição, solidez e credibilidade. A maior construtora do País assina este projeto especial que já conquistou centenas de famílias em Águas Claras.\n\nNão é promessa: é realidade! O Reserva Parque Clube já possui 6 torres entregues e habitadas, com moradores aproveitando toda a infraestrutura que o empreendimento oferece.\n\nEste é um empreendimento que você pode ver, tocar e sentir. Não há riscos nem incertezas – o que você vê é o que você terá, pois o projeto já está consolidado e as obras avançam em ritmo acelerado.\n\nApartamentos Pensados Para Sua Vida\n\nA Torre 05 oferece plantas inteligentes e funcionais, perfeitas para diferentes momentos da sua vida:\n\nApartamentos de 2 Quartos – 63,18m² Ideal para casais, pequenas famílias ou investidores que buscam rentabilidade em uma das regiões mais valorizadas do DF.\n\nApartamentos de 3 Quartos – 81,88m² Espaço generoso para famílias que valorizam conforto, com suíte e varanda para aproveitar a vista privilegiada do parque ecológico.\n\nCoberturas Lineares Para quem busca exclusividade e sofisticação, com hidromassagem já instalada e toda a amplitude que você merece.\n\nTodas as unidades incluem:\n\nSuíte e varanda\nInfraestrutura para ar-condicionado\nPiso laminado nos quartos\nPorcelanato nos demais ambientes\nTabela 00: Condições Imbatíveis!\n\nSó a Direcional pode oferecer as condições que você vai encontrar neste lançamento:\n\n✅ Financiamento pela Caixa – Segurança e taxas competitivas ✅ Use seu FGTS na entrada – Facilite ainda mais sua compra ✅ Entrada Facilitada – Modalidades diferenciadas de negociação ✅ ITBI Grátis – Economia significativa logo de início\n\nSão os melhores preços do ano no empreendimento, com condições pensadas para você realizar o sonho da casa própria sem comprometer seu orçamento.\n\nObras em Ritmo Acelerado\n\nEnquanto muitos empreendimentos estão apenas no papel, o Reserva Parque Clube já é uma realidade vibrante:\n\nTorres 100% Entregues:\n\nTorre 01 ✓\nTorre 02 ✓\nTorre 03 ✓\nTorre 04 ✓\nTorre 08 ✓\nTorre 09 ✓\n\nObras Avançadas:\n\nTorre 06: 70% concluída\nTorre 05: 30% concluída (seu futuro lar!)\n\nIsso significa segurança, previsibilidade e a certeza de que você está investindo em um projeto sério, com cronograma em dia e construtora comprometida com a entrega.\n\nMais de 40 Itens de Lazer Prontos Para Você!\n\nImagine acordar todos os dias em um verdadeiro clube. O Reserva Parque Clube não é apenas um lugar para morar: é um estilo de vida completo, com lazer pronto e totalmente equipado:\n\nPara Sua Saúde e Bem-Estar:\n\nAcademia coberta e descoberta\nPiscina com raia de 25m\nSpas e saunas\nDeck de yoga e meditação\nSala de yoga\n\nPara a Família:\n\nPiscinas infantis\nPlayground\nBrinquedoteca\nEspaço de jogos teen\nQuadra poliesportiva\nMiniquadra\n\nPara Seus Pets:\n\nEspaço pet coberto\nPet place descoberto\n\nPara Seu Lazer:\n\nChurrasqueiras\nEspaços gourmet\nSalões de festa finamente decorados\nSala de cinema\nSalão de jogos adulto\nEspaço stadium\nEspaços lareira\n\nPara Seu Trabalho:\n\nHome office equipado\nSala de reuniões\nEspaço bricolagem\n\nE Muito Mais:\n\nVestiários\nBicicletários\nCondomínio fechado com guarita de segurança\nPortão automatizado para veículos\nVagas vinculadas\n\nTudo isso entregue, decorado e pronto para você aproveitar desde o primeiro dia!\n\nSustentabilidade e Inteligência\n\nO Reserva Parque Clube foi projetado pensando no futuro:\n\nMedição individualizada de água e gás\nVagas com previsão para recarga de veículos elétricos\nDiferenciais de sustentabilidade nas áreas comuns e apartamentos\n\nEconomia no seu bolso e responsabilidade com o meio ambiente!\n\nLocalização Única em Águas Claras\n\nMorar no Reserva Parque Clube é estar no coração de Águas Claras, com tudo ao seu alcance:\n\n🌳 Ao lado do Parque Ecológico – Natureza, lazer e qualidade de vida 🎓 Acesso exclusivo ao Colégio La Salle – Educação de excelência para seus filhos 🏥 Hospitais e clínicas de saúde 🛍️ Shopping, comércio e gastronomia 🚇 Fácil acesso ao metrô e principais vias\n\nTudo que você precisa para viver com comodidade e praticidade está a poucos minutos de distância.\n\nPor Que Escolher a Torre 05 Agora?\nTabela 00: Melhores preços do ano\nProjeto consolidado: Sem riscos, tudo já funcionando\nObras avançadas: Previsibilidade de entrega\nLazer completo e pronto: Mais de 40 itens\nConstrutora líder: Direcional, a maior do Brasil\nCondições facilitadas: FGTS, entrada parcelada, ITBI grátis\nLocalização imbatível: O melhor de Águas Claras\nNão Perca Esta Oportunidade!\n\nO lançamento da Torre 05 acontece no dia 25 de outubro com condições que só estarão disponíveis para os primeiros compradores. Tabela 00 é sinônimo de oportunidade única – e quando acaba, não volta!\n\nSua melhor escolha em Águas Claras está aqui. Reserva Parque Clube: deixe-se surpreender por um condomínio à altura das suas melhores expectativas!\n\nAgende sua visita e conheça pessoalmente o empreendimento que já é referência em Águas Claras. Venha ver as torres entregues, o lazer completo e se imagine vivendo no seu novo lar!\n\nApartamentos\n\napartamento dois quartos Águas Claras\n\napartamento três quartos Águas Claras\ncobertura Águas Claras\nProximidades\nescolas em Águas Claras\nsupermercados em Águas Claras\nshoppings em Águas Claras\nhospitais em Águas Claras\nrestaurantes em Águas Claras\nReserva Parque Clube Águas Claras\náreas de lazer\ntorres\nfinanciamento\ncorretor\nconstrutora\nagendar visita\ncontato\nficha técnica\nlocalização\nfotos do Reserva Parque Clube\nvídeos do Reserva Parque Clube\n\ndecorados\n\nvalores\n\nplantas\n\nEndereço do Reserva Parque Clube: Rua das Carnaúbas Lote 12 – Águas Claras – Brasília – DF CEP: 70297-400\nVisitas no Reserva Parque Clube somente serão possíveis acompanhada de Corretor. As visitas são realizadas de segunda à sexta de 08h as 17h.\n\nLocalização no Google Maps: https://maps.app.goo.gl/ZZUnC5JSFWbB6Mgt5\nLocalização no Waze: https://waze.com/ul/h6vjvgq6g7\n\nReserva Parque Clube: R-14/223635 registrado no Cartório do 3º Ofício do Distrito Imobiliário Federal. Responsável Técnico: Ana Maria Montandon Chaer – CAU A44294-1 e Ismar Antônio Fernandes – CREA 18510/D. Consulte o corretor e a tabela de vendas. As imagens presentes nesta página são meramente ilustrativas, bem como os móveis, equipamentos, acessórios e paisagismo. Os materiais de acabamento constantes no Memorial Descritivo anexado ao Contrato de Compra e Venda prevalecem sobre estas ilustrações. Creci PJ – Direcional Vendas – DF: 14755\n\nOs valores e informações podem sofrer alterações e ajustes, consulte o corretor antes para confirmar as informações.\n\nUsamos cookies em nosso site para sua melhor experiência. Ao continuar a sua navegação, você concorda com nossa política de privacidade..\n\nAceitar"
+  },
+  "mobile": {
+   "scrollH": 7977,
+   "docH": 7977,
+   "wa": [],
+   "forms": [],
+   "sections": 0,
+   "hero": [
+    "Ir para o conteúdo",
+    "LANÇAMENTO TORRE 05 – RESERVA PARQUE CLUBE: Sua Oportunidade de Ouro em Águas Claras!"
+   ],
+   "ctas": [
+    {
+     "t": "1.3. Tabela 00: Condições Imbatíveis!",
+     "y": 982
+    },
+    {
+     "t": "corretor",
+     "y": 7070
+    },
+    {
+     "t": "agendar visita",
+     "y": 7155
+    },
+    {
+     "t": "contato",
+     "y": 7197
+    },
+    {
+     "t": "valores",
+     "y": 7452
+    }
+   ]
+  }
+ },
+ "brhouse-versat": {
+  "slug": "brhouse-versat",
+  "url_req": "https://www.brhouseimoveis.com.br/lancamento/versat-home-resort/906",
+  "ts": "2026-10-20 15:09",
+  "status": 200,
+  "desktop": {
+   "title": "404 - Produto não encontrado | BR House Inteligência Imobiliária LTDA",
+   "url": "https://www.brhouseimoveis.com.br/lancamento/versat-home-resort/906",
+   "scrollH": 0,
+   "docH": 800,
+   "heads": [
+    {
+     "tag": "H2",
+     "y": 261,
+     "t": "Oops!"
+    }
+   ],
+   "wa": [],
+   "ctas": [
+    {
+     "t": "Fale conosco",
+     "y": 637
+    }
+   ],
+   "forms": [],
+   "looseInputs": 0,
+   "videos": 0,
+   "vids": [],
+   "iframes": [],
+   "ytLinks": 0,
+   "sections": 1,
+   "hero": [
+    "Oops!",
+    "Parece que não conseguimos encontrar o produto",
+    "que você está procurando.",
+    "Aqui estão alguns links úteis",
+    "Home",
+    "Alugar",
+    "Comprar",
+    "A Empresa",
+    "Fale conosco"
+   ],
+   "text": "Oops!\n\nParece que não conseguimos encontrar o produto\n\nque você está procurando.\n\nAqui estão alguns links úteis\n\nHome\nAlugar\nComprar\nA Empresa\nFale conosco"
+  },
+  "mobile": {
+   "scrollH": 0,
+   "docH": 844,
+   "wa": [],
+   "forms": [],
+   "sections": 1,
+   "hero": [
+    "Oops!",
+    "Parece que não conseguimos encontrar o produto",
+    "que você está procurando.",
+    "Aqui estão alguns links úteis",
+    "Home",
+    "Alugar",
+    "Comprar",
+    "A Empresa",
+    "Fale conosco"
+   ],
+   "ctas": [
+    {
+     "t": "Fale conosco",
+     "y": 590
+    }
+   ]
+  }
+ },
+ "pilotis-versat": {
+  "slug": "pilotis-versat",
+  "url_req": "https://pilotis.com.br/lancamentos/versat-home-resort",
+  "ts": "2026-10-20 15:09",
+  "status": 404,
+  "desktop": {
+   "title": "Página não encontrada - PILOTIS IMOBILIÁRIA",
+   "url": "https://www.pilotis.com.br/lancamentos/versat-home-resort",
+   "scrollH": 1011,
+   "docH": 1011,
+   "heads": [
+    {
+     "tag": "H3",
+     "y": 138,
+     "t": "PÁGINAS"
+    },
+    {
+     "tag": "H3",
+     "y": 447,
+     "t": "ENTRE EM CONTATO"
+    },
+    {
+     "tag": "H3",
+     "y": 608,
+     "t": "REDES SOCIAIS"
+    },
+    {
+     "tag": "H1",
+     "y": 136,
+     "t": "Página não encontrada!"
+    },
+    {
+     "tag": "H2",
+     "y": 180,
+     "t": "Change Color"
+    }
+   ],
+   "wa": [
+    {
+     "t": "(61) 3575-7410",
+     "href": "https://wa.me/556135757410?text= Olá.%20Estou%20visitando%20o%20site. ",
+     "y": 17,
+     "fixed": true,
+     "visible": true
+    },
+    {
+     "t": "(61) 3575-7410",
+     "href": "https://wa.me/556135757410?text= Olá.%20Estou%20visitando%20o%20site. ",
+     "y": 495,
+     "fixed": true,
+     "visible": true
+    },
+    {
+     "t": "(61) 3575-7410",
+     "href": "https://wa.me/556135757410?text= Olá.%20Estou%20visitando%20o%20site. ",
+     "y": 564,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "",
+     "href": "https://wa.me/556135757410?text=Olá, estou visitando o site e gostaria de mais informações",
+     "y": 700,
+     "fixed": true,
+     "visible": true
+    }
+   ],
+   "ctas": [
+    {
+     "t": "Cadastro Aluguel",
+     "y": 63
+    },
+    {
+     "t": "Espaço Corretor",
+     "y": 63
+    },
+    {
+     "t": "Cadastro Aluguel",
+     "y": 264
+    },
+    {
+     "t": "Espaço Corretor",
+     "y": 352
+    },
+    {
+     "t": "Cadastro Aluguel",
+     "y": 597
+    },
+    {
+     "t": "Espaço Corretor",
+     "y": 667
+    },
+    {
+     "t": "Facebook",
+     "y": 793
+    }
+   ],
+   "forms": [],
+   "looseInputs": 0,
+   "videos": 0,
+   "vids": [],
+   "iframes": [],
+   "ytLinks": 3,
+   "sections": 0,
+   "hero": [
+    "Home",
+    "A Pilotis",
+    "Cadastro Aluguel",
+    "Calcule para alugar",
+    "Espaço Corretor",
+    "PÁGINAS",
+    "ENTRE EM CONTATO",
+    "REDES SOCIAIS",
+    "Página não encontrada!",
+    "Continuar navegando",
+    "Calcule para Alugar",
+    "Change Color"
+   ],
+   "text": "(61) 3575-7410\n \nHome\nA Pilotis\nCadastro Aluguel\nCalcule para alugar\nEspaço Corretor\nPÁGINAS\nHome\nA Pilotis\nCadastro Aluguel\nCalcule para alugar\nEspaço Corretor\nENTRE EM CONTATO\n(61) 3575-7410\nREDES SOCIAIS\n \nPágina não encontrada!\n\nContinuar navegando\n\nPILOTIS IMOBILIÁRIA\n(61) 3575-7410\nLINKS ÚTEIS\nA Pilotis\nCadastro Aluguel\nCalcule para Alugar\nEspaço Corretor\n\n© 2026 PILOTIS IMOBILIÁRIA :: CRECI 22309 Todos os direitos reservados.\n\nTodas as informações e valores exibidos neste portal são fornecidos pelos proprietários dos imóveis, podendo sofrer alterações sem aviso prévio. Antes da proposta, consulte nossos corretores.\nFacebook\nYoutube\nInstagram\nChange Color"
+  },
+  "mobile": {
+   "scrollH": 1229,
+   "docH": 1229,
+   "wa": [
+    {
+     "t": "(61) 3575-7410",
+     "href": "https://wa.me/556135757410?text= Olá.%20Estou%20visitando%20o%20site. ",
+     "y": 385,
+     "fixed": true,
+     "visible": false
+    },
+    {
+     "t": "(61) 3575-7410",
+     "href": "https://wa.me/556135757410?text= Olá.%20Estou%20visitando%20o%20site. ",
+     "y": 880,
+     "fixed": true,
+     "visible": true
+    },
+    {
+     "t": "(61) 3575-7410",
+     "href": "https://wa.me/556135757410?text= Olá.%20Estou%20visitando%20o%20site. ",
+     "y": 587,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "",
+     "href": "https://wa.me/556135757410?text=Olá, estou visitando o site e gostaria de mais informações",
+     "y": 1129,
+     "fixed": true,
+     "visible": true
+    }
+   ],
+   "forms": [],
+   "sections": 0,
+   "hero": [
+    "PÁGINAS",
+    "Home",
+    "A Pilotis",
+    "Cadastro Aluguel",
+    "Calcule para alugar",
+    "Espaço Corretor",
+    "ENTRE EM CONTATO",
+    "Página não encontrada!",
+    "Continuar navegando",
+    "Calcule para Alugar",
+    "Change Color"
+   ],
+   "ctas": [
+    {
+     "t": "Cadastro Aluguel",
+     "y": 649
+    },
+    {
+     "t": "Espaço Corretor",
+     "y": 737
+    },
+    {
+     "t": "Cadastro Aluguel",
+     "y": 733
+    },
+    {
+     "t": "Espaço Corretor",
+     "y": 803
+    },
+    {
+     "t": "Facebook",
+     "y": 1135
+    }
+   ]
+  }
+ },
+ "jurandyrleal-viva": {
+  "slug": "jurandyrleal-viva",
+  "url_req": "https://jurandyrleal.com.br/viva-aguas-claras-residencial-resort",
+  "ts": "2026-10-20 15:11",
+  "status": 200,
+  "desktop": {
+   "title": "Viva Águas Claras Residencial Resort | Lazer Excepcional",
+   "url": "https://jurandyrleal.com.br/viva-aguas-claras-residencial-resort/",
+   "scrollH": 7904,
+   "docH": 7904,
+   "heads": [
+    {
+     "tag": "H1",
+     "y": 247,
+     "t": "Viva Águas Claras Residencial Resort: Sofisticação E Lazer De Resort"
+    },
+    {
+     "tag": "H2",
+     "y": 515,
+     "t": "O Conceito “Resort Residencial”: Por Que Esta é a Tendência do Futuro?"
+    },
+    {
+     "tag": "H2",
+     "y": 798,
+     "t": "10.600m² de Pura Experiência: Onde o Lazer Premium se Torna seu Novo Estilo de Vida"
+    },
+    {
+     "tag": "H3",
+     "y": 1133,
+     "t": "O Complexo Aquático: Seu Oásis Particular"
+    },
+    {
+     "tag": "H3",
+     "y": 1842,
+     "t": "Esportes e Saúde"
+    },
+    {
+     "tag": "H3",
+     "y": 2358,
+     "t": "Contato com a Natureza"
+    },
+    {
+     "tag": "H3",
+     "y": 2560,
+     "t": "Celebração e Gastronomia"
+    },
+    {
+     "tag": "H3",
+     "y": 3196,
+     "t": "Kids e Teen"
+    },
+    {
+     "tag": "H3",
+     "y": 3398,
+     "t": "Conveniência e Facilidades"
+    },
+    {
+     "tag": "H2",
+     "y": 4133,
+     "t": "Localização Estratégica: O Equilíbrio entre Águas Claras e Taguatinga"
+    },
+    {
+     "tag": "H3",
+     "y": 4299,
+     "t": "Conectividade e Mobilidade"
+    },
+    {
+     "tag": "H3",
+     "y": 4493,
+     "t": "Vista Permanente para o Futuro Parque Veredas"
+    },
+    {
+     "tag": "H3",
+     "y": 4688,
+     "t": "Arquitetura de Assinatura: O Toque dos Mestres"
+    },
+    {
+     "tag": "H2",
+     "y": 5186,
+     "t": "Tipologias: Um Lar para Cada Momento da Vida"
+    },
+    {
+     "tag": "H2",
+     "y": 5561,
+     "t": "Sustentabilidade: O Primeiro Lançamento com Energia Fotovoltaica"
+    },
+    {
+     "tag": "H2",
+     "y": 5844,
+     "t": "Conclusão: O Próximo Nível da Sua Vida no Viva Águas Claras Residencial Resort"
+    },
+    {
+     "tag": "H2",
+     "y": 6159,
+     "t": "Precisa de Mais Informações ou Agendar Visita? Preencha o Formulário Que Entraremos em Contato Brevemente!"
+    },
+    {
+     "tag": "H2",
+     "y": 6775,
+     "t": "Profissional Responsável"
+    },
+    {
+     "tag": "H3",
+     "y": 6824,
+     "t": "Jurandyr Leal – Creci: 8361/DF"
+    }
+   ],
+   "wa": [
+    {
+     "t": "Falar Pelo WhatsApp",
+     "href": "https://api.whatsapp.com/send?l=pt&phone=5561993212020",
+     "y": 4085,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "Falar Pelo WhatsApp",
+     "href": "https://api.whatsapp.com/send?l=pt&phone=5561993212020",
+     "y": 6954,
+     "fixed": false,
+     "visible": true
+    }
+   ],
+   "ctas": [
+    {
+     "t": "Contato",
+     "y": 166
+    },
+    {
+     "t": "Falar Pelo WhatsApp",
+     "y": 4085
+    },
+    {
+     "t": "Clique e saiba mais >>>",
+     "y": 5359
+    },
+    {
+     "t": "Clique e saiba mais >>>",
+     "y": 5447
+    },
+    {
+     "t": "Falar Pelo WhatsApp",
+     "y": 6954
+    },
+    {
+     "t": "Contato",
+     "y": 7689
+    }
+   ],
+   "forms": [
+    {
+     "y": 235,
+     "visible": false,
+     "n": 0,
+     "fields": [],
+     "submit": [
+      "Pesquisar"
+     ]
+    },
+    {
+     "y": 6242,
+     "visible": true,
+     "n": 4,
+     "fields": [
+      "your-name",
+      "your-email",
+      "your-subject",
+      "your-message"
+     ],
+     "submit": [
+      "Enviar"
+     ]
+    }
+   ],
+   "looseInputs": 0,
+   "videos": 0,
+   "vids": [],
+   "iframes": [],
+   "ytLinks": 0,
+   "sections": 2,
+   "hero": [
+    "Skip to content",
+    "terça-feira, outubro 20, 2026",
+    "Apartamentos",
+    "Portal Do Parque I: Apartamentos De 3 Quartos Prontos No Guará II",
+    "Portal Do Parque II – Apartamento 2 Quartos Guará II",
+    "Residencial Quadra Parque Gama: Apartamentos De 2 Quartos No Centro Do Gama",
+    "Lotes Em Condomínio",
+    "Lote Jardim Botânico – Condominio Le Grand Jardin",
+    "Setor Habitacional Tororó – Jardim Botânico, Brasília/DF",
+    "Condomínio Le Grand Jardin",
+    "Casas Em Condomínio",
+    "Casas Le Jardin No Jardim Botânico",
+    "Contato",
+    "Blog",
+    "site mode button",
+    "Viva Águas Claras Residencial Resort: Sofisticação E Lazer De Resort",
+    "Com 4 torres implantadas em um terreno amplo e mais de 10.600 m² de área de lazer estilo resort, o projeto foi desenvolvido para famílias que desejam viver com conforto, praticidade e infraestrutura completa sem sair de casa.",
+    "Mais do que um endereço, o Viva Águas Claras representa um novo padrão de moradia na região.",
+    "O Conceito “Resort Residencial”: Por Que Esta é a Tendência do Futuro?",
+    "10.600m² de Pura Experiência: Onde o Lazer Premium se Torna seu Novo Estilo de Vida"
+   ],
+   "text": "Skip to content\nterça-feira, outubro 20, 2026\n\nApartamentos\nPortal Do Parque I: Apartamentos De 3 Quartos Prontos No Guará II\nPortal Do Parque II – Apartamento 2 Quartos Guará II\nResidencial Quadra Parque Gama: Apartamentos De 2 Quartos No Centro Do Gama\nLotes Em Condomínio\nLote Jardim Botânico – Condominio Le Grand Jardin\nSetor Habitacional Tororó – Jardim Botânico, Brasília/DF\nCondomínio Le Grand Jardin\nCasas Em Condomínio\nCasas Le Jardin No Jardim Botânico\nContato\nBlog\nsite mode button\nViva Águas Claras Residencial Resort: Sofisticação E Lazer De Resort\n\nO Viva Águas Claras Residencial Resort é um empreendimento residencial com conceito de condomínio-clube, planejado para oferecer qualidade de vida, segurança e lazer em nível superior em Águas Claras.\n\nCom 4 torres implantadas em um terreno amplo e mais de 10.600 m² de área de lazer estilo resort, o projeto foi desenvolvido para famílias que desejam viver com conforto, praticidade e infraestrutura completa sem sair de casa.\n\nMais do que um endereço, o Viva Águas Claras representa um novo padrão de moradia na região.\n\nO Conceito “Resort Residencial”: Por Que Esta é a Tendência do Futuro?\n\nO mundo mudou, e a forma como nos relacionamos com nossas moradias também. O conceito de Resort Residencial — do qual o Viva Águas Claras Residencial Resort é o maior expoente na região — baseia-se na ideia de que você não precisa viajar para ter experiências de férias.\n\nPara casais na faixa dos 30 a 50 anos, que lidam com o estresse do mundo corporativo e a gestão da vida escolar dos filhos, ter um “oásis” particular é uma necessidade. Morar no Viva Águas Claras Residencial Resort significa ter um parque aquático, um bosque privativo e uma academia profissional a poucos segundos de elevador. É a conveniência levada ao nível máximo, onde o tempo economizado no trânsito ou na busca por lazer externo é convertido em convivência familiar.\n\n10.600m² de Pura Experiência: Onde o Lazer Premium se Torna seu Novo Estilo de Vida\n\nNo Viva Águas Claras Residencial Resort, a área de lazer não é apenas um detalhe — é o motivo pelo qual você nunca mais vai querer sair de casa. Com uma extensão colossal de mais de 10.600 m², o empreendimento redefine o conceito de “condomínio clube” para entregar um verdadeiro Resort Particular.\n\nAqui, cada m² foi planejado para que o estresse da rotina urbana desapareça no momento em que você cruza o portão. Assinado por ícones da arquitetura, o complexo de lazer é dividido em “hubs de experiência” que atendem desde a alta performance esportiva até o relaxamento absoluto em meio à natureza.\n\nVeja também: Apartamento 3 Quartos Noroeste, vazado e pronto para morar!\n\nO Complexo Aquático: Seu Oásis Particular\n\nImagine um parque aquático privativo, projetado para oferecer o máximo em lazer e performance 365 dias por ano. No Viva Águas Claras Residencial Resort, a experiência aquática atende tanto ao atleta quanto a quem busca relaxamento total, com um diferencial inegociável: as três piscinas serão entregues com o sistema de aquecimento instalado e em pleno funcionamento.\n\nPiscina Adulto com Raia de 25m e Borda Infinita: O cenário perfeito para sua natação matinal ou para momentos de contemplação. A borda infinita eleva o padrão estético, criando uma integração visual magnífica com o horizonte e as áreas verdes do condomínio.\nSegunda Piscina Adulto (Lazer): Um espaço dedicado à descontração e ao convívio social, ideal para desfrutar de um mergulho relaxante em águas sempre na temperatura ideal.\nPiscina Infantil com Acquaplay: Diversão garantida para os pequenos em um ambiente seguro e climatizado, onde os brinquedos aquáticos temáticos transformam cada tarde em uma festa.\nSauna e Repouso: Um espaço de descompressão imediatamente integrado ao deck, permitindo um ciclo completo de bem-estar.\nEsportes e Saúde\nAcademia Profissional: Com mais de 250 m², equipada pela Nação Club.\nQuadra de Grama: Campo de futebol society privativo.\nQuadra de Areia: Ideal para Beach Tennis, Futevôlei ou Vôlei de praia.\nContato com a Natureza\n\nBosque Privativo: Área de 2.000 m² de natureza preservada com acesso exclusivo.\n\nPraças de Convivência: Espaços arborizados com paisagismo assinado pela Depieri.\n\nPet Space: Área dedicada para o lazer e exercício dos seus animais de estimação.\n\nCelebração e Gastronomia\n\nViva Eventos e Festas: 3 espaços integrados com capacidade para mais de 110 pessoas sentadas.\n\nEspaço Gourmet: Ambiente sofisticado para recepções íntimas.\n\nChurrasqueiras: Quiosques equipados para o tradicional churrasco em família.\n\nPoker Bar: Ambiente exclusivo para lazer adulto com mesa de jogos e bar.\n\nKids e Teen\n\nBrinquedoteca: Espaço lúdico e seguro para o desenvolvimento infantil.\n\nPlayground: Brinquedos modernos ao ar livre.\n\nEspaço Teen / Salão de Jogos: Equipado para o entretenimento de jovens e adolescentes.\n\nConveniência e Facilidades\n\nEspaço Mulher (Beauty): Salão de beleza privativo dentro do condomínio.\n\nCoworking: Estação de trabalho para home office com infraestrutura.\n\nMini Market: Conveniência de mercadinho autônomo 24h.\n\nEspaço Delivery: Local seguro para recebimento e armazenamento de encomendas.\n\nRecanto da Fé: Capela ecumênica para momentos de reflexão.\n\nFalar Pelo WhatsApp\nLocalização Estratégica: O Equilíbrio entre Águas Claras e Taguatinga\n\nSituado na Avenida Sibipiruna (QS 5), o Viva Águas Claras Residencial Resort ocupa uma posição geográfica privilegiada que oferece o melhor de dois mundos. O empreendimento está na fronteira inteligente entre Águas Claras e Taguatinga, permitindo que os moradores usufruam da infraestrutura moderna de uma e do comércio consolidado da outra.\n\nConectividade e Mobilidade\n\nUm dos grandes receios de quem mora em Águas Claras é o trânsito. No entanto, o Viva Águas Claras Residencial Resort está posicionado em um ponto estratégico de escoamento. O acesso ao Pistão Sul, EPTG e Estrada Parque Taguatinga é direto, facilitando o deslocamento para o Plano Piloto ou outras regiões administrativas. A proximidade com a central da CAESB e o fácil acesso ao transporte público e vias principais garantem que a logística da sua família seja fluida e eficiente.\n\nVista Permanente para o Futuro Parque Veredas\n\nDiferente de muitos prédios em Águas Claras que sofrem com o “paredão” de outros edifícios, o Viva Águas Claras Residencial Resort oferece uma vista panorâmica permanente. De frente para o Futuro Parque Veredas, os moradores das torres mais altas podem contemplar o horizonte de Brasília e a silhueta do Plano Piloto. Essa ventilação e iluminação natural não apenas melhoram a qualidade de vida, mas também garantem a valorização constante do imóvel.\n\nArquitetura de Assinatura: O Toque dos Mestres\n\nUm dos pilares que sustenta o status de “alto padrão” do Viva Águas Claras Residencial Resort é a curadoria de profissionais envolvidos no projeto. A Faenge convidou três dos maiores nomes da arquitetura e design de interiores do Brasil para assinar os decorados e áreas comuns:\n\nAndré Alf (Alf Arquitetura & Design): Responsável pelas áreas comuns e pelo decorado de 2 quartos. Seu estilo une o clean ao contemporâneo, focando em ambientes que transmitem calma e funcionalidade.\nWalléria Teixeira: Assina o decorado de 3 quartos. Seu trabalho é reconhecido pelo uso de materiais naturais, como madeira e pedra, criando uma atmosfera de luxo acolhedor e elegância atemporal.\nCybele Barbosa: Projetou o decorado de 4 quartos. Sua abordagem foca na integração de espaços, ideal para famílias que gostam de receber e prezam por ambientes onde a estética e o bem-estar caminham juntos.\n\nTer um imóvel no Viva Águas Claras Residencial Resort cujo design é validado por esses profissionais eleva o patamar de exclusividade do seu investimento.\n\nQuem está pesquisando imóveis na região de Águas Claras e Taguatinga também pode conhecer o Nexus Taguatinga, empreendimento em construção com apartamentos de 2 quartos, opções garden e estrutura de lazer. A comparação entre as plantas, as áreas comuns e as condições de compra ajuda a identificar qual proposta combina melhor com cada perfil.\n\nTipologias: Um Lar para Cada Momento da Vida\n\nO Viva Águas Claras Residencial Resort foi planejado para acompanhar as diferentes fases de uma família. Com metragens que variam de 61 m² a 247 m², o projeto atende desde o casal que planeja o primeiro filho até famílias grandes que buscam o máximo em espaço e privacidade.\n\nApartamentos de 2 Quartos (61 a 64 m²): Plantas otimizadas com suíte e varanda ideais para quem busca eficiência sem abrir mão do luxo.\nClique e saiba mais >>>\nApartamentos de 3 Quartos (88 m²): Espaço generoso com 1 Suíte Plena e 2 Semi-Suítes e Varanda com opções de integração de sala e cozinha, perfeito para o dia a dia familiar.\nClique e saiba mais >>>\nApartamentos de 4 Quartos (119 a 121 m²): O ápice do conforto em planta padrão, com Varanda Gourmet e Suítes espaçosas e acabamento de alto nível.\nCoberturas Lineares (130 a 247 m²): Para quem não aceita nada menos que o extraordinário. Espaços amplos ao ar livre privativos com a melhor vista da região.\nSustentabilidade: O Primeiro Lançamento com Energia Fotovoltaica\n\nEm uma era onde a consciência ambiental e a economia de recursos são vitais, o Viva Águas Claras Residencial Resort sai na frente. Este é o primeiro empreendimento de Águas Claras a contar com um sistema de geração de energia solar (fotovoltaica) em larga escala.\n\nCom uma produção mensal estimada em 33 mil kWh, o sistema gera energia para as áreas comuns do condomínio. Para o proprietário do Viva Águas Claras Residencial Resort, isso se traduz em um benefício financeiro direto: a redução significativa na taxa de condomínio. Além disso, o prédio conta com infraestrutura para coleta seletiva e dispositivos de economia de água, alinhando seu estilo de vida às melhores práticas globais de ESG.\n\nConclusão: O Próximo Nível da Sua Vida no Viva Águas Claras Residencial Resort\n\nEscolher o seu novo lar é, acima de tudo, escolher a qualidade do tempo que você passará com as pessoas que ama. O Viva Águas Claras Residencial Resort não é apenas um empreendimento imobiliário; é a materialização de um conceito onde o conforto, a segurança e a sustentabilidade caminham juntos. Com uma infraestrutura de lazer inédita de mais de 10.600 m² e o pioneirismo da energia fotovoltaica, o Viva Águas Claras Residencial Resort se posiciona como o investimento mais inteligente e desejado de Águas Claras.\n\nAo optar pelo Viva Águas Claras Residencial Resort, você garante à sua família um ecossistema de bem-estar, com a solidez construtiva da Faenge e uma localização estratégica que valoriza o seu patrimônio dia após dia. Não se trata apenas de metros quadrados, mas de viver o privilégio de um resort particular com vista permanente para a natureza.\n\nPrecisa de Mais Informações ou Agendar Visita? Preencha o Formulário Que Entraremos em Contato Brevemente!\n\nSeu nome\n\n\nSeu e-mail\n\n\nAssunto\n\n\nSua mensagem (opcional)\n\n\nProfissional Responsável\nJurandyr Leal – Creci: 8361/DF\n\nExperiente profissional que atua no mercado imobiliário de Brasília-DF há mais de 20 anos. Corretor especialista na venda de imóveis em Lançamentos, em Construção e Prontos para morar.\n\nFalar Pelo WhatsApp\nCATEGORIAS\nDicas de decoração\nMercado imobiliário\nSem categoria\nLINKS IMPORTANTES\nPolítica de Privacidade e Política de Cookies\nContato\nSobre mim\nTermos de Uso\nSobre o Autor\nJurandyr Leal Corretor | @ 2026 Todos os Direitos Reservadostarget=\"_blank\">Mystery Themes."
+  },
+  "mobile": {
+   "scrollH": 14022,
+   "docH": 14022,
+   "wa": [
+    {
+     "t": "Falar Pelo WhatsApp",
+     "href": "https://api.whatsapp.com/send?l=pt&phone=5561993212020",
+     "y": 7073,
+     "fixed": false,
+     "visible": true
+    },
+    {
+     "t": "Falar Pelo WhatsApp",
+     "href": "https://api.whatsapp.com/send?l=pt&phone=5561993212020",
+     "y": 13001,
+     "fixed": false,
+     "visible": true
+    }
+   ],
+   "forms": [
+    {
+     "y": 13247,
+     "visible": false,
+     "n": 0,
+     "fields": [],
+     "submit": [
+      "Pesquisar"
+     ]
+    },
+    {
+     "y": 12192,
+     "visible": true,
+     "n": 4,
+     "fields": [
+      "your-name",
+      "your-email",
+      "your-subject",
+      "your-message"
+     ],
+     "submit": [
+      "Enviar"
+     ]
+    }
+   ],
+   "sections": 2,
+   "hero": [
+    "Skip to content",
+    "terça-feira, outubro 20, 2026",
+    "Viva Águas Claras Residencial Resort: Sofisticação E Lazer De Resort",
+    "Com 4 torres implantadas em um terreno amplo e mais de 10.600 m² de área de lazer estilo resort, o projeto foi desenvolvido para famílias que desejam viver com conforto, praticidade e infraestrutura completa sem sair de casa.",
+    "Mais do que um endereço, o Viva Águas Claras representa um novo padrão de moradia na região."
+   ],
+   "ctas": [
+    {
+     "t": "Falar Pelo WhatsApp",
+     "y": 7073
+    },
+    {
+     "t": "Clique e saiba mais >>>",
+     "y": 10031
+    },
+    {
+     "t": "Clique e saiba mais >>>",
+     "y": 10194
+    },
+    {
+     "t": "Falar Pelo WhatsApp",
+     "y": 13001
+    },
+    {
+     "t": "Contato",
+     "y": 13786
+    }
+   ]
+  }
+ },
+ "vivaaguasclarasresort": {
+  "slug": "vivaaguasclarasresort",
+  "url_req": "https://vivaaguasclarasresort.com.br",
+  "ts": "2026-10-20 15:11",
+  "status": 200,
+  "desktop": {
+   "title": "hotsite Viva - Viva Residencial Resort",
+   "url": "https://vivaaguasclarasresort.com.br/",
+   "scrollH": 13351,
+   "docH": 13351,
+   "heads": [
+    {
+     "tag": "H1",
+     "y": 467,
+     "t": "UM RESORT PARA CHAMAR DE LAR 2, 3 E 4 QUARTOS E COBERTURAS"
+    },
+    {
+     "tag": "H2",
+     "y": 1988,
+     "t": "VIVA UM NOVO JEITO DE MORAR EM ÁGUAS CLARAS"
+    },
+    {
+     "tag": "H2",
+     "y": 4244,
+     "t": "VIVA ESSE RESORT E MERGULHE NO PARAÍSO"
+    },
+    {
+     "tag": "H2",
+     "y": 5178,
+     "t": "MAIS DE 2.000 M² DE NATUREZA, COM ACESSO EXCLUSIVO"
+    },
+    {
+     "tag": "H3",
+     "y": 6524,
+     "t": "Decorado 2 Quartos | 61,41 m²"
+    },
+    {
+     "tag": "H3",
+     "y": 6760,
+     "t": "Decorado 3 Quartos | 88,05 m²"
+    },
+    {
+     "tag": "H3",
+     "y": 7020,
+     "t": "Decorado 4 Quartos | 121,15 m²"
+    },
+    {
+     "tag": "H2",
+     "y": 7668,
+     "t": "VIVA O MELHOR DA VIDA TODOS OS DIAS"
+    },
+    {
+     "tag": "H2",
+     "y": 8991,
+     "t": "TIPOLOGIAS PARA TODOS OS ESTILOS DE VIDA"
+    },
+    {
+     "tag": "H2",
+     "y": 10242,
+     "t": "SAIBA MAIS SOBRE SEU NOVO LAR"
+    },
+    {
+     "tag": "H2",
+     "y": 11025,
+     "t": "FAENGE: 26 ANOS DE TRADIÇÃO E SOLIDEZ. E É SÓ O COMEÇO."
+    }
+   ],
+   "wa": [],
+   "ctas": [
+    {
+     "t": "AGENDE UMA VISITA",
+     "y": 36
+    },
+    {
+     "t": "AGENDE SUA VISITA AOS DECORADOS",
+     "y": 2880
+    },
+    {
+     "t": "AGENDE SUA VISITA AOS DECORADOS",
+     "y": 4895
+    },
+    {
+     "t": "AGENDE SUA VISITA AOS DECORADOS",
+     "y": 5998
+    },
+    {
+     "t": "AGENDE SUA VISITA AOS DECORADOS",
+     "y": 7305
+    },
+    {
+     "t": "AGENDE SUA VISITA AOS DECORADOS",
+     "y": 8628
+    },
+    {
+     "t": "BAIXE AQUI O BOOK COMPLETO",
+     "y": 9864
+    },
+    {
+     "t": "QUERO CONHECER O VIVA",
+     "y": 10691
+    },
+    {
+     "t": "CONHEÇA NOSSA HISTÓRIA",
+     "y": 11807
+    },
+    {
+     "t": "AGENDE SUA VISITA AOS DECORADOS",
+     "y": 12475
+    }
+   ],
+   "forms": [
+    {
+     "y": 10402,
+     "visible": true,
+     "n": 5,
+     "fields": [
+      "form_fields[name]",
+      "form_fields[telefone]",
+      "form_fields[email]",
+      "form_fields[unidadetipo]",
+      "form_fields[Aceite]"
+     ],
+     "submit": [
+      "QUERO CONHECER O VIVA"
+     ]
+    }
+   ],
+   "looseInputs": 0,
+   "videos": 0,
+   "vids": [],
+   "iframes": [],
+   "ytLinks": 0,
+   "sections": 0,
+   "hero": [
+    "O VIVA",
+    "VÍDEOS",
+    "VIVA DECOR",
+    "IMAGENS",
+    "A FAENGE",
+    "LOCALIZAÇÃO",
+    "AGENDE UMA VISITA"
+   ],
+   "text": "O VIVA\nVÍDEOS\nVIVA DECOR\nIMAGENS\nA FAENGE\nLOCALIZAÇÃO\nAGENDE UMA VISITA\nUM RESORT PARA CHAMAR DE LAR\n2, 3 E 4 QUARTOS E COBERTURAS\nVISITE OS\nDECORADOS EXCLUSIVOS\nE DESCUBRA O VIVA\nVIVA UM NOVO JEITO DE MORAR EM ÁGUAS CLARAS\n\nApartamentos de 2, 3 e 4 quartos e coberturas lineares.\n\nLAZER EM MAIS\nDE 10.600M²\n \n\n1º LANÇAMENTO EM ÁGUAS CLARAS COM GERAÇÃO DE ENERGIA ELÉTRICA*\n\nBOSQUE DE 2.000M² EM ÁREA PÚBLICA\n\nNA MELHOR LOCALIZAÇÃO DE ÁGUAS CLARAS\n\nA MELHOR VISTA PARA O PLANO PILOTO\n\nÁREAS COMUNS\nBY ANDRÉ ALF\n\nACADEMIA COM MAIS DE 250 M² BY NAÇÃO CLUB\n\nPAISAGISMO EXUBERANTE BY DEPIERI\n\nVIVA EVENTOS E FESTAS 3 ESPAÇOS INTEGRADOS E CAPACIDADE PARA +110 PESSOAS SENTADAS\n\nAGENDE SUA VISITA\nAOS DECORADOS\nVIVA ESSE RESORT E MERGULHE NO PARAÍSO\n\nConheça o Viva Águas Claras Residencial Resort. Aqui, você vai sempre se sentir de férias.\n\nAGENDE SUA VISITA\nAOS DECORADOS\nMAIS DE 2.000 M² DE NATUREZA, COM ACESSO EXCLUSIVO\n\nUm espaço que acolhe seus passos e a alegria do seu pet, ao lado do empreendimento, com acesso exclusivo.\n\nE em frente a área pública.\n\nAGENDE SUA VISITA\nAOS DECORADOS\n\nA experiência do Viva Águas Claras Residencial Resort é pensada para que você sinta a exclusividade e perceba a qualidade nos mínimos detalhes. Cada decorado foi projetado por um escritório de arquitetura renomado, com estilos únicos para valorizar conforto, estética e funcionalidade em cada detalhe.\n\nDecorado 2 Quartos | 61,41 m²\n\nAssinado por André Alf – ALF Arquitetura & Design\n\n“Este encantador apartamento de 2 quartos é perfeito para uma família em busca de conforto, praticidade e estilo. Com um design clean e contemporâneo, os ambientes foram planejados para oferecer bem-estar e funcionalidade no dia a dia.”\n\nDecorado 3 Quartos | 88,05 m²\n\nAssinado por Walléria Teixeira – Studio Walléria Teixeira\n\n“O layout fluido e o design atualizado unem funcionalidade e estética ao decorado. Os materiais naturais como madeira e pedra criam uma atmosfera de conforto e elegância em cada ambiente.”\n\nDecorado 4 Quartos | 121,15 m²\n\nAssinado por Cybele Barbosa\n\n“O projeto busca transformar o espaço em um lar onde beleza, funcionalidade e bem-estar se unem de forma harmoniosa. Cada ambiente foi cuidadosamente planejado para criar uma atmosfera eficiente e acolhedora.”\n\nAGENDE SUA VISITA\nAOS DECORADOS\nVIVA O MELHOR DA VIDA TODOS OS DIAS\n\nExclusividade, lazer e bem-estar. Um resort para chamar de lar.\n\nPaisagismo à Noite\nViva Águas Claras Resort\nParque aquático com 3 piscinas\nPiscina adulto\nPiscina infantil\nPraça de Boas Vindas\nEspaço Pet\nBosque\nQuadra de grama\nQuadra de areia\nAcademia\nAcademia\nSalão de Festas\nSalão de Festas\nSalão de Festas - Terraço\nEspaço Gourmet\nPraça Gourmet\nChurrasqueiras\nEspaço Beleza\nPoker Bar\nPlayground\nBrinquedoteca\nEspaço Teen\nEspaço compartilhado\nRecanto da Fé\nSauna\nDescanso da sauna\nEspaço Delivery\nMinimercado\nEstacionamento\nGaragem\nBicicletário\nFoto real tirada de drone, simulando vista da Torre C, apartamento 1402\nVaranda Gourmet\nCobertura Torre A\nCobertura Torre C\nCobertura Torre D\nPaisagismo à Noite\nViva Águas Claras Resort\nAGENDE SUA VISITA\nAOS DECORADOS\nTIPOLOGIAS PARA TODOS OS ESTILOS DE VIDA\n\nUm deles é o ideal para sua família.\n\n2 quartos: 61 a 64 m²\n\n3 quartos: 76 a 89 m²\n\n4 quartos: 119 a 121 m²\n\nCoberturas 3 quartos: 130 a 210 m²\n\nCoberturas 4 quartos: 241 a 247 m²\n\nBAIXE AQUI O BOOK COMPLETO\nSAIBA MAIS SOBRE SEU NOVO LAR\n\nPreencha o formulário e em breve você receberá as informações solicitadas.\n\nNome\nTelefone\nE-mail\nTipo de Unidade\nSelecione\n2 Quartos\n3 Quartos\n4 Quartos\nCobertura\n Ao preencher este formulário, autorizo a promotora a coletar e processar meus dados pessoais para fins de comunicação, envio de materiais promocionais, ofertas, contatos e informações sobre produtos e serviços.*\nQUERO CONHECER O VIVA\nFAENGE: 26 ANOS DE TRADIÇÃO E SOLIDEZ. E É SÓ O COMEÇO.\nCONHEÇA NOSSA HISTÓRIA\nAGENDE SUA VISITA\nAOS DECORADOS\n\nCentral de Vendas Águas Claras Avenida Sibipiruna – Próximo à CAESB\n\nEm atenção às Leis Federais nº 4.591/64 e nº 8.078/90, informamos que todas as imagens apresentadas neste material publicitário são meramente ilustrativas do imóvel a ser construído. Empreendimento registrado no MEMORIAL DE INCORPORAÇÃO: R. 1/385791 – 3º Ofício de Registro de Imóveis do Distrito Federal. Os móveis são de dimensões comerciais e os objetos de decoração, os acabamentos e alguns pontos de iluminação são meramente ilustrativos e constituem sugestão de decoração, não fazendo parte integrante da promessa de compra e venda das unidades, as quais serão entregues conforme o Memorial de Incorporação. As plantas humanizadas deste material publicitário são sugestões de decoração, as unidades imobiliárias serão executadas e entregues conforme projeto aprovado. Ver cláusula contratual referente a mobília, decoração, equipamentos e áreas comuns em geral. O pagamento da comissão de corretagem é de responsabilidade do adquirente."
+  },
+  "mobile": {
+   "scrollH": 14624,
+   "docH": 14624,
+   "wa": [],
+   "forms": [
+    {
+     "y": 11412,
+     "visible": true,
+     "n": 5,
+     "fields": [
+      "form_fields[name]",
+      "form_fields[telefone]",
+      "form_fields[email]",
+      "form_fields[unidadetipo]",
+      "form_fields[Aceite]"
+     ],
+     "submit": [
+      "QUERO CONHECER O VIVA"
+     ]
+    }
+   ],
+   "sections": 0,
+   "hero": [
+    "DECORADOS EXCLUSIVOS"
+   ],
+   "ctas": [
+    {
+     "t": "AGENDE SUA VISITA AOS DECORADOS",
+     "y": 3674
+    },
+    {
+     "t": "AGENDE SUA VISITA AOS DECORADOS",
+     "y": 5174
+    },
+    {
+     "t": "AGENDE SUA VISITA AOS DECORADOS",
+     "y": 6257
+    },
+    {
+     "t": "AGENDE SUA VISITA AOS DECORADOS",
+     "y": 8897
+    },
+    {
+     "t": "AGENDE SUA VISITA AOS DECORADOS",
+     "y": 9763
+    },
+    {
+     "t": "BAIXE AQUI O BOOK COMPLETO",
+     "y": 10800
+    },
+    {
+     "t": "QUERO CONHECER O VIVA",
+     "y": 11965
+    },
+    {
+     "t": "CONHEÇA NOSSA HISTÓRIA",
+     "y": 12835
+    },
+    {
+     "t": "AGENDE SUA VISITA AOS DECORADOS",
+     "y": 13317
+    }
+   ]
+  }
+ }
+}
