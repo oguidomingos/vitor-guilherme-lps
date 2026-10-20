@@ -1,3 +1,5 @@
+> **Atualizado:** a tabela de preços vigente, com fontes e datas de 20/10/2026, está no `README.md`. Este arquivo é o registro de 19/10.
+
 # Preços e pagamento — consulta em 19/10/2026
 
 Investimento em tráfego: aproximadamente **R$ 1.000**, confirmado por Guilherme nesta tarefa. A periodicidade não foi informada. Referência interna, não publicada como oferta nas LPs.
