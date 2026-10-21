@@ -1,0 +1,9 @@
+Produto,Peças,Campo,Valor na peça,Fonte,Valor na tabela oficial,Status,Obs
+ELEVA,Todas as 6 peças ELEVA (A/B/C × 4x5/9x16) + vídeo,Sinal,R$ 56.784,"Tabela ELEVA 25 TABELA(RUA)_2026_10, B-1906 (48,55 m², menor da tabela)","R$ 56.783,67",CONFERE,"arredondado p/ cima; = 8,00% de R$ 709.795,94"
+ELEVA,Todas as 6 peças ELEVA (A/B/C × 4x5/9x16) + vídeo,Mensal (6x),R$ 7.098,idem,"R$ 7.097,96",CONFERE,"arredondado p/ cima; = 1,00% do total; tabela tem 6 mensais a partir de 01/11/2026"
+ELEVA,Todas as 6 peças ELEVA (A/B/C × 4x5/9x16) + vídeo,Nº de mensais,6,idem,6x,CONFERE,
+ELEVA,Todas as 6 peças ELEVA (A/B/C × 4x5/9x16) + vídeo,Semestrais,não mencionado,—,tabela não tem semestrais (tem parcela única 01/02/2027),OK,pedido do Vitor
+ELEVA,Legal (rodapé),Unidade citada,"B-1906 (48,55 m²)",idem,"B-1906, Apto Borboleta, Disponível, total R$ 709.795,94",CONFERE,
+VERSAT,Todas as 6 peças VERSAT + vídeo,Sinal,R$ 87.770,Áudio do Vitor 21/10 (copiar concorrente),"menor sinal da tabela set/2026 R00: R$ 93.094,20 (un. 410)",NÃO CONFERE COM A TABELA,"Peça está R$ 5.324,20 ABAIXO do menor sinal. Nenhuma unidade da tabela tem sinal ≤ R$ 87.770. Decisão do Guilherme: seguir o pedido do cliente."
+VERSAT,Todas as 6 peças VERSAT + vídeo,Parcelas a partir de,R$ 3.050,Áudio do Vitor 21/10,"menor parcela (38x) da tabela: R$ 3.062,31 (un. 410)",NÃO CONFERE COM A TABELA,"R$ 12,31 abaixo da menor parcela. Tabela exige também 6 semestrais (R$ 23.273,55 na un. 410) e parcela final — omitidas por pedido do Vitor."
+VERSAT,Todas as 6 peças VERSAT + vídeo,Semestrais,não mencionado,—,tabela tem 6 semestrais,OMITIDO POR PEDIDO,"Vitor: ""não precisa nem colocar que tem semestral"""
