@@ -3,6 +3,7 @@
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 const { spawn } = require("child_process");
 
 const PORT = Number(process.env.PORT || 3021);
@@ -152,6 +153,60 @@ async function autoReply(data) {
   }
 }
 
+// ---- Meta Conversions API (server-side; dedupe com o fbq do navegador via event_id = click_id) ----
+// Desligada por padrão. Token SÓ por env (nunca no código): CAPI_ENABLED=1 + META_CAPI_TOKEN.
+const CAPI_ENABLED = /^(1|true|on|yes)$/i.test(String(process.env.CAPI_ENABLED || ""));
+const PIXEL_ID = process.env.META_PIXEL_ID || "1376646820713079";
+const CAPI_TOKEN = (process.env.META_CAPI_TOKEN || "").trim();
+const CAPI_TEST_CODE = (process.env.META_TEST_EVENT_CODE || "").trim();
+const GRAPH_VER = process.env.META_GRAPH_VERSION || "v21.0";
+const sha256 = (v) => crypto.createHash("sha256").update(String(v)).digest("hex");
+
+function buildCapiEvent(data, ip, ua) {
+  const isForm = String(data.tipo || "") === "lead";
+  const ud = { client_user_agent: String(ua || data.ua || "") };
+  if (ip) ud.client_ip_address = String(ip).split(",")[0].trim();
+  if (data.fbp) ud.fbp = String(data.fbp);
+  if (data.fbc) ud.fbc = String(data.fbc);
+  const ph = normalizePhone(data.telefone || data.phone);
+  if (ph) ud.ph = [sha256(ph)];
+  const custom = { source: isForm ? "form" : "wa_click" };
+  ["emp", "section", "botao", "utm_source", "utm_campaign", "utm_content"].forEach((k) => { if (data[k]) custom[k] = String(data[k]); });
+  const ev = {
+    event_name: "Lead",
+    event_time: Math.floor(Date.now() / 1000),
+    event_id: String(data.click_id),
+    action_source: "website",
+    user_data: ud,
+    custom_data: custom
+  };
+  if (data.pagina) ev.event_source_url = String(data.pagina);
+  return ev;
+}
+
+// Nunca lança: falha da CAPI não pode afetar a gravação.
+async function sendCapi(data, ip, ua) {
+  try {
+    if (!CAPI_ENABLED) return;
+    if (!CAPI_TOKEN) { console.error("[vg-lead-logger] CAPI ignorada: sem META_CAPI_TOKEN"); return; }
+    if (!data.click_id) { console.error("[vg-lead-logger] CAPI ignorada: sem click_id (dedupe)"); return; }
+    const body = { data: [buildCapiEvent(data, ip, ua)] };
+    if (CAPI_TEST_CODE) body.test_event_code = CAPI_TEST_CODE;
+    const ctl = new AbortController();
+    const t = setTimeout(() => ctl.abort(), 15000);
+    const r = await fetch("https://graph.facebook.com/" + GRAPH_VER + "/" + PIXEL_ID + "/events", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: "Bearer " + CAPI_TOKEN },
+      body: JSON.stringify(body),
+      signal: ctl.signal
+    }).finally(() => clearTimeout(t));
+    const txt = await r.text();
+    console.log("[vg-lead-logger] CAPI http=" + r.status + " tipo=" + data.tipo + " id=" + data.click_id + " resp=" + txt.slice(0, 300));
+  } catch (e) {
+    console.error("[vg-lead-logger] CAPI ERRO:", e && e.message || e);
+  }
+}
+
 let syncTimer = null;
 function queueSyncOnce() {
   // Sem token: só enfileira mentalmente — o cron de 6h faz o export CSV.
@@ -211,6 +266,8 @@ const server = http.createServer((req, res) => {
           const crow = Object.assign({}, row, { client_ts: data.ts || "", ts: new Date().toISOString() });
           const fd = fs.openSync(CLICKS_LOG, "a", 0o600);
           try { fs.writeSync(fd, JSON.stringify(crow) + "\n"); fs.fsyncSync(fd); } finally { fs.closeSync(fd); }
+          if (String(data.tipo) === "wa_click" && data.is_test !== true) sendCapi(data, row.ip, row.ua);
+          else if (String(data.tipo) === "wa_click" && CAPI_TEST_CODE) sendCapi(data, row.ip, row.ua);
           res.writeHead(200, { "Content-Type": "application/json" });
           return res.end(JSON.stringify({ ok: true }));
         }
@@ -218,7 +275,8 @@ const server = http.createServer((req, res) => {
         if (isTest) row.is_test = true;
         fs.appendFileSync(LOG, JSON.stringify(row) + "\n");
         if (isTest) console.log("[vg-lead-logger] lead de TESTE: sem auto-reply/sync");
-        else { queueSyncOnce(); autoReply(data); }
+        else { queueSyncOnce(); autoReply(data); sendCapi(data, row.ip, row.ua); }
+        if (isTest && CAPI_TEST_CODE) sendCapi(data, row.ip, row.ua);
         res.writeHead(200, { "Content-Type": "application/json" });
         res.end(JSON.stringify({ ok: true }));
       } catch (e) {

@@ -53,14 +53,22 @@
     var saved = JSON.parse(load("vg_origin") || "{}");
     var qs = new URLSearchParams(location.search);
     var fresh = false;
-    KEYS.forEach(function (k) { if (qs.get(k)) { saved[k] = qs.get(k); fresh = true; } });
+    KEYS.forEach(function (k) { if (qs.get(k)) { saved[k] = qs.get(k); fresh = true; if (k === "fbclid") saved.fbclid_ts = Date.now(); } });
     if (fresh) store("vg_origin", JSON.stringify(saved));
     origin = saved;
   } catch (e) {}
 
+  function cookie(n) {
+    try { var m = document.cookie.match(new RegExp("(?:^|; )" + n + "=([^;]*)")); return m ? decodeURIComponent(m[1]) : ""; } catch (e) { return ""; }
+  }
+
   function base(tipo) {
     var o = { tipo: tipo, emp: EMP, session_id: sessionId, pagina: location.href.split("#")[0], referrer: document.referrer || "" };
     KEYS.forEach(function (k) { o[k] = origin[k] || ""; });
+    var fbp = cookie("_fbp"), fbc = cookie("_fbc");
+    if (!fbc && origin.fbclid) fbc = "fb.1." + (origin.fbclid_ts || Date.now()) + "." + origin.fbclid;
+    if (fbp) o.fbp = fbp;
+    if (fbc) o.fbc = fbc;
     if (/[?&]vg_test=1/.test(location.search)) o.is_test = true; // testes: gravados, mas fora do relatório e sem auto-resposta
     return o;
   }
@@ -124,6 +132,9 @@
       send(p, true);
       fireGadsWa();
       push("vg_wa_click", { section: p.section });
+      // Meta: mesmo evento padrão Lead do formulário; mesmo event_id (click_id) para deduplicar com a CAPI.
+      try { if (typeof window.fbq === "function") window.fbq("track", "Lead", { content_name: p.botao, content_category: "whatsapp", source: "wa_click" }, { eventID: p.click_id }); } catch (e) {}
+      push("generate_lead", { event_id: p.click_id, section: p.section, source: "wa_click" });
     });
   });
 
@@ -153,8 +164,8 @@
       push("vg_lead_form", { section: p.section, interesse: interesse });
       // Evento padrão de Lead (Meta): mesmo event_id nos dois caminhos para o Meta deduplicar.
       var leadId = p.click_id;
-      try { if (typeof window.fbq === "function") window.fbq("track", "Lead", {}, { eventID: leadId }); } catch (e) {}
-      push("generate_lead", { event_id: leadId, section: p.section });
+      try { if (typeof window.fbq === "function") window.fbq("track", "Lead", { source: "form" }, { eventID: leadId }); } catch (e) {}
+      push("generate_lead", { event_id: leadId, section: p.section, source: "form" });
       form.hidden = true;
       if (done) {
         var nm = done.querySelector("[data-nome]");
